@@ -21,20 +21,19 @@ export default async function TopicPage({
 
   const subject = subjects.find((s) => s.id === topic.subjectId);
   const paper = papers.find((p) => p.id === topic.paperId);
-  const related = topic.relatedTopicIds
-    .map((id) => getTopicById(id))
-    .filter(Boolean);
+  const related = topic.relatedTopicIds.map((id) => getTopicById(id)).filter(Boolean);
+  const analysis = topic.pyqAnalysis;
 
   return (
     <div className="space-y-6">
       <div>
         <div className="flex flex-wrap gap-2 text-sm">
-          {paper && (
+          {paper ? (
             <Link href={`/syllabus/${paper.id}`} className="text-amber-800 underline">
               {paper.shortTitle}
             </Link>
-          )}
-          {subject && (
+          ) : null}
+          {subject ? (
             <>
               <span className="text-slate-400">/</span>
               <Link
@@ -44,7 +43,7 @@ export default async function TopicPage({
                 {subject.title}
               </Link>
             </>
-          )}
+          ) : null}
         </div>
         <h1 className="mt-2 text-3xl font-bold text-slate-900">{topic.title}</h1>
         <p className="mt-2 text-slate-600">{topic.summary}</p>
@@ -55,6 +54,40 @@ export default async function TopicPage({
         <p className="mt-3 text-sm text-slate-700">
           <strong>Why this estimate:</strong> {topic.whyBlurb}
         </p>
+        {analysis ? (
+          <div className="mt-4 grid gap-3 rounded-lg bg-slate-50 p-4 text-sm sm:grid-cols-2">
+            <div>
+              <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                Years appeared
+              </div>
+              <p className="mt-1 text-slate-800">
+                {analysis.yearsAppeared.length
+                  ? analysis.yearsAppeared.join(", ")
+                  : "Sparse / not tagged in window"}
+              </p>
+            </div>
+            <div>
+              <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                Frequency score
+              </div>
+              <p className="mt-1 text-slate-800">
+                {analysis.frequencyScore}/100 · {analysis.totalAppearances} tagged appearances
+              </p>
+            </div>
+            <div>
+              <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                Trend
+              </div>
+              <p className="mt-1 capitalize text-slate-800">{analysis.trend}</p>
+            </div>
+            <div>
+              <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                Method
+              </div>
+              <p className="mt-1 text-slate-800">{analysis.methodologyNote}</p>
+            </div>
+          </div>
+        ) : null}
         <div className="mt-3">
           <Disclaimer compact />
         </div>
@@ -69,7 +102,7 @@ export default async function TopicPage({
         </p>
       </section>
 
-      {topic.subtopics.length > 0 && (
+      {topic.subtopics.length > 0 ? (
         <section>
           <h2 className="mb-3 text-lg font-semibold">Subtopics</h2>
           <div className="grid gap-3 sm:grid-cols-2">
@@ -81,17 +114,20 @@ export default async function TopicPage({
             ))}
           </div>
         </section>
-      )}
+      ) : null}
 
       <div className="flex flex-wrap gap-2">
         {topic.tags.map((tag) => (
-          <span key={tag} className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-700">
+          <span
+            key={tag}
+            className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-700"
+          >
             #{tag}
           </span>
         ))}
       </div>
 
-      {related.length > 0 && (
+      {related.length > 0 ? (
         <section>
           <h2 className="mb-3 text-lg font-semibold">Related topics</h2>
           <ul className="space-y-2">
@@ -110,7 +146,7 @@ export default async function TopicPage({
             )}
           </ul>
         </section>
-      )}
+      ) : null}
     </div>
   );
 }

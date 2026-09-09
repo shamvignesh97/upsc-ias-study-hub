@@ -1,11 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { subjects } from "@/data/papers";
-import { getQuizSubjects, getQuizzesBySubject } from "@/data/quizzes";
-import QuizPlayer from "@/components/QuizPlayer";
+import { getTrackMeta, quizTracks } from "@/data/quizzes";
+import QuizTrackLoader from "@/components/QuizTrackLoader";
 
 export function generateStaticParams() {
-  return getQuizSubjects().map((subjectId) => ({ subjectId }));
+  return quizTracks.map((t) => ({ subjectId: t.id }));
 }
 
 export default async function QuizSubjectPage({
@@ -14,9 +13,8 @@ export default async function QuizSubjectPage({
   params: Promise<{ subjectId: string }>;
 }) {
   const { subjectId } = await params;
-  const subject = subjects.find((s) => s.id === subjectId);
-  const questions = getQuizzesBySubject(subjectId);
-  if (!subject || !questions.length) notFound();
+  const track = getTrackMeta(subjectId);
+  if (!track) notFound();
 
   return (
     <div className="space-y-6">
@@ -25,10 +23,17 @@ export default async function QuizSubjectPage({
           ← All quizzes
         </Link>
         <h1 className="mt-2 text-3xl font-bold">
-          {subject.icon} {subject.title} Quiz
+          {track.icon} {track.title}
         </h1>
+        <p className="mt-1 text-slate-600">{track.description}</p>
+        <p className="mt-1 text-xs text-slate-500">
+          Bank size: {track.count} ·{" "}
+          {track.kind === "mcq"
+            ? "Loaded dynamically; each attempt uses a 15-question session."
+            : "Mains prompts with model outlines — write first, then reveal."}
+        </p>
       </div>
-      <QuizPlayer questions={questions} />
+      <QuizTrackLoader track={track} />
     </div>
   );
 }

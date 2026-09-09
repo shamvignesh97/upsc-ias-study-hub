@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { topics, getHighProbabilityTopics } from "@/data/topics";
+import { getQuizCountsSummary } from "@/data/quizzes";
 import { useProgress } from "@/hooks/useClientStore";
 import ProgressRing from "./ProgressRing";
 import TopicCard from "./TopicCard";
@@ -10,6 +11,7 @@ import Disclaimer from "./Disclaimer";
 export default function DashboardClient() {
   const { progress, studiedCount, ready } = useProgress();
   const focus = getHighProbabilityTopics(6);
+  const quizSummary = getQuizCountsSummary();
 
   return (
     <div className="space-y-8">
@@ -18,8 +20,8 @@ export default function DashboardClient() {
           <p className="text-sm text-amber-300">Civil Services Study Companion</p>
           <h1 className="mt-1 text-3xl font-bold tracking-tight">UPSC IAS Study Hub</h1>
           <p className="mt-3 max-w-xl text-sm text-slate-200">
-            Navigate the full syllabus — Prelims, Mains, Optional & Interview — with PYQ-trend
-            likelihood estimates to prioritise revision without ignoring coverage.
+            Full syllabus navigation with next-exam likelihood from multi-year PYQ frequency
+            analysis — plus Prelims GS, CSAT and Mains practice banks.
           </p>
           <div className="mt-5 flex flex-wrap gap-2">
             <Link href="/syllabus" className="rounded-lg bg-amber-500 px-4 py-2 text-sm font-semibold text-[#0f2744]">
@@ -29,9 +31,12 @@ export default function DashboardClient() {
               Study planner
             </Link>
             <Link href="/quiz" className="rounded-lg border border-white/30 px-4 py-2 text-sm font-semibold">
-              Take a quiz
+              Quiz hub
             </Link>
           </div>
+          <p className="mt-4 text-xs text-slate-300">
+            Practice: ~{quizSummary.mcq} MCQs · {quizSummary.mains} mains prompts
+          </p>
         </div>
 
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
@@ -50,8 +55,10 @@ export default function DashboardClient() {
       <section>
         <div className="mb-4 flex items-end justify-between gap-2">
           <div>
-            <h2 className="text-xl font-bold text-slate-900">Focus for next paper</h2>
-            <p className="text-sm text-slate-600">Top high-probability topics with short “why” blurbs.</p>
+            <h2 className="text-xl font-bold text-slate-900">Focus for next exam</h2>
+            <p className="text-sm text-slate-600">
+              Ranked by PYQ frequency + recency weighting (see methodology).
+            </p>
           </div>
           <Link href="/methodology" className="text-sm font-medium text-amber-800 underline">
             Methodology
@@ -67,9 +74,9 @@ export default function DashboardClient() {
       <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {[
           { href: "/syllabus", title: "Syllabus browser", desc: "Paper → Subject → Topic" },
-          { href: "/pyq", title: "PYQ practice", desc: "Sample questions by year" },
-          { href: "/optional", title: "Optional subjects", desc: "Browse & focus one" },
-          { href: "/interview", title: "Interview tips", desc: "DAF, CA, mocks" },
+          { href: "/quiz", title: "GS · CSAT · Mains tests", desc: "Lazy-loaded practice banks" },
+          { href: "/pyq", title: "PYQ-style practice", desc: "Illustrative year-tagged items" },
+          { href: "/optional", title: "Optional & Interview", desc: "Browse optionals · tips" },
         ].map((c) => (
           <Link
             key={c.href}
