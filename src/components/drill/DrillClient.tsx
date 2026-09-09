@@ -11,6 +11,7 @@ import {
   type DrillPersist,
 } from "@/lib/storage";
 import { cn } from "@/lib/utils";
+import ExplanationPanel from "@/components/ExplanationPanel";
 
 export default function DrillClient() {
   const [questions, setQuestions] = useState<MockQuestion[] | null>(null);
@@ -216,7 +217,7 @@ export default function DrillClient() {
                   Incorrect. Correct: {String.fromCharCode(65 + q.correctIndex)}
                 </p>
               )}
-              <p className="mt-1 text-slate-800">{q.explanation}</p>
+              <ExplanationPanel className="mt-2 bg-white/70" explanation={q.explanation} correctIndex={q.correctIndex} />
               {q.topicId ? (
                 <Link
                   href={`/topic/${q.topicId}`}

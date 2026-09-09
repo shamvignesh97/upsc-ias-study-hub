@@ -8,6 +8,7 @@ import { saveMockAttempt } from "@/lib/storage";
 import { MOCK_DISCLAIMER } from "@/data/mocks";
 import { cn } from "@/lib/utils";
 import WeakAreaCoach from "@/components/WeakAreaCoach";
+import ExplanationPanel from "@/components/ExplanationPanel";
 
 type Phase = "exam" | "confirm" | "result";
 type FeedbackMode = "practice" | "exam";
@@ -310,12 +311,15 @@ export default function MockExamPlayer({
                 );
               })}
             </div>
-            <p className="mt-3 rounded-lg bg-slate-50 p-3 text-sm text-slate-700">
-              <span className="font-semibold text-slate-800">
-                Correct answer: {String.fromCharCode(65 + rq.correctIndex)} —{" "}
-              </span>
-              {rq.explanation}
-            </p>
+            <div className="mt-3">
+              <p className="mb-1 text-sm font-semibold text-slate-800">
+                Correct answer: {String.fromCharCode(65 + rq.correctIndex)}
+              </p>
+              <ExplanationPanel
+                explanation={rq.explanation}
+                correctIndex={rq.correctIndex}
+              />
+            </div>
             <div className="mt-4 flex gap-2">
               <button
                 type="button"
@@ -528,13 +532,14 @@ export default function MockExamPlayer({
                     Incorrect. Correct answer: {String.fromCharCode(65 + q.correctIndex)}
                   </p>
                 )}
-                <p className="mt-1 text-slate-800">
-                  <span className="font-medium">
-                    {String.fromCharCode(65 + q.correctIndex)}. {q.options[q.correctIndex]}
-                  </span>
-                  {" — "}
-                  {q.explanation}
+                <p className="mt-1 text-sm font-medium text-slate-900">
+                  {String.fromCharCode(65 + q.correctIndex)}. {q.options[q.correctIndex]}
                 </p>
+                <ExplanationPanel
+                  className="mt-2 bg-white/80"
+                  explanation={q.explanation}
+                  correctIndex={q.correctIndex}
+                />
               </div>
             ) : null}
 

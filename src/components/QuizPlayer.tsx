@@ -3,6 +3,7 @@
 import { memo, useCallback, useMemo, useState } from "react";
 import type { QuizQuestion } from "@/types";
 import { buildSession } from "@/lib/quiz-session";
+import ExplanationPanel from "@/components/ExplanationPanel";
 
 const OptionButton = memo(function OptionButton({
   label,
@@ -147,7 +148,7 @@ function QuizPlayerInner({
       </div>
       {selected !== null ? (
         <div className="mt-4 space-y-3">
-          <p className="rounded-lg bg-slate-50 p-3 text-sm text-slate-700">{q.explanation}</p>
+          <ExplanationPanel explanation={q.explanation} correctIndex={q.correctIndex} />
           <button
             type="button"
             onClick={next}

@@ -2,8 +2,14 @@
 """Expand GS1/CSAT mock pools and generate papers D/E/F."""
 from __future__ import annotations
 from pathlib import Path
-import re, random
+import re, random, sys
 from collections import Counter, defaultdict
+
+_SCRIPTS = Path(__file__).resolve().parent
+if str(_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS))
+
+from question_quality import make_variants  # full stems + teaching AR explanations
 
 ROOT = Path("src/data/mocks")
 
@@ -494,43 +500,6 @@ for i in range(1, 11):
       0, "Rule of law + courtesy.")
 
 print("CSAT new", len(CSAT), Counter(x["section"] for x in CSAT))
-
-def make_variants(facts, start):
-    out = []
-    n = start
-    by = defaultdict(list)
-    for f in facts:
-        by[f["subjectId"]].append(f)
-    for sub, flist in by.items():
-        for i in range(0, len(flist) - 1, 2):
-            a, b = flist[i], flist[i + 1]
-            ca, cb = a["options"][0], b["options"][0]
-            out.append({
-                "id": f"tmp-{n}", "subjectId": sub, "paperId": "prelims-gs",
-                "question": f"Consider the following statements:\n1. {ca}\n2. {cb}\nWhich of the statements given above is/are correct?",
-                "options": ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
-                "correctIndex": 2,
-                "explanation": f"Both are Prelims-relevant: (1) {a['explanation']} (2) {b['explanation']}",
-                "illustrative": True, "topicId": a["topicId"],
-                "nextExamChance": max(76, min(a["nextExamChance"], b["nextExamChance"]) - 2),
-            }); n += 1
-            out.append({
-                "id": f"tmp-{n}", "subjectId": sub, "paperId": "prelims-gs",
-                "question": f"With reference to {sub}, which one of the following is correct?",
-                "options": [ca, f"Opposite of: {ca}", "No relevance to Indian polity/economy/environment", "Applies only outside India with no domestic link"],
-                "correctIndex": 0, "explanation": a["explanation"], "illustrative": True,
-                "topicId": a["topicId"], "nextExamChance": max(75, a["nextExamChance"] - 3),
-            }); n += 1
-            out.append({
-                "id": f"tmp-{n}", "subjectId": sub, "paperId": "prelims-gs",
-                "question": f"Assertion (A): {ca}\nReason (R): {cb}\nSelect the correct option:",
-                "options": ["Both A and R true and R explains A", "Both A and R true but R does not explain A", "A true, R false", "A false, R true"],
-                "correctIndex": 1,
-                "explanation": "Both statements plausible; R need not explain A — illustrative AR practice.",
-                "illustrative": True, "topicId": a["topicId"],
-                "nextExamChance": max(74, min(a["nextExamChance"], b["nextExamChance"]) - 4),
-            }); n += 1
-    return out
 
 def main():
     gs1_pool = parse_qs(ROOT / "gs1-pool.ts")
