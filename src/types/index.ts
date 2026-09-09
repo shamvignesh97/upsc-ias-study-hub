@@ -166,3 +166,43 @@ export interface QuizTrackMeta {
   kind: "mcq" | "mains";
   count: number;
 }
+
+
+export type MockKind = "gs1" | "csat";
+
+export interface MockQuestion extends QuizQuestion {
+  /** Estimated next-exam theme chance % from PYQ analysis (0–100). */
+  nextExamChance: number;
+  /** CSAT skill section tag when applicable. */
+  section?: string;
+}
+
+export interface MockPaperMeta {
+  id: string;
+  kind: MockKind;
+  key: string;
+  title: string;
+  subtitle: string;
+  questionCount: number;
+  durationMinutes: number;
+}
+
+export interface MockAttemptSummary {
+  id: string;
+  kind: MockKind;
+  paperKey: string;
+  paperTitle: string;
+  finishedAt: string;
+  rawScore: number;
+  maxScore: number;
+  correct: number;
+  wrong: number;
+  unattempted: number;
+  attempted: number;
+  accuracy: number;
+  timeUsedSeconds: number;
+  durationSeconds: number;
+  passedHeuristic: boolean;
+  topicBreakup: { topicId: string; correct: number; total: number }[];
+  subjectBreakup: { subjectId: string; correct: number; total: number }[];
+}

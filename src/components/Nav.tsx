@@ -11,6 +11,7 @@ const links = [
   { href: "/study", label: "Study" },
   { href: "/syllabus", label: "Focus" },
   { href: "/quiz", label: "Practice" },
+  { href: "/mock", label: "Mock" },
   { href: "/pyq", label: "PYQ" },
   { href: "/planner", label: "Planner" },
   { href: "/optional", label: "Optional" },

@@ -2,12 +2,11 @@ import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import { SerwistProvider } from "@serwist/turbopack/react";
 import "./globals.css";
-import Nav from "@/components/Nav";
-import InstallPrompt from "@/components/InstallPrompt";
+import AppChrome from "@/components/AppChrome";
 
 const APP_NAME = "UPSC IAS Study Hub";
 const APP_DESCRIPTION =
-  "Complete IAS/UPSC study companion — syllabus, PYQ-trend likelihood estimates, quizzes, planner, and interview tips.";
+  "Complete IAS/UPSC study companion — syllabus, PYQ-trend likelihood estimates, quizzes, prelims mocks, planner, and interview tips.";
 
 export const metadata: Metadata = {
   applicationName: APP_NAME,
@@ -55,18 +54,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
     <html lang="en">
       <body className="min-h-screen antialiased">
         <SerwistProvider swUrl="/serwist/sw.js">
-          <Nav />
-          <main className="mx-auto max-w-6xl px-4 py-6 sm:py-8">{children}</main>
-          <footer className="border-t border-slate-200 bg-white">
-            <div className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-              <p>
-                UPSC IAS Study Hub — educational MVP. Probabilities are estimates, not
-                official predictions.
-              </p>
-              <p>Client-side progress · Installable PWA · No account required</p>
-            </div>
-          </footer>
-          <InstallPrompt />
+          <AppChrome>{children}</AppChrome>
         </SerwistProvider>
       </body>
     </html>

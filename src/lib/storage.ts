@@ -68,3 +68,24 @@ export function togglePlannerDone(topicId: string): PlannerItem[] {
   setPlanner(items);
   return items;
 }
+
+
+const MOCK_HISTORY_KEY = "upsc-mock-history";
+
+export type StoredMockAttempt = import("@/types").MockAttemptSummary;
+
+export function getMockHistory(): StoredMockAttempt[] {
+  if (typeof window === "undefined") return [];
+  return safeParse(localStorage.getItem(MOCK_HISTORY_KEY), []);
+}
+
+export function saveMockAttempt(attempt: StoredMockAttempt): StoredMockAttempt[] {
+  const current = getMockHistory();
+  const next = [attempt, ...current].slice(0, 40);
+  localStorage.setItem(MOCK_HISTORY_KEY, JSON.stringify(next));
+  return next;
+}
+
+export function clearMockHistory(): void {
+  localStorage.removeItem(MOCK_HISTORY_KEY);
+}

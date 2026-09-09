@@ -33,6 +33,9 @@ export default function DashboardClient() {
             <Link href="/quiz" className="rounded-lg border border-white/30 px-4 py-2 text-sm font-semibold">
               Practice quizzes
             </Link>
+            <Link href="/mock" className="rounded-lg border border-amber-300/50 bg-amber-500/20 px-4 py-2 text-sm font-semibold text-amber-100">
+              Prelims mocks
+            </Link>
           </div>
           <p className="mt-4 text-xs text-slate-300">
             {topics.length} study topics · ~{quizSummary.mcq} MCQs · {quizSummary.mains} mains prompts
@@ -53,7 +56,7 @@ export default function DashboardClient() {
         </div>
       </section>
 
-      <section className="grid gap-3 sm:grid-cols-3">
+      <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {[
           {
             href: "/study",
@@ -71,6 +74,12 @@ export default function DashboardClient() {
             href: "/quiz",
             title: "3. Practice",
             desc: "Prelims MCQs, CSAT, Mains prompts — lazy-loaded",
+            primary: false,
+          },
+          {
+            href: "/mock",
+            title: "4. Mock",
+            desc: "Full GS1 & CSAT papers · timer · scorecard · A/B/C sets",
             primary: false,
           },
         ].map((c) => (

@@ -34,6 +34,11 @@ export default function QuizIndexPage() {
         <p className="mt-2 text-sm text-slate-500">
           ~{summary.mcq} MCQs · {summary.mains} mains prompts · {summary.tracks} tracks
         </p>
+        <p className="mt-3">
+          <Link href="/mock" className="text-sm font-semibold text-amber-800 underline">
+            Prefer a full Prelims mock (GS1 / CSAT)? Open Mock Tests →
+          </Link>
+        </p>
       </div>
 
       {sections.map((section) => {
