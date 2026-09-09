@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Serwist generated service worker (webpack path; turbopack serves via route)
+public/sw*
+public/swe-worker*

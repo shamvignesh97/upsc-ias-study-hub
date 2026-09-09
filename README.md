@@ -12,6 +12,7 @@ A polished Next.js study companion for the Indian Civil Services (IAS/UPSC) exam
 - **PYQ-style practice** — sample questions tagged by year/topic
 - **Study planner** — 7-day plan from high-probability topics
 - **Methodology page** — how estimates are derived
+- **Progressive Web App** — installable on phone & desktop, offline app shell after first visit
 
 > Probabilities are **estimates for study prioritisation**, not official UPSC predictions.
 
@@ -19,6 +20,7 @@ A polished Next.js study companion for the Indian Civil Services (IAS/UPSC) exam
 
 - Next.js (App Router) + TypeScript + Tailwind CSS
 - Client-side data (TS modules) — no backend required
+- PWA via `@serwist/turbopack` (service worker + runtime caching)
 
 ## Getting started
 
@@ -33,6 +35,24 @@ Open [http://localhost:3000](http://localhost:3000).
 npm run build
 npm start
 ```
+
+## Install as an app (PWA)
+
+The site is a Progressive Web App. After opening it once online, core pages and static assets are cached for offline study.
+
+| Platform | How to install |
+|----------|----------------|
+| **Android (Chrome)** | Open the site → tap the browser menu → **Install app** / **Add to Home screen**. Or use the in-app **Install app** banner / nav button when Chrome shows it. |
+| **iOS (Safari)** | Open the site in Safari → tap **Share** → **Add to Home Screen** → Add. (Chrome/Firefox on iOS use the same WebKit limitation — install from Safari.) |
+| **Desktop (Chrome / Edge / Chromium)** | Look for the **install** icon in the address bar, or use the in-app **Install app** control in the nav. |
+
+Once installed (or when running in standalone display mode), the install banner hides automatically.
+
+**Notes / caveats**
+
+- iOS does not support `beforeinstallprompt`; installation is only via Share → Add to Home Screen.
+- Offline works best for routes you have already visited; unvisited dynamic routes fall back to the offline page until cached.
+- Progress and bookmarks stay on-device in `localStorage`.
 
 ## Routes
 

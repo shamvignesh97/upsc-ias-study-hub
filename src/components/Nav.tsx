@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import InstallMenuButton from "@/components/InstallMenuButton";
 
 const links = [
   { href: "/", label: "Dashboard" },
@@ -60,6 +61,7 @@ export default function Nav() {
               </Link>
             );
           })}
+          <InstallMenuButton className="ml-1" />
         </nav>
       </div>
 
@@ -82,6 +84,7 @@ export default function Nav() {
                 </Link>
               );
             })}
+            <InstallMenuButton className="col-span-2" />
           </div>
         </nav>
       )}
