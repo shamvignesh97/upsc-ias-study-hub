@@ -6,14 +6,16 @@ export default function TopicCard({
   topic,
   studied,
   showWhy = false,
+  href,
 }: {
   topic: Topic;
   studied?: boolean;
   showWhy?: boolean;
+  href?: string;
 }) {
   return (
     <Link
-      href={`/topic/${topic.id}`}
+      href={href ?? `/topic/${topic.id}`}
       className="group block rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-amber-300 hover:shadow-md"
     >
       <div className="mb-2 flex items-start justify-between gap-2">
@@ -25,13 +27,14 @@ export default function TopicCard({
         )}
       </div>
       <p className="mb-3 line-clamp-2 text-sm text-slate-600">{topic.summary}</p>
-      <LikelihoodBadge likelihood={topic.likelihood} probability={topic.probability} compact />
-      {showWhy && (
-        <p className="mt-2 border-t border-slate-100 pt-2 text-xs text-slate-500">
-          <span className="font-medium text-slate-700">Why: </span>
-          {topic.whyBlurb}
-        </p>
-      )}
+      <LikelihoodBadge
+        likelihood={topic.likelihood}
+        probability={topic.probability}
+        chanceLabel={topic.chanceLabel}
+        shortWhy={showWhy ? topic.shortWhy ?? topic.whyBlurb : undefined}
+        trend={topic.pyqAnalysis?.trend}
+        compact
+      />
     </Link>
   );
 }

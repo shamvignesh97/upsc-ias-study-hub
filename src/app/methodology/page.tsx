@@ -70,10 +70,13 @@ export default function MethodologyPage() {
       <section className="space-y-3 rounded-xl border border-slate-200 bg-white p-5 text-sm leading-relaxed text-slate-700 shadow-sm">
         <h2 className="text-lg font-semibold text-slate-900">What you see on topics</h2>
         <ul className="list-disc space-y-1 pl-5">
-          <li>Years appeared (from the frequency table)</li>
-          <li>Total tagged appearances & frequency score</li>
-          <li>Trend (rising / stable / falling)</li>
-          <li>Estimated likelihood % for next paper + “why” blurb citing PYQ pattern</li>
+          <li>
+            Plain-language chance line (e.g. “~82% chance in next Prelims GS Paper I”) plus
+            High/Medium/Low band
+          </li>
+          <li>Big % meter, trend (rising / stable / falling), years appeared</li>
+          <li>Short “why this score” from PYQ notes + frequency</li>
+          <li>Full rationale blurb and frequency score on topic pages</li>
         </ul>
         <p className="pt-2">
           Dashboard <strong>Focus for next exam</strong> ranks topics by this computed probability

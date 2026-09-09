@@ -9,10 +9,13 @@ import { useProgress } from "@/hooks/useClientStore";
 
 const PAGE_SIZE = 12;
 
+type SortMode = "chance-desc" | "chance-asc" | "title";
+
 export default function SyllabusFilters() {
   const [paperId, setPaperId] = useState<PaperId | "all">("all");
   const [subjectId, setSubjectId] = useState<string>("all");
   const [likelihood, setLikelihood] = useState<Likelihood | "all">("all");
+  const [sort, setSort] = useState<SortMode>("chance-desc");
   const [page, setPage] = useState(0);
   const { progress } = useProgress();
 
@@ -22,13 +25,18 @@ export default function SyllabusFilters() {
   );
 
   const filtered = useMemo(() => {
-    return topics.filter((t) => {
+    const list = topics.filter((t) => {
       if (paperId !== "all" && t.paperId !== paperId) return false;
       if (subjectId !== "all" && t.subjectId !== subjectId) return false;
       if (likelihood !== "all" && t.likelihood !== likelihood) return false;
       return true;
     });
-  }, [paperId, subjectId, likelihood]);
+    const sorted = [...list];
+    if (sort === "chance-desc") sorted.sort((a, b) => b.probability - a.probability);
+    else if (sort === "chance-asc") sorted.sort((a, b) => a.probability - b.probability);
+    else sorted.sort((a, b) => a.title.localeCompare(b.title));
+    return sorted;
+  }, [paperId, subjectId, likelihood, sort]);
 
   const pageCount = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const safePage = Math.min(page, pageCount - 1);
@@ -36,7 +44,7 @@ export default function SyllabusFilters() {
 
   return (
     <div className="space-y-6">
-      <div className="grid gap-3 rounded-xl border border-slate-200 bg-white p-4 sm:grid-cols-3">
+      <div className="grid gap-3 rounded-xl border border-slate-200 bg-white p-4 sm:grid-cols-2 lg:grid-cols-4">
         <label className="text-sm">
           <span className="mb-1 block font-medium text-slate-700">Paper</span>
           <select
@@ -75,7 +83,7 @@ export default function SyllabusFilters() {
           </select>
         </label>
         <label className="text-sm">
-          <span className="mb-1 block font-medium text-slate-700">Likelihood</span>
+          <span className="mb-1 block font-medium text-slate-700">Chance band</span>
           <select
             className="w-full rounded-lg border border-slate-300 px-3 py-2"
             value={likelihood}
@@ -90,11 +98,26 @@ export default function SyllabusFilters() {
             <option value="Low">Low</option>
           </select>
         </label>
+        <label className="text-sm">
+          <span className="mb-1 block font-medium text-slate-700">Sort by chance</span>
+          <select
+            className="w-full rounded-lg border border-slate-300 px-3 py-2"
+            value={sort}
+            onChange={(e) => {
+              setSort(e.target.value as SortMode);
+              setPage(0);
+            }}
+          >
+            <option value="chance-desc">Highest % first</option>
+            <option value="chance-asc">Lowest % first</option>
+            <option value="title">Title A–Z</option>
+          </select>
+        </label>
       </div>
 
       <p className="text-sm text-slate-600">
         Showing <strong>{pageItems.length}</strong> of <strong>{filtered.length}</strong> topics
-        (page {safePage + 1}/{pageCount})
+        (page {safePage + 1}/{pageCount}) — percentages are PYQ-based estimates, not official forecasts.
       </p>
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

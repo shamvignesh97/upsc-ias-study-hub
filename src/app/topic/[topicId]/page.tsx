@@ -1,10 +1,13 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { topics, getTopicById } from "@/data/topics";
+import { topics, getTopicById, getAdjacentInSubject } from "@/data/topics";
 import { subjects, papers } from "@/data/papers";
 import LikelihoodBadge from "@/components/LikelihoodBadge";
 import TopicActions from "@/components/TopicActions";
 import Disclaimer from "@/components/Disclaimer";
+import StudyNotes from "@/components/study/StudyNotes";
+import RevisionCards from "@/components/study/RevisionCards";
+import StudyNav from "@/components/study/StudyNav";
 
 export function generateStaticParams() {
   return topics.map((t) => ({ topicId: t.id }));
@@ -23,6 +26,7 @@ export default async function TopicPage({
   const paper = papers.find((p) => p.id === topic.paperId);
   const related = topic.relatedTopicIds.map((id) => getTopicById(id)).filter(Boolean);
   const analysis = topic.pyqAnalysis;
+  const adj = getAdjacentInSubject(topic.id);
 
   return (
     <div className="space-y-6">
@@ -47,25 +51,39 @@ export default async function TopicPage({
         </div>
         <h1 className="mt-2 text-3xl font-bold text-slate-900">{topic.title}</h1>
         <p className="mt-2 text-slate-600">{topic.summary}</p>
+        <div className="mt-3 flex flex-wrap gap-2">
+          <Link
+            href={`/study/${topic.paperId}/${topic.subjectId}?topic=${topic.id}`}
+            className="rounded-lg bg-amber-500 px-3 py-1.5 text-sm font-semibold text-[#0f2744]"
+          >
+            Open in Study mode
+          </Link>
+          <Link
+            href={`/study/${topic.paperId}/${topic.subjectId}`}
+            className="rounded-lg border border-slate-300 px-3 py-1.5 text-sm font-semibold text-slate-800"
+          >
+            Subject study path
+          </Link>
+        </div>
       </div>
 
       <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-        <LikelihoodBadge likelihood={topic.likelihood} probability={topic.probability} />
+        <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-slate-500">
+          Chance next exam
+        </p>
+        <LikelihoodBadge
+          likelihood={topic.likelihood}
+          probability={topic.probability}
+          chanceLabel={topic.chanceLabel}
+          shortWhy={topic.shortWhy}
+          trend={analysis?.trend}
+          yearsAppeared={analysis?.yearsAppeared}
+        />
         <p className="mt-3 text-sm text-slate-700">
-          <strong>Why this estimate:</strong> {topic.whyBlurb}
+          <strong>Full rationale:</strong> {topic.whyBlurb}
         </p>
         {analysis ? (
           <div className="mt-4 grid gap-3 rounded-lg bg-slate-50 p-4 text-sm sm:grid-cols-2">
-            <div>
-              <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-                Years appeared
-              </div>
-              <p className="mt-1 text-slate-800">
-                {analysis.yearsAppeared.length
-                  ? analysis.yearsAppeared.join(", ")
-                  : "Sparse / not tagged in window"}
-              </p>
-            </div>
             <div>
               <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">
                 Frequency score
@@ -75,15 +93,7 @@ export default async function TopicPage({
               </p>
             </div>
             <div>
-              <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-                Trend
-              </div>
-              <p className="mt-1 capitalize text-slate-800">{analysis.trend}</p>
-            </div>
-            <div>
-              <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-                Method
-              </div>
+              <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">Method</div>
               <p className="mt-1 text-slate-800">{analysis.methodologyNote}</p>
             </div>
           </div>
@@ -93,28 +103,10 @@ export default async function TopicPage({
         </div>
       </div>
 
+      <StudyNav prev={adj.prev} next={adj.next} index={adj.index} total={adj.total} />
       <TopicActions topicId={topic.id} />
-
-      <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-        <h2 className="text-lg font-semibold">Notes</h2>
-        <p className="mt-3 whitespace-pre-wrap text-sm leading-relaxed text-slate-700">
-          {topic.notes}
-        </p>
-      </section>
-
-      {topic.subtopics.length > 0 ? (
-        <section>
-          <h2 className="mb-3 text-lg font-semibold">Subtopics</h2>
-          <div className="grid gap-3 sm:grid-cols-2">
-            {topic.subtopics.map((s) => (
-              <div key={s.id} className="rounded-xl border border-slate-200 bg-white p-4">
-                <h3 className="font-semibold text-slate-900">{s.title}</h3>
-                <p className="mt-1 text-sm text-slate-600">{s.notes}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-      ) : null}
+      <StudyNotes topic={topic} />
+      {topic.revisionCards?.length ? <RevisionCards cards={topic.revisionCards} /> : null}
 
       <div className="flex flex-wrap gap-2">
         {topic.tags.map((tag) => (
@@ -134,19 +126,21 @@ export default async function TopicPage({
             {related.map(
               (r) =>
                 r && (
-                  <li key={r.id}>
-                    <Link href={`/topic/${r.id}`} className="text-amber-800 underline">
+                  <li key={r.id} className="rounded-lg border border-slate-200 bg-white px-3 py-2">
+                    <Link href={`/topic/${r.id}`} className="font-medium text-amber-800 underline">
                       {r.title}
                     </Link>
-                    <span className="ml-2 text-xs text-slate-500">
-                      {r.likelihood} · ~{r.probability}%
-                    </span>
+                    <p className="mt-0.5 text-xs text-slate-600">
+                      {r.chanceLabel ?? `~${r.probability}%`} · {r.likelihood}
+                    </p>
                   </li>
                 )
             )}
           </ul>
         </section>
       ) : null}
+
+      <StudyNav prev={adj.prev} next={adj.next} index={adj.index} total={adj.total} />
     </div>
   );
 }

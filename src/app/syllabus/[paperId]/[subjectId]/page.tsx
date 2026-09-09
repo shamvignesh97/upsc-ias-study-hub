@@ -18,7 +18,9 @@ export default async function SubjectPage({
   const subject = subjects.find((s) => s.id === subjectId && s.paperId === paperId);
   if (!paper || !subject) notFound();
 
-  const subjectTopics = getTopicsBySubject(subject.id);
+  const subjectTopics = [...getTopicsBySubject(subject.id)].sort(
+    (a, b) => b.probability - a.probability
+  );
 
   return (
     <div className="space-y-6">
@@ -30,7 +32,14 @@ export default async function SubjectPage({
           {subject.icon} {subject.title}
         </h1>
         <p className="mt-2 text-slate-600">{subject.description}</p>
+        <Link
+          href={`/study/${paper.id}/${subject.id}`}
+          className="mt-3 inline-flex rounded-lg bg-amber-500 px-3 py-1.5 text-sm font-semibold text-[#0f2744]"
+        >
+          Study this subject sequentially →
+        </Link>
       </div>
+      <p className="text-sm text-slate-600">Topics ranked by estimated next-exam chance (PYQ-based).</p>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {subjectTopics.map((t) => (
           <TopicCard key={t.id} topic={t} showWhy />

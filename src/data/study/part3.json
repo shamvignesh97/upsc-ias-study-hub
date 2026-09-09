@@ -1,0 +1,605 @@
+{
+  "essay-structure": {
+    "keyConcepts": [
+      "Topic choice you can sustain",
+      "Intro hook+thesis; multidimensional body; forward conclusion",
+      "SPEECHG dimensions (social political economic ethical cultural historical geographical)",
+      "Sparse subheads; strong transitions",
+      "Evidence over sermon"
+    ],
+    "mustRemember": [
+      "Two essays; ~1.5 hrs each",
+      "5–7 min outline first",
+      "Conclusion synthesises, doesn't copy intro"
+    ],
+    "commonTraps": [
+      "Quote dumps",
+      "One-dimensional rants"
+    ],
+    "revisionCards": [
+      {
+        "front": "First 5 minutes?",
+        "back": "Brainstorm dimensions + outline + thesis"
+      }
+    ],
+    "studyNotes": "Marks reward structure and maturity. Bank 30 examples across domains. Weekly timed essay.",
+    "definitions": [
+      {
+        "term": "Thesis",
+        "meaning": "Central claim developed with nuance."
+      }
+    ]
+  },
+  "essay-themes": {
+    "keyConcepts": [
+      "Philosophical: define & illustrate",
+      "Socio-political governance/democracy/development",
+      "Science–society & education–ethics",
+      "Gender/environment/tech baskets",
+      "India-specific + universal frames"
+    ],
+    "mustRemember": [
+      "Prepare both philosophical and issue baskets",
+      "Define abstract terms early"
+    ],
+    "commonTraps": [
+      "GS-answer style without reflective depth on abstract topics"
+    ],
+    "revisionCards": [
+      {
+        "front": "Abstract essay first move?",
+        "back": "Define terms → thesis → dimensions"
+      }
+    ],
+    "studyNotes": "Theme folders: few quotes, thinkers, Indian/global examples, critiques."
+  },
+  "gs1-culture-art": {
+    "keyConcepts": [
+      "Continuity & change in Indian art",
+      "Art as social/political mirror",
+      "Bhakti–Sufi cultural themes",
+      "Modern art & nationalism"
+    ],
+    "mustRemember": [
+      "Features + examples + significance",
+      "Patronage analysis impresses examiners"
+    ],
+    "commonTraps": [
+      "Pure description without why-it-matters"
+    ],
+    "revisionCards": [
+      {
+        "front": "Culture answer needs?",
+        "back": "Features + examples + significance"
+      }
+    ],
+    "studyNotes": "Analytical GS1 culture: evolution, regional variation, contemporary conservation relevance. Reuse Prelims examples with deeper meaning."
+  },
+  "gs1-hist-freedom": {
+    "keyConcepts": [
+      "Strategy evolution under colonialism",
+      "Expanding social base",
+      "Compare political streams",
+      "Post-1947 consolidation themes",
+      "Light historiography awareness"
+    ],
+    "mustRemember": [
+      "Post-independence frequently asked not only pre-1947",
+      "Compare methods Moderates/Extremists/Gandhi/Revolutionaries"
+    ],
+    "commonTraps": [
+      "Chronology dump without analysis"
+    ],
+    "revisionCards": [
+      {
+        "front": "1947 challenges?",
+        "back": "Princely integration, Partition, refugees, scarcity, new institutions"
+      }
+    ],
+    "studyNotes": "Write as evolving strategies + evidence from movements. Post-1947: Patel/integration, planning beginnings, linguistic states, NAM roots."
+  },
+  "gs1-world-hist": {
+    "keyConcepts": [
+      "Industrial Revolution impacts",
+      "Colonisation/decolonisation",
+      "World Wars → UN",
+      "Select revolutions",
+      "Cold War to multipolarity link"
+    ],
+    "mustRemember": [
+      "Themes not Eurocentric timelines",
+      "Add Asia/India connection when natural"
+    ],
+    "commonTraps": [
+      "Event narration without forces analysis"
+    ],
+    "revisionCards": [
+      {
+        "front": "IR social impact?",
+        "back": "Urban factory labour, classes, imperial expansion fuel"
+      }
+    ],
+    "studyNotes": "1–2 page theme notes. 10-mark structure: causes/brief course/consequences/lessons."
+  },
+  "gs1-society-diversity": {
+    "keyConcepts": [
+      "Diversity dimensions & unity challenges",
+      "Women indicators/laws/norms",
+      "Urbanisation & informality",
+      "Globalisation cultural/economic effects",
+      "Communalism/regionalism/secularism concepts"
+    ],
+    "mustRemember": [
+      "Constitution + schemes + careful data",
+      "Empathy + institutions not moralising alone"
+    ],
+    "commonTraps": [
+      "Stereotypes / one-sided blame"
+    ],
+    "revisionCards": [
+      {
+        "front": "Empowerment levers?",
+        "back": "Law, education, economic access, representation, norms"
+      }
+    ],
+    "studyNotes": "Ready skeletons for gender, caste, urban, migration. Structure: dimensions→causes→impact→values→govt/civil society→way forward.",
+    "definitions": [
+      {
+        "term": "Communalism",
+        "meaning": "Religion used as adversarial political mobilisation."
+      },
+      {
+        "term": "Indian secularism",
+        "meaning": "Principled distance / equal respect model."
+      }
+    ]
+  },
+  "gs1-geo-mains": {
+    "keyConcepts": [
+      "Geophysical phenomena causes/distribution",
+      "Resource & industry location factors",
+      "Climate impacts on India",
+      "Map thinking in prose answers"
+    ],
+    "mustRemember": [
+      "Process + Indian example + human impact + mitigation",
+      "Location factors: material, power, labour, market, policy, logistics"
+    ],
+    "commonTraps": [
+      "Generic answers without spatial examples"
+    ],
+    "revisionCards": [
+      {
+        "front": "Why near raw materials historically?",
+        "back": "Weight-losing inputs & transport cost logic"
+      }
+    ],
+    "studyNotes": "Causal explanation + text diagrams. Link disasters to GS3 DM."
+  },
+  "gs2-polity-fed": {
+    "keyConcepts": [
+      "Federal features + unitary bias",
+      "Legislative/admin/financial relations",
+      "GST Council, FC, Inter-State Council",
+      "Separation of powers checks",
+      "Cooperative vs competitive federalism"
+    ],
+    "mustRemember": [
+      "7th Schedule; residuary with Centre",
+      "Bommai limits on Art.356",
+      "GST as fiscal federal experiment"
+    ],
+    "commonTraps": [
+      "Calling India purely federal or purely unitary"
+    ],
+    "revisionCards": [
+      {
+        "front": "Bommai takeaway?",
+        "back": "Art.356 judicially reviewable; floor test preference"
+      }
+    ],
+    "studyNotes": "Articles + cases + restrained contemporary flashpoints. Sarkaria/Punchhi selectively.",
+    "definitions": [
+      {
+        "term": "Cooperative federalism",
+        "meaning": "Centre–state collaboration for shared goals."
+      },
+      {
+        "term": "Art.356",
+        "meaning": "President's Rule in states — constrained use."
+      }
+    ]
+  },
+  "gs2-gov-schemes": {
+    "keyConcepts": [
+      "Welfare for vulnerable sections",
+      "Health systems & insurance",
+      "NEP 2020 thrusts",
+      "Civil society/SHG roles",
+      "Accountability in delivery"
+    ],
+    "mustRemember": [
+      "Evaluate design, last-mile, exclusion, fiscality, outcomes",
+      "Legal safeguards + institutions in vulnerable-section answers"
+    ],
+    "commonTraps": [
+      "Scheme laundry lists without critique"
+    ],
+    "revisionCards": [
+      {
+        "front": "Scheme answer arc?",
+        "back": "Intent→design→gains→gaps→reforms"
+      }
+    ],
+    "studyNotes": "Sector notes: health, education, disability, women, elderly, SC/ST with law+scheme+gap+reform."
+  },
+  "gs2-ir-bilateral": {
+    "keyConcepts": [
+      "Neighbourhood First & SAGAR",
+      "Major-power interest matrices",
+      "UN/climate/trade multilateralism",
+      "Diaspora soft power",
+      "IOR connectivity competition"
+    ],
+    "mustRemember": [
+      "IR arc: context→interests→instruments→challenges→way forward",
+      "Avoid partisan tone"
+    ],
+    "commonTraps": [
+      "Cheerleading/alarmism without options"
+    ],
+    "revisionCards": [
+      {
+        "front": "IOR priority?",
+        "back": "SLOC security, blue economy, strategic influence"
+      }
+    ],
+    "studyNotes": "1-page country briefs. Neighbourhood asymmetric interdependence themes."
+  },
+  "gs3-econ-growth": {
+    "keyConcepts": [
+      "Growth vs development vs inclusion",
+      "Agri productivity/markets/processing",
+      "Industry/services formalisation",
+      "Infra: energy transport DPI",
+      "Jobs & inequality quality"
+    ],
+    "mustRemember": [
+      "Use Budget/Survey as illustration not whole answer",
+      "Feasible reforms: institutions+incentives+investment"
+    ],
+    "commonTraps": [
+      "GDP cheer without jobs/environment when asked to balance"
+    ],
+    "revisionCards": [
+      {
+        "front": "Agri reform pillars?",
+        "back": "Productivity, markets/storage, income diversification"
+      }
+    ],
+    "studyNotes": "Issue notes: inflation, manufacturing, PLI eval, banks, infra finance, climate-smart agri.",
+    "definitions": [
+      {
+        "term": "Inclusive growth",
+        "meaning": "Opportunity-expanding growth reducing exclusion."
+      }
+    ]
+  },
+  "gs3-tech-env": {
+    "keyConcepts": [
+      "Indigenisation defence/space/semicon/pharma",
+      "S&T for development sectors",
+      "EIA quality & conservation models",
+      "Biodiversity–livelihood links",
+      "Emerging tech ethics"
+    ],
+    "mustRemember": [
+      "Opportunity + risk dual lens",
+      "DPI, vaccines, renewables as India examples"
+    ],
+    "commonTraps": [
+      "Tech utopia without capacity/ethics/ecology"
+    ],
+    "revisionCards": [
+      {
+        "front": "EIA purpose?",
+        "back": "Anticipate & mitigate impacts before approval"
+      }
+    ],
+    "studyNotes": "Bridge Prelims S&T/Env to Mains analysis. Institutional strengthening over slogans."
+  },
+  "gs3-sec-internal": {
+    "keyConcepts": [
+      "LWE/terror/insurgency distinct drivers",
+      "Border & coastal management",
+      "Cyber & CII protection",
+      "Crime-terror-finance nexus",
+      "Police reform & community trust"
+    ],
+    "mustRemember": [
+      "Cause–capability–coordination–rights balance",
+      "Constitutional values in hard security answers"
+    ],
+    "commonTraps": [
+      "Force-only solutions ignoring governance deficits"
+    ],
+    "revisionCards": [
+      {
+        "front": "Cyber CIA triad?",
+        "back": "Confidentiality, Integrity, Availability"
+      }
+    ],
+    "studyNotes": "Theatre notes without sensationalism. Federal police coordination + cyber hygiene."
+  },
+  "gs3-sec-disaster": {
+    "keyConcepts": [
+      "DM Act 2005 architecture",
+      "Sendai priorities",
+      "Mitigation–preparedness–response–recovery",
+      "India hazard profile",
+      "Community DRM & early warning"
+    ],
+    "mustRemember": [
+      "Hazard vs vulnerability vs risk",
+      "NDMA chaired by PM",
+      "Mitigation often under-answered"
+    ],
+    "commonTraps": [
+      "Only relief-centric write-ups"
+    ],
+    "revisionCards": [
+      {
+        "front": "DM Act year?",
+        "back": "2005"
+      },
+      {
+        "front": "NDMA chair?",
+        "back": "Prime Minister"
+      }
+    ],
+    "studyNotes": "Recent disasters as systemic lessons. Climate as risk multiplier. Resilient infra + social protection.",
+    "definitions": [
+      {
+        "term": "Sendai Framework",
+        "meaning": "2015–30 global DRR framework."
+      }
+    ]
+  },
+  "gs4-ethics-basics": {
+    "keyConcepts": [
+      "Ethics vs law vs religion vs morality",
+      "Determinants of ethics",
+      "Consequentialism/deontology/virtue lite",
+      "Indian & Western thinkers applied",
+      "Emotional intelligence components"
+    ],
+    "mustRemember": [
+      "Crisp definitions + one example",
+      "Thinkers: 3–4 lines + admin application"
+    ],
+    "commonTraps": [
+      "Philosophy lecture without public service link"
+    ],
+    "revisionCards": [
+      {
+        "front": "Kant core?",
+        "back": "Duty; persons as ends"
+      },
+      {
+        "front": "Utilitarianism core?",
+        "back": "Greatest good for greatest number"
+      }
+    ],
+    "studyNotes": "Definition bank of ~40 terms. Weekly 150-word answers. EI text-diagram.",
+    "definitions": [
+      {
+        "term": "Ethics",
+        "meaning": "Reasoned principles of right conduct."
+      },
+      {
+        "term": "EI",
+        "meaning": "Recognise/manage emotions in self and others."
+      },
+      {
+        "term": "Attitude",
+        "meaning": "Learned predisposition to respond."
+      }
+    ]
+  },
+  "gs4-integrity": {
+    "keyConcepts": [
+      "Foundational civil service values",
+      "Integrity under pressure",
+      "Conflict of interest",
+      "Probity in procurement",
+      "Corruption: opportunity/incentive/opacity remedies"
+    ],
+    "mustRemember": [
+      "2nd ARC ethics themes",
+      "Code of conduct vs code of ethics"
+    ],
+    "commonTraps": [
+      "Integrity ≠ only anti-bribery"
+    ],
+    "revisionCards": [
+      {
+        "front": "Impartiality?",
+        "back": "Rule-based fairness free of personal bias"
+      },
+      {
+        "front": "Objectivity?",
+        "back": "Evidence-based minimising prejudice"
+      }
+    ],
+    "studyNotes": "Values with generic admin anecdotes. Integrity infrastructure: RTI, e-procurement, social audit, whistleblowing.",
+    "definitions": [
+      {
+        "term": "Integrity",
+        "meaning": "Honesty and moral consistency in action."
+      },
+      {
+        "term": "Conflict of interest",
+        "meaning": "Private interest risking official duty."
+      }
+    ]
+  },
+  "gs4-cases-app": {
+    "keyConcepts": [
+      "Facts→stakeholders→dilemmas→options→decision→justification",
+      "Short-term containment + systemic fix",
+      "Law + rights + compassion + channels",
+      "Avoid cowardice/populism/illegality/arrogance",
+      "Domain variety practice"
+    ],
+    "mustRemember": [
+      "List 3–4 options before choosing",
+      "Name values in justification",
+      "Weekly timed cases"
+    ],
+    "commonTraps": [
+      "Jumping to decision",
+      "Illegal heroics as ethics"
+    ],
+    "revisionCards": [
+      {
+        "front": "Min options?",
+        "back": "3–4 including status quo"
+      },
+      {
+        "front": "Stakeholders?",
+        "back": "Citizens, org, colleagues, society, vulnerable, self"
+      }
+    ],
+    "studyNotes": "Structured empathy within law. Checklist of values and institutional remedies.",
+    "tables": [
+      {
+        "title": "Case template",
+        "headers": [
+          "Step",
+          "Write"
+        ],
+        "rows": [
+          [
+            "Facts",
+            "Neutral"
+          ],
+          [
+            "Stakeholders",
+            "Who/how"
+          ],
+          [
+            "Dilemmas",
+            "Value conflicts"
+          ],
+          [
+            "Options",
+            "Merits/demerits"
+          ],
+          [
+            "Decision",
+            "Choice + why"
+          ],
+          [
+            "Follow-up",
+            "Prevent recurrence"
+          ]
+        ]
+      }
+    ]
+  },
+  "opt-overview": {
+    "keyConcepts": [
+      "Optional = 500 marks multiplier",
+      "Interest×background×resources×overlap×length",
+      "Two syllabus iterations + PYQs + tests",
+      "Last-60-day revisable notes",
+      "Avoid frequent switching"
+    ],
+    "mustRemember": [
+      "Interest beats scoring myths for sustainability",
+      "Overlap helps but is optional"
+    ],
+    "commonTraps": [
+      "Topper-copy without aptitude fit",
+      "Resource hoarding without finishing"
+    ],
+    "revisionCards": [
+      {
+        "front": "Decision rule?",
+        "back": "Interest × resources × overlap × sustainability"
+      }
+    ],
+    "studyNotes": "Use Optional page briefs. 2-week trial with 2 PYQs. Integrate examples into GS/essay/ethics."
+  },
+  "interview-daf": {
+    "keyConcepts": [
+      "Every DAF line is a question seed",
+      "District 360° notes",
+      "Education/work depth with humility",
+      "Hobbies must be genuine",
+      "Service preference rationale"
+    ],
+    "mustRemember": [
+      "Honesty > impressiveness",
+      "Optional basics ready for interview pitch"
+    ],
+    "commonTraps": [
+      "Shallow hobbies; fake language claims"
+    ],
+    "revisionCards": [
+      {
+        "front": "DAF method?",
+        "back": "Line-by-line Qs + 1-min answers + follow-ups"
+      }
+    ],
+    "studyNotes": "Annotate printed DAF. District: crops, industry, culture, vulnerabilities, success stories. Rehearse aloud."
+  },
+  "interview-ca": {
+    "keyConcepts": [
+      "Opinion = facts + constitutional values + empathy + feasibility",
+      "Trade-offs acknowledged",
+      "National + state depth",
+      "India interests in IR",
+      "Listen then answer"
+    ],
+    "mustRemember": [
+      "Admit 'I don't know' gracefully",
+      "Stance→reasons→caveat→way forward"
+    ],
+    "commonTraps": [
+      "Coaching slogans",
+      "Anger under provocation"
+    ],
+    "revisionCards": [
+      {
+        "front": "Opinion formula?",
+        "back": "Value-based + evidence-aware + balanced + actionable"
+      }
+    ],
+    "studyNotes": "Weekly opinion notebook (10 issues). 2-minute answers. Admin practicality always."
+  },
+  "interview-mocks": {
+    "keyConcepts": [
+      "2–4 quality mocks with feedback",
+      "Calm body language & pace",
+      "Formal neat dress",
+      "Stress tests temperament",
+      "Post-mock pattern fixes"
+    ],
+    "mustRemember": [
+      "Brevity with substance",
+      "Never bluff"
+    ],
+    "commonTraps": [
+      "Over-mocking into robotics",
+      "Ignoring sleep/health"
+    ],
+    "revisionCards": [
+      {
+        "front": "When unsure?",
+        "back": "Admit; nearest principle; stay composed"
+      }
+    ],
+    "studyNotes": "Simulate board. Record one mock. Entry/exit etiquette. Confident humility."
+  }
+}

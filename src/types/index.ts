@@ -27,6 +27,34 @@ export interface PyqAnalysisSummary {
   methodologyNote: string;
 }
 
+export interface Definition {
+  term: string;
+  meaning: string;
+}
+
+export interface RevisionCard {
+  front: string;
+  back: string;
+}
+
+export interface StudyTable {
+  title: string;
+  headers: string[];
+  rows: string[][];
+}
+
+/** Rich in-app study payload merged onto each topic. */
+export interface StudyEnrichment {
+  keyConcepts: string[];
+  definitions?: Definition[];
+  mustRemember: string[];
+  commonTraps: string[];
+  revisionCards: RevisionCard[];
+  tables?: StudyTable[];
+  /** Longer original study notes (replaces thin stub notes when present). */
+  studyNotes: string;
+}
+
 export interface Topic {
   id: string;
   title: string;
@@ -35,12 +63,22 @@ export interface Topic {
   likelihood: Likelihood;
   probability: number; // 0-100 estimate from PYQ analysis
   whyBlurb: string;
+  /** One-line rationale for focus lists / cards. */
+  shortWhy?: string;
+  /** Plain-language chance line, e.g. "~82% chance in next Prelims GS Paper I". */
+  chanceLabel?: string;
   summary: string;
   notes: string;
   subtopics: Subtopic[];
   relatedTopicIds: string[];
   tags: string[];
   pyqAnalysis?: PyqAnalysisSummary;
+  keyConcepts?: string[];
+  definitions?: Definition[];
+  mustRemember?: string[];
+  commonTraps?: string[];
+  revisionCards?: RevisionCard[];
+  tables?: StudyTable[];
 }
 
 export interface Subject {

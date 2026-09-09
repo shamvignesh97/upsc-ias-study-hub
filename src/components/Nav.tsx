@@ -7,15 +7,16 @@ import { cn } from "@/lib/utils";
 import InstallMenuButton from "@/components/InstallMenuButton";
 
 const links = [
-  { href: "/", label: "Dashboard" },
-  { href: "/syllabus", label: "Syllabus" },
-  { href: "/quiz", label: "Quiz" },
+  { href: "/", label: "Home" },
+  { href: "/study", label: "Study" },
+  { href: "/syllabus", label: "Focus" },
+  { href: "/quiz", label: "Practice" },
   { href: "/pyq", label: "PYQ" },
   { href: "/planner", label: "Planner" },
   { href: "/optional", label: "Optional" },
   { href: "/interview", label: "Interview" },
   { href: "/bookmarks", label: "Bookmarks" },
-  { href: "/methodology", label: "Methodology" },
+  { href: "/methodology", label: "Odds method" },
   { href: "/search", label: "Search" },
 ];
 
@@ -32,7 +33,7 @@ export default function Nav() {
           </span>
           <div className="leading-tight">
             <div className="text-sm font-semibold tracking-wide">UPSC IAS Study Hub</div>
-            <div className="text-[11px] text-slate-300">Syllabus · Trends · Practice</div>
+            <div className="text-[11px] text-slate-300">Study · Focus · Practice</div>
           </div>
         </Link>
 

@@ -1,0 +1,581 @@
+{
+  "hist-ancient": {
+    "keyConcepts": [
+      "Harappan urban planning: grid, citadel–lower town, drains, bricks",
+      "Early Vedic pastoral → Later Vedic agrarian janapadas",
+      "Buddhism: Four Noble Truths, Eightfold Path, Three Jewels, councils",
+      "Jainism: Tri-ratna, anekantavada, ahimsa",
+      "Mauryan Arthashastra admin & Ashokan Dhamma",
+      "Gupta classical age & Sangam polities"
+    ],
+    "mustRemember": [
+      "IVC: Harappa, Mohenjo-daro; Dholavira, Lothal, Kalibangan, Rakhigarhi",
+      "Lothal dockyard; Dholavira water systems",
+      "Councils: Rajgir, Vaishali, Pataliputra, Kashmir",
+      "Ashokan edicts Prakrit/Brahmi; RE XIII Kalinga"
+    ],
+    "commonTraps": [
+      "Do not equate IVC with Vedic culture",
+      "Buddhism challenged birth hierarchy but society stayed complex",
+      "Gupta 'golden age' was regionally uneven"
+    ],
+    "revisionCards": [
+      {
+        "front": "IVC dockyard site?",
+        "back": "Lothal"
+      },
+      {
+        "front": "Three Jewels?",
+        "back": "Buddha, Dhamma, Sangha"
+      },
+      {
+        "front": "Ashokan edict language?",
+        "back": "Prakrit (Brahmi)"
+      },
+      {
+        "front": "Arthashastra author tradition?",
+        "back": "Kautilya/Chanakya"
+      }
+    ],
+    "studyNotes": "Ancient India Prelims focus: culture, economy, religion, sites — not endless king lists.\n\nHarappan civilization: urban, craft-specialised, long-distance trade; undeciphered script; multi-causal decline.\nVedic: Early pastoral sabha/samiti → Later iron, agriculture, varna, Upanishads.\n6th century BCE: mahajanapadas, Buddhism & Jainism as ethical/monastic alternatives.\nMauryas: centralised ideal-type state; Ashoka's Dhamma after Kalinga.\nGuptas: classical art/science with expanding land grants.\nAlways cross-link stupas, caves, early temples to Art & Culture.",
+    "definitions": [
+      {
+        "term": "Janapada",
+        "meaning": "Tribal territory evolving into mahajanapadas."
+      },
+      {
+        "term": "Dhamma (Ashoka)",
+        "meaning": "Ethical welfare-tolerance code, not a sect."
+      },
+      {
+        "term": "Anekantavada",
+        "meaning": "Jain many-sided truth doctrine."
+      }
+    ],
+    "tables": [
+      {
+        "title": "IVC sites",
+        "headers": [
+          "Site",
+          "Feature"
+        ],
+        "rows": [
+          [
+            "Harappa",
+            "Granaries"
+          ],
+          [
+            "Mohenjo-daro",
+            "Great Bath"
+          ],
+          [
+            "Dholavira",
+            "Reservoirs"
+          ],
+          [
+            "Lothal",
+            "Dockyard"
+          ],
+          [
+            "Kalibangan",
+            "Ploughed field"
+          ]
+        ]
+      }
+    ]
+  },
+  "hist-medieval": {
+    "keyConcepts": [
+      "Iqta vs Mansabdari/Zabti",
+      "Bhakti Nirguna vs Saguna",
+      "Sufi silsilas especially Chishti",
+      "Vijayanagara–Bahmani Deccan rivalry",
+      "Indo-Islamic architectural vocabulary"
+    ],
+    "mustRemember": [
+      "Alauddin Khalji market & army reforms",
+      "Akbar Sulh-i-Kul, mansab, zabti",
+      "Chishti: Ajmer & Delhi centres",
+      "Hampi as Vijayanagara capital"
+    ],
+    "commonTraps": [
+      "Bhakti was not merely anti-Islam polemic",
+      "Din-i-Ilahi was not a mass religion"
+    ],
+    "revisionCards": [
+      {
+        "front": "Sultanate market reforms?",
+        "back": "Alauddin Khalji"
+      },
+      {
+        "front": "Zabti associated with?",
+        "back": "Todar Mal / Akbar"
+      },
+      {
+        "front": "Nirguna emphasis?",
+        "back": "Formless divine (Kabir/Nanak)"
+      }
+    ],
+    "studyNotes": "Medieval questions reward institutions and culture.\nSultanate iqta and cavalry state; Mughal mansab–jagir; painting and tomb-garden architecture; 18th-c decline multi-causal.\nBhakti–Sufi: learn saints with region + idea. Link architecture to Culture topic.",
+    "definitions": [
+      {
+        "term": "Iqta",
+        "meaning": "Revenue-military land assignment."
+      },
+      {
+        "term": "Mansab",
+        "meaning": "Mughal rank (zat/sawar)."
+      },
+      {
+        "term": "Zabti",
+        "meaning": "Measurement-based revenue."
+      }
+    ]
+  },
+  "hist-modern": {
+    "keyConcepts": [
+      "Plassey to Crown 1858",
+      "Permanent Settlement / Ryotwari / Mahalwari",
+      "1857 revolt dynamics",
+      "Moderates–Extremists–Gandhian phases",
+      "GoI Acts 1919 & 1935",
+      "NCM, CDM, Quit India, INA"
+    ],
+    "mustRemember": [
+      "INC 1885; Bengal Partition 1905–1911",
+      "NCM 1920–22; CDM 1930; QI 1942",
+      "GoI 1935 provincial autonomy",
+      "Independence 15 Aug 1947 after Mountbatten Plan"
+    ],
+    "commonTraps": [
+      "Timeline mix-ups on sessions/movements",
+      "Ignoring reformers' nationalist links"
+    ],
+    "revisionCards": [
+      {
+        "front": "Permanent Settlement year/who?",
+        "back": "1793 Cornwallis"
+      },
+      {
+        "front": "Rowlatt year?",
+        "back": "1919"
+      },
+      {
+        "front": "INA trials where?",
+        "back": "Red Fort"
+      },
+      {
+        "front": "Doctrine of Lapse?",
+        "back": "Dalhousie annexation tool"
+      }
+    ],
+    "studyNotes": "Highest history weightage. Build spine timeline 1757→1947.\nCompare political methods across phases; know Act changes; drill year–event pairs; map 1857 centres and salt march geography.\nColonial economy mechanisms (drain, commercialisation, famines) matter more than historiographical jargon for Prelims.",
+    "definitions": [
+      {
+        "term": "Subsidiary Alliance",
+        "meaning": "British troops/Resident; restricted sovereignty."
+      },
+      {
+        "term": "Satyagraha",
+        "meaning": "Non-violent mass truth-force."
+      },
+      {
+        "term": "Dyarchy",
+        "meaning": "1919 provincial dual government experiment."
+      }
+    ],
+    "tables": [
+      {
+        "title": "Land systems",
+        "headers": [
+          "System",
+          "Region",
+          "Intermediary"
+        ],
+        "rows": [
+          [
+            "Permanent",
+            "Bengal belt",
+            "Zamindar"
+          ],
+          [
+            "Ryotwari",
+            "Madras/Bombay",
+            "Ryot"
+          ],
+          [
+            "Mahalwari",
+            "NWP/Punjab",
+            "Mahal"
+          ]
+        ]
+      }
+    ]
+  },
+  "geo-physical": {
+    "keyConcepts": [
+      "Interior structure & P/S waves",
+      "Plate boundaries and landforms",
+      "Pressure belts, Coriolis, jets",
+      "Monsoon mechanism & ENSO",
+      "Oceans: currents, tides, reefs, EEZ"
+    ],
+    "mustRemember": [
+      "Western Disturbances → NW winter rain",
+      "Cyclones need warm sea, Coriolis, low shear",
+      "S waves blocked by liquid outer core",
+      "Coral bleaching from heat/acidification"
+    ],
+    "commonTraps": [
+      "El Niño ≠ automatic India drought",
+      "Mixing weathering/erosion"
+    ],
+    "revisionCards": [
+      {
+        "front": "No cyclones at equator why?",
+        "back": "Coriolis≈0"
+      },
+      {
+        "front": "S waves in liquid?",
+        "back": "No"
+      },
+      {
+        "front": "ITCZ is?",
+        "back": "Seasonal convergence low-pressure belt"
+      }
+    ],
+    "studyNotes": "Prioritise processes explaining Indian climate/hazards. Monsoon mechanics are high-yield. Practise mental diagrams for pressure belts and rain-shadow.",
+    "definitions": [
+      {
+        "term": "ITCZ",
+        "meaning": "Inter-Tropical Convergence Zone."
+      },
+      {
+        "term": "El Niño",
+        "meaning": "E. Pacific warming; probabilistic monsoon link."
+      },
+      {
+        "term": "EEZ",
+        "meaning": "200 nm resource zone."
+      }
+    ]
+  },
+  "geo-india": {
+    "keyConcepts": [
+      "Physiographic divisions",
+      "Himalayan vs Peninsular drainage",
+      "Soils–crops links",
+      "Monsoon rainfall pattern",
+      "Minerals, energy, industry, cropping seasons"
+    ],
+    "mustRemember": [
+      "Narmada/Tapi west-flowing to Arabian Sea",
+      "Tropic of Cancer through 8 states",
+      "Khadar vs Bhangar alluvium",
+      "Black soil = Deccan trap cotton belt"
+    ],
+    "commonTraps": [
+      "Black soil not only Maharashtra",
+      "Mixing east/west flowing rivers"
+    ],
+    "revisionCards": [
+      {
+        "front": "Narmada drains to?",
+        "back": "Arabian Sea"
+      },
+      {
+        "front": "Black soil crop?",
+        "back": "Cotton"
+      },
+      {
+        "front": "New alluvium name?",
+        "back": "Khadar"
+      }
+    ],
+    "studyNotes": "Map-heavy: physiography, rivers, soils, minerals, industrial regions, kharif/rabi/zaid. Weekly 10 map points.",
+    "definitions": [
+      {
+        "term": "Doab",
+        "meaning": "Land between two rivers."
+      },
+      {
+        "term": "Regur",
+        "meaning": "Black cotton soil."
+      }
+    ],
+    "tables": [
+      {
+        "title": "Soils",
+        "headers": [
+          "Soil",
+          "Crops"
+        ],
+        "rows": [
+          [
+            "Alluvial",
+            "Wheat/rice"
+          ],
+          [
+            "Black",
+            "Cotton"
+          ],
+          [
+            "Red",
+            "Millets"
+          ],
+          [
+            "Laterite",
+            "Cashew/tea"
+          ]
+        ]
+      }
+    ]
+  },
+  "geo-world": {
+    "keyConcepts": [
+      "Köppen climates",
+      "Deserts/grasslands/rainforests",
+      "Chokepoints Hormuz/Malacca/Suez/Panama",
+      "Resource regions",
+      "Arctic routes"
+    ],
+    "mustRemember": [
+      "Atacama = cold current + Andes shadow",
+      "Grasslands: Prairies/Pampas/Steppes/Veld/Downs",
+      "Suez Med–Red; Panama Atlantic–Pacific"
+    ],
+    "commonTraps": [
+      "Climate names without causes"
+    ],
+    "revisionCards": [
+      {
+        "front": "Atacama causes?",
+        "back": "Cold current + rain shadow"
+      },
+      {
+        "front": "Malacca why vital?",
+        "back": "Trade chokepoint to East Asia"
+      }
+    ],
+    "studyNotes": "Lower volume but map surprises. Tie CA conflicts/trade to locations.",
+    "definitions": [
+      {
+        "term": "Chokepoint",
+        "meaning": "Narrow critical sea passage."
+      }
+    ]
+  },
+  "polity-const": {
+    "keyConcepts": [
+      "Constitutionalism",
+      "Preamble keywords",
+      "FRs 12–35",
+      "DPSPs 36–51",
+      "Duties 51A",
+      "Basic Structure & Art. 368"
+    ],
+    "mustRemember": [
+      "Writs five types",
+      "Arts 14/19/21 golden triangle",
+      "Minerva Mills FR–DPSP balance",
+      "7th/8th/10th/11th/12th Schedules key"
+    ],
+    "commonTraps": [
+      "DPSPs not directly justiciable like FRs",
+      "Not all amendments need state ratification"
+    ],
+    "revisionCards": [
+      {
+        "front": "Art.32 called?",
+        "back": "Heart and soul (Ambedkar)"
+      },
+      {
+        "front": "Kesavananda year?",
+        "back": "1973"
+      },
+      {
+        "front": "HC writ article?",
+        "back": "226"
+      }
+    ],
+    "studyNotes": "High-ROI polity core. Know FR restrictions, DPSP categories, amendment types, Basic Structure applications for Prelims+Mains.",
+    "definitions": [
+      {
+        "term": "Basic Structure",
+        "meaning": "Unamendable core features doctrine."
+      },
+      {
+        "term": "Art.32",
+        "meaning": "SC constitutional remedies."
+      }
+    ]
+  },
+  "polity-institutions": {
+    "keyConcepts": [
+      "Union executive realities",
+      "Parliament devices & money bills",
+      "Judiciary review/PIL/collegium",
+      "EC CAG UPSC FC",
+      "73rd/74th local bodies"
+    ],
+    "mustRemember": [
+      "Art.110 money bill",
+      "Art.123 ordinances with limits",
+      "EC Art.324; FC Art.280",
+      "Constitutional vs statutory bodies"
+    ],
+    "commonTraps": [
+      "RS can discuss money bills though not amend/reject",
+      "Mixing NHRC/CBI/NITI with constitutional bodies"
+    ],
+    "revisionCards": [
+      {
+        "front": "Money bill article?",
+        "back": "110"
+      },
+      {
+        "front": "73rd Amendment?",
+        "back": "Panchayats (1992/93)"
+      },
+      {
+        "front": "Union audit?",
+        "back": "CAG"
+      }
+    ],
+    "studyNotes": "Process knowledge: how bills/budgets/appointments work. Compare bodies' status carefully.",
+    "definitions": [
+      {
+        "term": "Money Bill",
+        "meaning": "Art.110 LS-dominated bill class."
+      },
+      {
+        "term": "Judicial Review",
+        "meaning": "Strike unconstitutional acts."
+      }
+    ]
+  },
+  "polity-governance": {
+    "keyConcepts": [
+      "RTI transparency",
+      "Citizen charter & social audit",
+      "Lokpal architecture",
+      "e-Governance",
+      "Rights commissions"
+    ],
+    "mustRemember": [
+      "RTI 2005 timelines & CIC/SIC",
+      "Social audit–MGNREGA link",
+      "Digital India service delivery angle"
+    ],
+    "commonTraps": [
+      "RTI does not fully cover all private entities"
+    ],
+    "revisionCards": [
+      {
+        "front": "RTI year?",
+        "back": "2005"
+      },
+      {
+        "front": "Social audit scheme link?",
+        "back": "MGNREGA"
+      }
+    ],
+    "studyNotes": "Bridge static polity and schemes. Prelims: authorities/Acts. Mains: evaluate accountability gaps.",
+    "definitions": [
+      {
+        "term": "RTI",
+        "meaning": "Right to information from public authorities."
+      },
+      {
+        "term": "Social audit",
+        "meaning": "Community expenditure verification."
+      }
+    ]
+  },
+  "econ-basics": {
+    "keyConcepts": [
+      "GDP/GVA real vs nominal",
+      "CPI vs WPI",
+      "RBI corridor & MPC target",
+      "Fiscal/revenue/primary deficits",
+      "Budget + GST basics"
+    ],
+    "mustRemember": [
+      "MPC 4%±2% CPI target",
+      "Fiscal deficit % GDP headline",
+      "GST destination-based dual tax",
+      "Primary=fiscal−interest"
+    ],
+    "commonTraps": [
+      "Fiscal deficit ≠ CAD",
+      "CPI is MPC anchor not WPI"
+    ],
+    "revisionCards": [
+      {
+        "front": "Inflation target?",
+        "back": "4%±2% CPI"
+      },
+      {
+        "front": "Primary deficit?",
+        "back": "Fiscal deficit − interest"
+      },
+      {
+        "front": "GST Council chair?",
+        "back": "FM"
+      }
+    ],
+    "studyNotes": "Definitions + instrument effects. Link Survey/Budget keywords to static concepts yearly.",
+    "definitions": [
+      {
+        "term": "Fiscal Deficit",
+        "meaning": "Borrowing requirement."
+      },
+      {
+        "term": "Repo Rate",
+        "meaning": "Policy rate signal."
+      },
+      {
+        "term": "GVA",
+        "meaning": "Value added measure."
+      }
+    ]
+  },
+  "econ-schemes": {
+    "keyConcepts": [
+      "MSP/e-NAM/FPO agri architecture",
+      "PLI manufacturing",
+      "BoP accounts",
+      "WTO & India issues",
+      "SEBI capital markets"
+    ],
+    "mustRemember": [
+      "Scheme→ministry→objective map",
+      "CAD drivers oil/gold/electronics",
+      "FDI vs FPI; depreciation vs devaluation"
+    ],
+    "commonTraps": [
+      "Endless scheme lists without hooks"
+    ],
+    "revisionCards": [
+      {
+        "front": "e-NAM?",
+        "back": "Online mandi trading"
+      },
+      {
+        "front": "SEBI?",
+        "back": "Securities regulator"
+      }
+    ],
+    "studyNotes": "Dynamic: last 18 months schemes. External sector + industrial policy for Prelims/Mains overlap.",
+    "definitions": [
+      {
+        "term": "Current Account",
+        "meaning": "Trade+income+transfers."
+      },
+      {
+        "term": "PLI",
+        "meaning": "Production Linked Incentive."
+      }
+    ]
+  }
+}

@@ -1,4 +1,5 @@
-import type { Likelihood, PyqTopicFrequency, Trend, PyqAnalysisSummary } from "@/types";
+import type { Likelihood, PyqTopicFrequency, Trend, PyqAnalysisSummary, PaperId } from "@/types";
+import { examChanceLabel } from "@/lib/utils";
 
 const ANALYSIS_YEARS = [
   "2016",
@@ -23,6 +24,8 @@ export interface ComputedProbability {
   totalAppearances: number;
   frequencyScore: number;
   whyBlurb: string;
+  shortWhy: string;
+  chanceLabel: string;
   analysis: PyqAnalysisSummary;
 }
 
@@ -43,7 +46,6 @@ export function computeFromFrequency(entry: PyqTopicFrequency): ComputedProbabil
   const yearsAppeared = ANALYSIS_YEARS.filter((_, i) => counts[i] > 0).map(Number);
   const totalAppearances = counts.reduce((a, b) => a + b, 0);
 
-  // Recency weights: newer years count more (linear 1.0 → 2.0 across window)
   const weighted = counts.reduce((sum, c, i) => {
     const w = 1 + i / (ANALYSIS_YEARS.length - 1);
     return sum + c * w;
@@ -52,7 +54,7 @@ export function computeFromFrequency(entry: PyqTopicFrequency): ComputedProbabil
   const maxPerYear = 8;
   const maxWeighted =
     ANALYSIS_YEARS.reduce((s, _, i) => s + maxPerYear * (1 + i / (ANALYSIS_YEARS.length - 1)), 0) *
-    0.45; // calibrate so typical high topics land ~75–90
+    0.45;
 
   let frequencyScore = Math.round((100 * weighted) / Math.max(maxWeighted, 1));
   frequencyScore = clamp(frequencyScore, 0, 100);
@@ -69,7 +71,6 @@ export function computeFromFrequency(entry: PyqTopicFrequency): ComputedProbabil
   let recencyAdj = 0;
   if (last3 >= prev3 + 2) recencyAdj += 6;
   else if (last3 + 2 <= prev3) recencyAdj -= 4;
-  // Neglected rebound: quiet 2–4 years then still in syllabus
   if (yearsSinceLast >= 2 && yearsSinceLast <= 4 && entry.syllabusWeight >= 3) recencyAdj += 5;
   if (yearsSinceLast === 1) recencyAdj += 3;
 
@@ -77,7 +78,6 @@ export function computeFromFrequency(entry: PyqTopicFrequency): ComputedProbabil
 
   let probability = frequencyScore * 0.72 + syllabusBoost + recencyAdj;
 
-  // CSAT: qualifying paper — probability = chance the skill area is tested / needed to clear
   if (entry.paper === "prelims-csat") {
     probability = Math.max(probability, 40 + entry.syllabusWeight * 8);
     if (entry.topicId.startsWith("csat-decision")) {
@@ -98,6 +98,8 @@ export function computeFromFrequency(entry: PyqTopicFrequency): ComputedProbabil
       : `${yearsAppeared.slice(0, 3).join(", ")}…${yearsAppeared.slice(-2).join(", ")} (${yearsAppeared.length} yrs)`;
 
   const whyBlurb = buildWhy(entry, yearsAppeared, totalAppearances, trend, yearList);
+  const shortWhy = buildShortWhy(entry, yearsAppeared.length, totalAppearances, trend);
+  const chanceLabel = examChanceLabel(entry.paper as PaperId, probability);
 
   const methodologyNote = `Derived from PYQ theme frequency (${ANALYSIS_YEARS[0]}–${ANALYSIS_YEARS[ANALYSIS_YEARS.length - 1]}) with recency weighting and syllabus importance (weight ${entry.syllabusWeight}/5). Not an official UPSC prediction.`;
 
@@ -109,6 +111,8 @@ export function computeFromFrequency(entry: PyqTopicFrequency): ComputedProbabil
     totalAppearances,
     frequencyScore,
     whyBlurb,
+    shortWhy,
+    chanceLabel,
     analysis: {
       yearsAppeared,
       totalAppearances,
@@ -128,11 +132,6 @@ function deriveTrend(counts: number[]): Trend {
 }
 
 function toLikelihood(p: number, paper: string): Likelihood {
-  if (paper === "prelims-csat") {
-    if (p >= 70) return "High";
-    if (p >= 45) return "Medium";
-    return "Low";
-  }
   if (p >= 70) return "High";
   if (p >= 45) return "Medium";
   return "Low";
@@ -152,6 +151,19 @@ function buildWhy(
       ? " CSAT is qualifying (~33%); framing is skill-necessity, not GS merit rank."
       : "";
   return `PYQ themes across ${yearsAppeared.length || 0} year(s) [${yearList || "sparse"}]; ~${total} tagged appearances; ${trendWord}. ${entry.notes}${csatNote}`;
+}
+
+function buildShortWhy(
+  entry: PyqTopicFrequency,
+  yearCount: number,
+  total: number,
+  trend: Trend
+): string {
+  const trendBit =
+    trend === "rising" ? "rising lately" : trend === "falling" ? "softer lately" : "stable pattern";
+  const note = entry.notes.replace(/\s+/g, " ").trim();
+  if (note.length <= 110) return note;
+  return `Appeared in ${yearCount} of last 10 years (~${total} themes); ${trendBit}.`;
 }
 
 function clamp(n: number, lo: number, hi: number) {

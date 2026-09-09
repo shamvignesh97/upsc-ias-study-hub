@@ -1,0 +1,569 @@
+{
+  "env-biodiversity": {
+    "keyConcepts": [
+      "Genetic/species/ecosystem diversity",
+      "Hotspots criteria & Indian hotspots",
+      "PA network NP/WLS/reserves/biospheres",
+      "WPA schedules; Project Tiger/Elephant",
+      "CITES CBD Ramsar CMS"
+    ],
+    "mustRemember": [
+      "Schedule I highest protection",
+      "Biosphere zones core-buffer-transition",
+      "Four hotspots: Himalaya, WG, Indo-Burma, Sundaland/Nicobar",
+      "Map flagship NPs with species"
+    ],
+    "commonTraps": [
+      "Mixing IUCN Red List with WPA schedules",
+      "NP vs WLS legal nuance ignored"
+    ],
+    "revisionCards": [
+      {
+        "front": "Indian hotspots?",
+        "back": "Himalaya, Western Ghats, Indo-Burma, Sundaland(Nicobar)"
+      },
+      {
+        "front": "Project Tiger year?",
+        "back": "1973"
+      },
+      {
+        "front": "CITES regulates?",
+        "back": "Endangered species trade"
+      }
+    ],
+    "studyNotes": "Among densest Prelims areas. Combine ecology basics, Indian conservation law, maps of PAs/species, and conventions. Weekly: 5 PAs + 5 species + 1 convention update.",
+    "definitions": [
+      {
+        "term": "Biodiversity hotspot",
+        "meaning": "High endemism + habitat threat."
+      },
+      {
+        "term": "Ramsar site",
+        "meaning": "Wetland of international importance."
+      },
+      {
+        "term": "In-situ",
+        "meaning": "Conservation in natural habitat."
+      }
+    ],
+    "tables": [
+      {
+        "title": "PA types",
+        "headers": [
+          "Type",
+          "Focus"
+        ],
+        "rows": [
+          [
+            "National Park",
+            "Strict conservation"
+          ],
+          [
+            "WLS",
+            "Conservation + regulated rights"
+          ],
+          [
+            "Conservation Reserve",
+            "Corridors/buffers"
+          ],
+          [
+            "Community Reserve",
+            "Community-managed"
+          ]
+        ]
+      }
+    ]
+  },
+  "env-climate": {
+    "keyConcepts": [
+      "GHG vs ozone problems differ",
+      "UNFCCC→Kyoto→Paris NDCs",
+      "CBDR-RC & climate finance",
+      "India NDCs, LiFE, net-zero 2070",
+      "Mitigation vs adaptation"
+    ],
+    "mustRemember": [
+      "Paris COP21 2015; 1.5/2°C goals",
+      "Montreal/Kigali for ODS/HFCs",
+      "IPCC assesses science, does not set NDCs"
+    ],
+    "commonTraps": [
+      "Mixing ODS with all GHGs casually",
+      "Paris is bottom-up NDCs not Kyoto Annex clone"
+    ],
+    "revisionCards": [
+      {
+        "front": "Paris year?",
+        "back": "2015"
+      },
+      {
+        "front": "India net-zero declared?",
+        "back": "2070"
+      },
+      {
+        "front": "Kigali about?",
+        "back": "HFC phase-down"
+      }
+    ],
+    "studyNotes": "Blend science + institutions. Track COP headlines lightly; master architecture and India's policy package.",
+    "definitions": [
+      {
+        "term": "NDC",
+        "meaning": "Nationally Determined Contribution under Paris."
+      },
+      {
+        "term": "CBDR-RC",
+        "meaning": "Differentiated climate responsibility principle."
+      },
+      {
+        "term": "Net zero",
+        "meaning": "Emissions balanced by removals."
+      }
+    ]
+  },
+  "env-pollution": {
+    "keyConcepts": [
+      "PM/NOx/SOx/O3/CO sources & health",
+      "AQI & NCAP",
+      "BOD/COD water intuition",
+      "Waste rules families",
+      "EIA purpose stages"
+    ],
+    "mustRemember": [
+      "NCR winter multi-source pollution",
+      "Polluter Pays & Precautionary principles",
+      "Wetland ecological services"
+    ],
+    "commonTraps": [
+      "One-scheme-solves-river myth",
+      "Ignoring indoor air pollution"
+    ],
+    "revisionCards": [
+      {
+        "front": "PM2.5 harm?",
+        "back": "Deeper lung/blood penetration"
+      },
+      {
+        "front": "BOD means?",
+        "back": "Oxygen used by microbes on organics"
+      }
+    ],
+    "studyNotes": "Often CA-driven. Anchor on pollutants, rules names, CPCB/SPCB. Mains: tech+regulation+behaviour+federal coordination.",
+    "definitions": [
+      {
+        "term": "AQI",
+        "meaning": "Composite air quality communication index."
+      },
+      {
+        "term": "EIA",
+        "meaning": "Predict/mitigate impacts before clearance."
+      }
+    ]
+  },
+  "sci-space-defence": {
+    "keyConcepts": [
+      "LEO/MEO/GEO uses",
+      "ISRO missions as applications not trivia only",
+      "Remote sensing & NavIC",
+      "Ballistic vs cruise missiles",
+      "Credible minimum deterrence awareness"
+    ],
+    "mustRemember": [
+      "Space apps: disaster, crops, maps, navigation",
+      "Link CA launches to orbit class",
+      "MTCR-type regimes awareness helps"
+    ],
+    "commonTraps": [
+      "Rote names without orbit/application"
+    ],
+    "revisionCards": [
+      {
+        "front": "NavIC?",
+        "back": "Indian regional navigation system"
+      },
+      {
+        "front": "GEO height use?",
+        "back": "~36,000km continuous weather/comms"
+      }
+    ],
+    "studyNotes": "UPSC asks classification/application more than engineering depth. Keep 2-year mission one-pager.",
+    "definitions": [
+      {
+        "term": "GEO",
+        "meaning": "Geostationary orbit ~36,000 km."
+      },
+      {
+        "term": "Ballistic missile",
+        "meaning": "Powered then ballistic arc flight."
+      }
+    ]
+  },
+  "sci-bio-it": {
+    "keyConcepts": [
+      "Gene/genome/vaccine platforms",
+      "CRISPR promise & ethics",
+      "AMR One Health",
+      "AI + DPI (Aadhaar/UPI)",
+      "Agri/health biotech apps"
+    ],
+    "mustRemember": [
+      "mRNA instructs antigen protein production",
+      "CERT-In cyber role awareness",
+      "Elimination vs eradication"
+    ],
+    "commonTraps": [
+      "Sci-fi option traps",
+      "AI anthropomorphism"
+    ],
+    "revisionCards": [
+      {
+        "front": "CRISPR?",
+        "back": "Gene editing tool"
+      },
+      {
+        "front": "One Health?",
+        "back": "Human-animal-environment health link"
+      }
+    ],
+    "studyNotes": "Glossary-style prep from newspaper terms. Ethics links GS3/GS4.",
+    "definitions": [
+      {
+        "term": "AMR",
+        "meaning": "Drug-resistant microbes threat."
+      },
+      {
+        "term": "mRNA vaccine",
+        "meaning": "mRNA instructs antigen production."
+      }
+    ]
+  },
+  "ca-national": {
+    "keyConcepts": [
+      "Static–dynamic linking method",
+      "Scheme 5-field notes",
+      "Reports/indices publisher+implication",
+      "Institutions' legal status",
+      "Judgments/Bills operative takeaway"
+    ],
+    "mustRemember": [
+      "Prelims CA densest in last 12–18 months",
+      "Budget/Survey/PIB selective beats infinite scrolling",
+      "Env/Polity/S&T CA often high yield"
+    ],
+    "commonTraps": [
+      "Notes-free newspaper binge",
+      "Ephemeral political noise without syllabus hook"
+    ],
+    "revisionCards": [
+      {
+        "front": "CA rule #1?",
+        "back": "Static link or skip"
+      },
+      {
+        "front": "Best Prelims CA window?",
+        "back": "~12–18 months + recurring themes"
+      }
+    ],
+    "studyNotes": "CA is a method. Monthly notes under syllabus heads. Scheme cards: ministry, aim, features, issues, funding.",
+    "definitions": [
+      {
+        "term": "Static–dynamic link",
+        "meaning": "Connecting news to enduring syllabus concepts."
+      }
+    ]
+  },
+  "ca-intl": {
+    "keyConcepts": [
+      "Org mandate/HQ/summit",
+      "Quad/SCO/BRICS etc plurilaterals",
+      "Map geopolitics",
+      "IMF/WB/WTO differentiation",
+      "Climate & tech diplomacy"
+    ],
+    "mustRemember": [
+      "UN organs + frequent specialised agencies",
+      "Neighbourhood First & SAGAR for Mains",
+      "HQ drill only for frequent orgs"
+    ],
+    "commonTraps": [
+      "HQ mix-ups",
+      "Treating all groupings as military blocs"
+    ],
+    "revisionCards": [
+      {
+        "front": "Quad members?",
+        "back": "India USA Japan Australia"
+      },
+      {
+        "front": "WTO role?",
+        "back": "Rules-based trade & disputes"
+      }
+    ],
+    "studyNotes": "Map-anchored dossier: org→HQ→India angle. Bilateral visits: 3 takeaways max.",
+    "definitions": [
+      {
+        "term": "Plurilateral",
+        "meaning": "Subset-country cooperation format."
+      }
+    ]
+  },
+  "culture-arch": {
+    "keyConcepts": [
+      "Nagara/Dravida/Vesara",
+      "Stupa anatomy",
+      "Ajanta/Ellora/Elephanta rock-cut",
+      "Indo-Islamic vocabulary",
+      "Patronage–religion–region links"
+    ],
+    "mustRemember": [
+      "Gupta early structural temples",
+      "Chola bronzes; Pallava rock-cut→structural",
+      "Mughal tomb-garden tradition"
+    ],
+    "commonTraps": [
+      "Rigid style labels ignoring hybrids"
+    ],
+    "revisionCards": [
+      {
+        "front": "Gopuram style?",
+        "back": "Dravida complexes"
+      },
+      {
+        "front": "Sanchi stupa origin?",
+        "back": "Mauryan/Ashokan core"
+      }
+    ],
+    "studyNotes": "Feature→example→dynasty sheets. Cross-link Ancient/Medieval.",
+    "definitions": [
+      {
+        "term": "Nagara",
+        "meaning": "N. Indian curvilinear shikhara temples."
+      },
+      {
+        "term": "Dravida",
+        "meaning": "S. Indian vimana/gopuram tradition."
+      }
+    ]
+  },
+  "culture-perf": {
+    "keyConcepts": [
+      "Eight classical dances",
+      "Hindustani vs Carnatic basics",
+      "Regional folk examples",
+      "UNESCO ICH awareness"
+    ],
+    "mustRemember": [
+      "Bharatanatyam TN; Kathak North; Kathakali/Mohiniyattam Kerala; Odissi Odisha; Kuchipudi AP/TG; Manipuri Manipur; Sattriya Assam"
+    ],
+    "commonTraps": [
+      "Calling folk 'classical'"
+    ],
+    "revisionCards": [
+      {
+        "front": "Sattriya state?",
+        "back": "Assam"
+      },
+      {
+        "front": "Mohiniyattam state?",
+        "back": "Kerala"
+      }
+    ],
+    "studyNotes": "Matching-type heavy. Drill dance–state–one feature. Light music terms (raga/tala).",
+    "definitions": [
+      {
+        "term": "Abhinaya",
+        "meaning": "Expressive storytelling aspect of dance/drama."
+      }
+    ]
+  },
+  "culture-lit": {
+    "keyConcepts": [
+      "Vedas/Upanishads/epics/Sangam",
+      "Bhakti–Sufi literary sources",
+      "Astika vs Nastika schools",
+      "Modern literature & reform"
+    ],
+    "mustRemember": [
+      "Sangam Tamil milieu",
+      "Tripitaka Vinaya-Sutta-Abhidhamma",
+      "One idea per philosophical school"
+    ],
+    "commonTraps": [
+      "Over-deep philosophy for Prelims"
+    ],
+    "revisionCards": [
+      {
+        "front": "Charvaka?",
+        "back": "Materialist Nastika school"
+      },
+      {
+        "front": "Vedanta roots?",
+        "back": "Upanishadic philosophy"
+      }
+    ],
+    "studyNotes": "Lower frequency, high surprise. Thin notes: one idea per school/saint.",
+    "definitions": [
+      {
+        "term": "Astika schools",
+        "meaning": "Six systems accepting Vedic authority."
+      }
+    ]
+  },
+  "culture-modern": {
+    "keyConcepts": [
+      "ASI heritage protection",
+      "Sahitya/Sangeet Natak/Lalit Kala Akademis",
+      "UNESCO WH process awareness",
+      "Museums & digital heritage"
+    ],
+    "mustRemember": [
+      "Akademi domain differences",
+      "Conservation vs development Mains angle"
+    ],
+    "commonTraps": [
+      "Assuming all old buildings are WH sites"
+    ],
+    "revisionCards": [
+      {
+        "front": "Sahitya Akademi domain?",
+        "back": "Literature"
+      }
+    ],
+    "studyNotes": "Institution mandates + CA. Interview-ready on conservation ethics.",
+    "definitions": [
+      {
+        "term": "ASI",
+        "meaning": "Archaeological Survey of India."
+      }
+    ]
+  },
+  "csat-reading": {
+    "keyConcepts": [
+      "Question-stem first when useful",
+      "Fact vs inference vs assumption vs tone",
+      "Eliminate absolute options",
+      "Context vocabulary",
+      "Accuracy > speed (qualifying)"
+    ],
+    "mustRemember": [
+      "~33% qualifying; respect negative marking",
+      "Inference must follow passage not GK",
+      "Tone must match evidence"
+    ],
+    "commonTraps": [
+      "Importing outside knowledge",
+      "True-in-world but unstated options"
+    ],
+    "revisionCards": [
+      {
+        "front": "Assumption vs inference?",
+        "back": "Assumption=unstated premise; inference=text-based conclusion"
+      },
+      {
+        "front": "CSAT qualify roughly?",
+        "back": "~33% (check notification)"
+      }
+    ],
+    "studyNotes": "Largest CSAT block. Timed RC sets; error log by trap type; target high accuracy.",
+    "definitions": [
+      {
+        "term": "Inference",
+        "meaning": "Conclusion strongly supported by passage."
+      }
+    ]
+  },
+  "csat-logic": {
+    "keyConcepts": [
+      "Syllogism Venns",
+      "Statement-conclusion/assumption",
+      "Ordering/relations diagrams",
+      "Constraint puzzles",
+      "Series/coding patterns"
+    ],
+    "mustRemember": [
+      "Draw don't only visualise",
+      "Skip time-sink puzzles early"
+    ],
+    "commonTraps": [
+      "Reading possibility as certainty",
+      "Missing one puzzle constraint"
+    ],
+    "revisionCards": [
+      {
+        "front": "First seating step?",
+        "back": "Fix definite info first"
+      }
+    ],
+    "studyNotes": "Personal playbook per question type. Mixed sets to train switching.",
+    "definitions": [
+      {
+        "term": "Syllogism",
+        "meaning": "Categorical deductive reasoning."
+      }
+    ]
+  },
+  "csat-math": {
+    "keyConcepts": [
+      "% ratio average automaticity",
+      "PL SI/CI TSD work",
+      "Number shortcuts",
+      "DI units/scales first",
+      "Approximate & eliminate"
+    ],
+    "mustRemember": [
+      "20-formula weekly sheet",
+      "DI carelessness > conceptual fail often",
+      "Don't sink 3 minutes on one item"
+    ],
+    "commonTraps": [
+      "Unit mismatches",
+      "Successive % treated as simple sum"
+    ],
+    "revisionCards": [
+      {
+        "front": "10%+10% successive?",
+        "back": "21% net"
+      },
+      {
+        "front": "km/h to m/s?",
+        "back": "×5/18"
+      }
+    ],
+    "studyNotes": "Class X core + speed. Daily 20 mixed > weekend marathon. Clear with buffer.",
+    "definitions": [
+      {
+        "term": "DI",
+        "meaning": "Arithmetic extraction from tables/graphs."
+      }
+    ]
+  },
+  "csat-decision": {
+    "keyConcepts": [
+      "Legality/rights/safety first",
+      "Avoid extremes & vigilantism",
+      "Empathy within rules",
+      "Thin recent weight — light time allocation"
+    ],
+    "mustRemember": [
+      "Best options: facts, law, proper escalation, interim care",
+      "Check latest paper instructions on marking"
+    ],
+    "commonTraps": [
+      "Populist illegal choices",
+      "Endless buck-passing"
+    ],
+    "revisionCards": [
+      {
+        "front": "DM north star?",
+        "back": "Constitution→law→equity→empathy"
+      }
+    ],
+    "studyNotes": "Applied GS4-lite. Few practice sets suffice if scarce time.",
+    "definitions": [
+      {
+        "term": "Situational judgement",
+        "meaning": "Choosing most appropriate admin response."
+      }
+    ]
+  }
+}
