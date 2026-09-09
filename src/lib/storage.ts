@@ -89,3 +89,63 @@ export function saveMockAttempt(attempt: StoredMockAttempt): StoredMockAttempt[]
 export function clearMockHistory(): void {
   localStorage.removeItem(MOCK_HISTORY_KEY);
 }
+
+
+const DRILL_STATE_KEY = "upsc-daily-drill";
+const WEAK_AREAS_KEY = "upsc-weak-areas";
+
+export type DrillDayState = {
+  dayKey: string;
+  answered: Record<string, number>;
+  completed: boolean;
+  correctCount: number;
+};
+
+export type DrillPersist = {
+  streak: number;
+  bestStreak: number;
+  lastCompletedDay: string | null;
+  today: DrillDayState | null;
+};
+
+export function getDrillPersist(): DrillPersist {
+  if (typeof window === "undefined") {
+    return { streak: 0, bestStreak: 0, lastCompletedDay: null, today: null };
+  }
+  return safeParse(localStorage.getItem(DRILL_STATE_KEY), {
+    streak: 0,
+    bestStreak: 0,
+    lastCompletedDay: null,
+    today: null,
+  });
+}
+
+export function saveDrillPersist(state: DrillPersist): void {
+  localStorage.setItem(DRILL_STATE_KEY, JSON.stringify(state));
+}
+
+export type StoredWeakAreas = {
+  updatedAt: string;
+  sourceAttemptId: string;
+  sourceTitle: string;
+  rows: {
+    topicId: string;
+    title: string;
+    subjectId: string;
+    paperId: string;
+    correct: number;
+    total: number;
+    wrongOrSkip: number;
+    accuracy: number;
+    studyHref: string;
+  }[];
+};
+
+export function getStoredWeakAreas(): StoredWeakAreas | null {
+  if (typeof window === "undefined") return null;
+  return safeParse(localStorage.getItem(WEAK_AREAS_KEY), null);
+}
+
+export function saveStoredWeakAreas(data: StoredWeakAreas): void {
+  localStorage.setItem(WEAK_AREAS_KEY, JSON.stringify(data));
+}

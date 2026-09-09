@@ -8,6 +8,7 @@ import Disclaimer from "@/components/Disclaimer";
 import StudyNotes from "@/components/study/StudyNotes";
 import RevisionCards from "@/components/study/RevisionCards";
 import StudyNav from "@/components/study/StudyNav";
+import CoachTip from "@/components/CoachTip";
 
 export function generateStaticParams() {
   return topics.map((t) => ({ topicId: t.id }));
@@ -100,6 +101,9 @@ export default async function TopicPage({
         ) : null}
         <div className="mt-3">
           <Disclaimer compact />
+        </div>
+        <div className="mt-4">
+          <CoachTip topic={topic} />
         </div>
       </div>
 

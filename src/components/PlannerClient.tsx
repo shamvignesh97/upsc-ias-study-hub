@@ -42,8 +42,8 @@ export default function PlannerClient() {
 
       {!items.length && (
         <p className="rounded-xl border border-dashed border-slate-300 bg-white p-6 text-sm text-slate-600">
-          Generate a planner from the highest-probability topics across papers. Estimates only —
-          balance with full syllabus coverage.
+          Generate a planner from the highest-probability topics across papers — or rebuild a
+          weak-area-aware plan from a mock scorecard. Estimates only — balance with full syllabus coverage.
         </p>
       )}
 

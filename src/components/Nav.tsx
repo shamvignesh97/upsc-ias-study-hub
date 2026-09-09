@@ -6,12 +6,17 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 import InstallMenuButton from "@/components/InstallMenuButton";
 
-const links = [
+const primaryLinks = [
   { href: "/", label: "Home" },
   { href: "/study", label: "Study" },
-  { href: "/syllabus", label: "Focus" },
-  { href: "/quiz", label: "Practice" },
   { href: "/mock", label: "Mock" },
+  { href: "/drill", label: "Drill" },
+  { href: "/syllabus", label: "Focus" },
+  { href: "/analytics", label: "Analytics" },
+];
+
+const moreLinks = [
+  { href: "/quiz", label: "Practice" },
   { href: "/pyq", label: "PYQ" },
   { href: "/planner", label: "Planner" },
   { href: "/optional", label: "Optional" },
@@ -20,6 +25,8 @@ const links = [
   { href: "/methodology", label: "Odds method" },
   { href: "/search", label: "Search" },
 ];
+
+const links = [...primaryLinks, ...moreLinks];
 
 export default function Nav() {
   const pathname = usePathname();
@@ -34,7 +41,7 @@ export default function Nav() {
           </span>
           <div className="leading-tight">
             <div className="text-sm font-semibold tracking-wide">UPSC IAS Study Hub</div>
-            <div className="text-[11px] text-slate-300">Study · Focus · Practice</div>
+            <div className="text-[11px] text-slate-300">Study · Focus · Drill · Practice</div>
           </div>
         </Link>
 
@@ -48,7 +55,7 @@ export default function Nav() {
         </button>
 
         <nav className="hidden flex-wrap items-center justify-end gap-1 md:flex">
-          {links.map((l) => {
+          {primaryLinks.map((l) => {
             const active = pathname === l.href || (l.href !== "/" && pathname.startsWith(l.href));
             return (
               <Link
@@ -63,6 +70,29 @@ export default function Nav() {
               </Link>
             );
           })}
+          <details className="relative">
+            <summary className="cursor-pointer list-none rounded-md px-2.5 py-1.5 text-xs font-medium text-slate-200 hover:bg-white/10">
+              More ▾
+            </summary>
+            <div className="absolute right-0 z-50 mt-1 min-w-[10rem] rounded-lg border border-slate-200 bg-white p-1 shadow-lg">
+              {moreLinks.map((l) => {
+                const active =
+                  pathname === l.href || (l.href !== "/" && pathname.startsWith(l.href));
+                return (
+                  <Link
+                    key={l.href}
+                    href={l.href}
+                    className={cn(
+                      "block rounded-md px-3 py-1.5 text-xs font-medium",
+                      active ? "bg-amber-100 text-[#0f2744]" : "text-slate-700 hover:bg-slate-50"
+                    )}
+                  >
+                    {l.label}
+                  </Link>
+                );
+              })}
+            </div>
+          </details>
           <InstallMenuButton className="ml-1" />
         </nav>
       </div>

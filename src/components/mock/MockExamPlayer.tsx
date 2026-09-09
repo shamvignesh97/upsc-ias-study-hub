@@ -7,6 +7,7 @@ import { formatTime, marksFor, scoreAnswers } from "@/lib/mock-scoring";
 import { saveMockAttempt } from "@/lib/storage";
 import { MOCK_DISCLAIMER } from "@/data/mocks";
 import { cn } from "@/lib/utils";
+import WeakAreaCoach from "@/components/WeakAreaCoach";
 
 type Phase = "exam" | "confirm" | "result";
 type FeedbackMode = "practice" | "exam";
@@ -37,6 +38,7 @@ export default function MockExamPlayer({
   const [feedbackMode, setFeedbackMode] = useState<FeedbackMode>("practice");
   const startedAt = useRef(Date.now());
   const [result, setResult] = useState<ReturnType<typeof scoreAnswers> | null>(null);
+  const [savedAttemptId, setSavedAttemptId] = useState<string>("");
 
   const q = questions[index];
   const marks = marksFor(kind);
@@ -116,8 +118,10 @@ export default function MockExamPlayer({
     setResult(scored);
     setPhase("result");
     const timeUsed = Math.min(durationSeconds, Math.round((Date.now() - startedAt.current) / 1000));
+    const attemptId = `${kind}-${paperKey}-${Date.now()}`;
+    setSavedAttemptId(attemptId);
     saveMockAttempt({
-      id: `${kind}-${paperKey}-${Date.now()}`,
+      id: attemptId,
       kind,
       paperKey,
       paperTitle: title,
@@ -210,6 +214,12 @@ export default function MockExamPlayer({
             <Link href="/mock" className="rounded-lg bg-amber-500 px-4 py-2 text-sm font-semibold text-[#0f2744]">
               Back to Mock hub
             </Link>
+            <Link href="/analytics" className="rounded-lg border border-slate-300 px-4 py-2 text-sm font-medium">
+              View analytics
+            </Link>
+            <Link href="/planner" className="rounded-lg border border-slate-300 px-4 py-2 text-sm font-medium">
+              Open planner
+            </Link>
             <button
               type="button"
               onClick={() => {
@@ -259,6 +269,14 @@ export default function MockExamPlayer({
             </p>
           </div>
         </div>
+
+        <WeakAreaCoach
+          attemptId={savedAttemptId || `${kind}-${paperKey}-session`}
+          paperTitle={title}
+          questions={questions}
+          answers={answers}
+          topicBreakup={result.topicBreakup}
+        />
 
         {rq ? (
           <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
