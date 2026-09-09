@@ -24,8 +24,10 @@ export default function MockHubClient() {
         <h1 className="text-3xl font-bold text-slate-900">Prelims Mock Tests</h1>
         <p className="mt-2 max-w-2xl text-slate-600">
           Full-length GS Paper I (100 Q, 2 hrs) and CSAT Paper II (80 Q, 2 hrs) built from
-          high-likelihood PYQ themes — meant to help crack Prelims. Papers A/B/C are alternate
-          full sets (lazy-loaded).
+          high-likelihood PYQ themes — meant to help crack Prelims. Papers A–F are alternate
+          full sets (lazy-loaded). Default <strong>Practice mode</strong> shows the correct
+          answer and a short explanation as soon as you click — including when you are wrong.
+          Switch to <strong>Exam mode</strong> inside a paper for timed realism (hide until submit).
         </p>
         <p className="mt-2 rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-950">
           {MOCK_DISCLAIMER}
@@ -33,7 +35,7 @@ export default function MockHubClient() {
       </div>
 
       <section className="space-y-3">
-        <h2 className="text-xl font-bold">GS Paper I mocks</h2>
+        <h2 className="text-xl font-bold">GS Paper I mocks ({gs1.length})</h2>
         <p className="text-sm text-slate-600">
           Marking: <strong>+2</strong> correct · <strong>−0.66</strong> wrong · <strong>0</strong>{" "}
           unattempted. Mix weighted to Polity, Economy, Environment, History, Geography, S&T,
@@ -56,7 +58,7 @@ export default function MockHubClient() {
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-xl font-bold">CSAT Paper II mocks</h2>
+        <h2 className="text-xl font-bold">CSAT Paper II mocks ({csat.length})</h2>
         <p className="text-sm text-slate-600">
           Marking: <strong>+2.5</strong> correct · <strong>−0.83</strong> wrong · qualifying ≈{" "}
           <strong>33%</strong>. Comprehension, reasoning, numeracy & decision-making.

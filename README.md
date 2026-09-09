@@ -10,7 +10,7 @@ A polished Next.js study companion for the Indian Civil Services (IAS/UPSC) exam
 - **Focus lists** — dashboard ranked list; syllabus sort/filter by chance
 - **Full syllabus navigation** — Prelims GS & CSAT, Mains Essay + GS I–IV, Optional, Interview
 - **Quiz / tests hub** — Prelims GS, CSAT, Mains prompts (lazy-loaded)
-- **Prelims mocks** — full GS Paper I (100 Q) & CSAT (80 Q) with timer, negative marking, scorecard; Papers A/B/C from high-prob PYQ themes
+- **Prelims mocks** — full GS Paper I (100 Q) & CSAT (80 Q) with timer, negative marking, scorecard; Papers A–F from high-prob PYQ themes; Practice mode shows correct answer + explanation on wrong click
 - **PYQ-style practice**, planner, bookmarks, search
 - **PWA** — installable; offline shell after first visit
 

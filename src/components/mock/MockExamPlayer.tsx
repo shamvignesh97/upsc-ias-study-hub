@@ -9,6 +9,7 @@ import { MOCK_DISCLAIMER } from "@/data/mocks";
 import { cn } from "@/lib/utils";
 
 type Phase = "exam" | "confirm" | "result";
+type FeedbackMode = "practice" | "exam";
 
 export default function MockExamPlayer({
   kind,
@@ -32,11 +33,18 @@ export default function MockExamPlayer({
   const [paused, setPaused] = useState(false);
   const [mistakesOnly, setMistakesOnly] = useState(false);
   const [reviewIndex, setReviewIndex] = useState(0);
+  /** Practice = show correct/wrong + explanation on select (default). Exam = hide until submit. */
+  const [feedbackMode, setFeedbackMode] = useState<FeedbackMode>("practice");
   const startedAt = useRef(Date.now());
   const [result, setResult] = useState<ReturnType<typeof scoreAnswers> | null>(null);
 
   const q = questions[index];
   const marks = marksFor(kind);
+  const selected = q ? answers[q.id] : null;
+  const hasAnswer =
+    selected !== null && selected !== undefined;
+  const showFeedback = feedbackMode === "practice" && hasAnswer;
+  const isCorrect = hasAnswer && selected === q?.correctIndex;
 
   useEffect(() => {
     if (phase !== "exam" || paused) return;
@@ -82,9 +90,15 @@ export default function MockExamPlayer({
   const selectOption = useCallback(
     (opt: number) => {
       if (!q || phase !== "exam") return;
+      // In practice mode, keep the first selection so wrong answer stays visible with feedback.
+      // User can still Clear to try again.
+      if (feedbackMode === "practice") {
+        const cur = answers[q.id];
+        if (cur !== null && cur !== undefined) return;
+      }
       setAnswers((a) => ({ ...a, [q.id]: opt }));
     },
-    [q, phase]
+    [q, phase, feedbackMode, answers]
   );
 
   const clearAnswer = useCallback(() => {
@@ -268,11 +282,22 @@ export default function MockExamPlayer({
                   <div key={i} className={`rounded-lg border px-3 py-2 text-sm ${style}`}>
                     <span className="mr-2 font-semibold text-slate-500">{String.fromCharCode(65 + i)}.</span>
                     {opt}
+                    {i === rq.correctIndex ? (
+                      <span className="ml-2 text-xs font-semibold text-emerald-700">Correct</span>
+                    ) : null}
+                    {chosen === i && i !== rq.correctIndex ? (
+                      <span className="ml-2 text-xs font-semibold text-rose-700">Your answer</span>
+                    ) : null}
                   </div>
                 );
               })}
             </div>
-            <p className="mt-3 rounded-lg bg-slate-50 p-3 text-sm text-slate-700">{rq.explanation}</p>
+            <p className="mt-3 rounded-lg bg-slate-50 p-3 text-sm text-slate-700">
+              <span className="font-semibold text-slate-800">
+                Correct answer: {String.fromCharCode(65 + rq.correctIndex)} —{" "}
+              </span>
+              {rq.explanation}
+            </p>
             <div className="mt-4 flex gap-2">
               <button
                 type="button"
@@ -310,7 +335,31 @@ export default function MockExamPlayer({
               Q {index + 1}/{questions.length} · Answered {answeredCount} · Marked {markedCount}
             </div>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
+            <div className="flex rounded-md border border-white/30 p-0.5 text-[10px] font-semibold">
+              <button
+                type="button"
+                onClick={() => setFeedbackMode("practice")}
+                className={cn(
+                  "rounded px-2 py-1",
+                  feedbackMode === "practice" ? "bg-amber-500 text-[#0f2744]" : "text-slate-200"
+                )}
+                title="Show correct answer and explanation as soon as you select"
+              >
+                Practice
+              </button>
+              <button
+                type="button"
+                onClick={() => setFeedbackMode("exam")}
+                className={cn(
+                  "rounded px-2 py-1",
+                  feedbackMode === "exam" ? "bg-amber-500 text-[#0f2744]" : "text-slate-200"
+                )}
+                title="Hide answers until you submit (timed realism)"
+              >
+                Exam
+              </button>
+            </div>
             <span
               className={cn(
                 "rounded-md px-2.5 py-1 font-mono text-sm font-bold",
@@ -340,6 +389,16 @@ export default function MockExamPlayer({
             Timer paused — resume to continue. Leaving the page may lose progress.
           </div>
         ) : null}
+        {feedbackMode === "practice" ? (
+          <div className="bg-emerald-500/15 px-4 py-1 text-center text-[11px] text-emerald-100">
+            Practice mode: wrong answers stay highlighted with the correct option + explanation
+            immediately. Switch to Exam mode to hide feedback until submit.
+          </div>
+        ) : (
+          <div className="bg-slate-500/20 px-4 py-1 text-center text-[11px] text-slate-200">
+            Exam mode: answers hidden until you submit — for timed realism.
+          </div>
+        )}
       </header>
 
       <div className="mx-auto flex w-full max-w-6xl flex-1 flex-col gap-4 p-3 sm:flex-row sm:p-4">
@@ -350,8 +409,13 @@ export default function MockExamPlayer({
             </div>
             <div className="grid max-h-64 grid-cols-8 gap-1 overflow-y-auto sm:max-h-[70vh] sm:grid-cols-5">
               {questions.map((qq, i) => {
-                const answered = answers[qq.id] !== null && answers[qq.id] !== undefined;
+                const ans = answers[qq.id];
+                const answered = ans !== null && ans !== undefined;
                 const isMarked = !!marked[qq.id];
+                const wrongPractice =
+                  feedbackMode === "practice" && answered && ans !== qq.correctIndex;
+                const rightPractice =
+                  feedbackMode === "practice" && answered && ans === qq.correctIndex;
                 return (
                   <button
                     key={qq.id}
@@ -360,7 +424,13 @@ export default function MockExamPlayer({
                     className={cn(
                       "h-8 rounded text-[11px] font-medium",
                       i === index && "ring-2 ring-amber-500",
-                      answered ? "bg-emerald-100 text-emerald-900" : "bg-slate-100 text-slate-700",
+                      wrongPractice
+                        ? "bg-rose-100 text-rose-900"
+                        : rightPractice
+                          ? "bg-emerald-100 text-emerald-900"
+                          : answered
+                            ? "bg-emerald-100 text-emerald-900"
+                            : "bg-slate-100 text-slate-700",
                       isMarked && "outline outline-2 outline-offset-[-2px] outline-amber-500"
                     )}
                   >
@@ -390,27 +460,66 @@ export default function MockExamPlayer({
             <h2 className="whitespace-pre-wrap text-lg font-semibold text-slate-900">{q.question}</h2>
             <div className="mt-4 space-y-2">
               {q.options.map((opt, i) => {
-                const selected = answers[q.id] === i;
+                let style = "border-slate-200 hover:border-amber-300";
+                if (showFeedback) {
+                  if (i === q.correctIndex) style = "border-emerald-500 bg-emerald-50";
+                  else if (selected === i) style = "border-rose-400 bg-rose-50";
+                  else style = "border-slate-100 opacity-70";
+                } else if (selected === i) {
+                  style = "border-amber-500 bg-amber-50";
+                }
                 return (
                   <button
                     key={i}
                     type="button"
                     onClick={() => selectOption(i)}
+                    disabled={showFeedback}
                     className={cn(
-                      "block w-full rounded-lg border px-4 py-3 text-left text-sm transition",
-                      selected
-                        ? "border-amber-500 bg-amber-50"
-                        : "border-slate-200 hover:border-amber-300"
+                      "block w-full rounded-lg border px-4 py-3 text-left text-sm transition disabled:cursor-default",
+                      style
                     )}
                   >
                     <span className="mr-2 font-semibold text-slate-500">
                       {String.fromCharCode(65 + i)}.
                     </span>
                     {opt}
+                    {showFeedback && i === q.correctIndex ? (
+                      <span className="ml-2 text-xs font-semibold text-emerald-700">Correct</span>
+                    ) : null}
+                    {showFeedback && selected === i && i !== q.correctIndex ? (
+                      <span className="ml-2 text-xs font-semibold text-rose-700">Your answer</span>
+                    ) : null}
                   </button>
                 );
               })}
             </div>
+
+            {showFeedback ? (
+              <div
+                className={cn(
+                  "mt-4 rounded-lg border px-3 py-3 text-sm",
+                  isCorrect
+                    ? "border-emerald-200 bg-emerald-50 text-emerald-950"
+                    : "border-rose-200 bg-rose-50 text-rose-950"
+                )}
+              >
+                {isCorrect ? (
+                  <p className="font-semibold">Correct — well done.</p>
+                ) : (
+                  <p className="font-semibold">
+                    Incorrect. Correct answer: {String.fromCharCode(65 + q.correctIndex)}
+                  </p>
+                )}
+                <p className="mt-1 text-slate-800">
+                  <span className="font-medium">
+                    {String.fromCharCode(65 + q.correctIndex)}. {q.options[q.correctIndex]}
+                  </span>
+                  {" — "}
+                  {q.explanation}
+                </p>
+              </div>
+            ) : null}
+
             <div className="mt-5 flex flex-wrap gap-2">
               <button
                 type="button"
