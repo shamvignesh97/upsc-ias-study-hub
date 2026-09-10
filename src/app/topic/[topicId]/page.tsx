@@ -9,6 +9,7 @@ import StudyNotes from "@/components/study/StudyNotes";
 import RevisionCards from "@/components/study/RevisionCards";
 import StudyNav from "@/components/study/StudyNav";
 import CoachTip from "@/components/CoachTip";
+import HighProbArticles from "@/components/articles/HighProbArticles";
 
 export function generateStaticParams() {
   return topics.map((t) => ({ topicId: t.id }));
@@ -109,6 +110,7 @@ export default async function TopicPage({
 
       <StudyNav prev={adj.prev} next={adj.next} index={adj.index} total={adj.total} />
       <TopicActions topicId={topic.id} />
+      <HighProbArticles topicId={topic.id} />
       <StudyNotes topic={topic} />
       {topic.revisionCards?.length ? <RevisionCards cards={topic.revisionCards} /> : null}
 

@@ -11,6 +11,7 @@ import RevisionCards from "@/components/study/RevisionCards";
 import StudyNav from "@/components/study/StudyNav";
 import TopicActions from "@/components/TopicActions";
 import Disclaimer from "@/components/Disclaimer";
+import HighProbArticles from "@/components/articles/HighProbArticles";
 import { useProgress } from "@/hooks/useClientStore";
 
 export default function StudySubjectClient({
@@ -65,6 +66,7 @@ export default function StudySubjectClient({
 
         <StudyNav prev={prev} next={next} index={index} total={subjectTopics.length} mode="study" />
         <TopicActions topicId={active.id} />
+        <HighProbArticles topicId={active.id} />
         <StudyNotes topic={active} />
         {active.revisionCards?.length ? <RevisionCards cards={active.revisionCards} /> : null}
         <StudyNav prev={prev} next={next} index={index} total={subjectTopics.length} mode="study" />
