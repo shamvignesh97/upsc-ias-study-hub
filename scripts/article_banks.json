@@ -1,1 +1,3698 @@
-[{"slug": "climate-unfccc-paris", "topicId": "env-climate", "chance": 88, "title": "Climate Science, UNFCCC & Paris Agreement", "blurb": "GHG physics, UNFCCC–Kyoto–Paris arc, NDCs/COP and India pledges — rising #1 environment portion.", "theme": "climate science and the UNFCCC/Paris regime", "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], "chanceNote": "Ranked among the highest next-exam-chance portions (~88%, rising). Appeared across 2016–2025; late-window COP/NDC weight exceeds early years. Parent topic env-climate ~91%.", "why": "Blends durable science with living treaty politics and India’s diplomacy — ideal for mixed static–CA papers.", "pyq": ["Paris Agreement", "NDCs", "COP", "GHGs", "Mitigation/adaptation"], "facts": [["Enhanced greenhouse effect", "Anthropogenic GHGs increase infrared absorption in the troposphere, raising global mean temperatures beyond the natural greenhouse baseline"], ["Major GHGs", "CO2 (long-lived), CH4 (higher GWP, shorter life), N2O, and F-gases"], ["GWP", "Compares warming of a gas to CO2 over a chosen time horizon"], ["Carbon sinks", "Oceans, forests and soils remove CO2; not infinite offsets"], ["UNFCCC 1992", "Framework convention creating COP process and CBDR-RC"], ["Kyoto Protocol", "Historic Annex-I style quantified targets with flexibility mechanisms"], ["Paris Agreement 2015", "Universal NDCs; temperature goals well below 2C / pursue 1.5C"], ["Global Stocktake", "Collective progress check to inform stronger NDCs"], ["Transparency framework", "Reporting/review rules building trust"], ["Mitigation", "Actions that reduce emissions or enhance sinks"], ["Adaptation", "Adjustments to limit harm from climate impacts"], ["Loss and damage", "Agenda on residual irreversible harms"], ["CBDR-RC", "Common but differentiated responsibilities and respective capabilities"], ["India narrative", "Equity, intensity and non-fossil pledges, net-zero framing — verify latest NDC numbers"], ["Montreal contrast", "Ozone treaty — do not merge into UNFCCC"], ["Co-benefits", "Air quality and energy security gains from climate action"], ["Extremes literacy", "Warming shifts probabilities of heat extremes"], ["Ocean acidification", "CO2 dissolution alters carbonate chemistry"], ["COP theatre", "Revise last 2–3 COP headlines as CA overlay"], ["Carbon budget idea", "Finite CO2 consistent with a temperature target"]], "traps": ["Treating Kyoto and Paris as identical", "Confusing Montreal with UNFCCC", "NDCs as mere press releases", "Net zero as overnight zero emissions", "Collapsing mitigation/adaptation/L&D", "Infinite forest offsets"], "table": {"title": "Treaty design contrast", "headers": ["Feature", "Kyoto (classic)", "Paris"], "rows": [["Participation", "Annex-I focus historically", "Near-universal NDCs"], ["Target style", "Top-down quantified", "Bottom-up NDCs"], ["Temperature goal", "Not Paris-style 1.5/2 framing", "Well below 2C; pursue 1.5C"], ["Ambition cycle", "Commitment periods", "NDC cycles + Stocktake"]]}, "table2": {"title": "Vocabulary triad", "headers": ["Term", "Focus", "Prelims cue"], "rows": [["Mitigation", "Cut/sequester GHGs", "Renewables, sinks"], ["Adaptation", "Live with impacts", "EWS, resilient infra"], ["Loss & damage", "Residual harm finance/politics", "Vulnerable nations"]]}, "maps": ["Himalayan cryosphere", "Coastal vulnerability", "SIDS L&D politics", "India renewables geography"], "must": ["UNFCCC→Kyoto→Paris differences", "GHGs + GWP idea", "Paris NDCs/stocktake", "CBDR-RC", "Mitigation vs adaptation vs L&D", "Refresh India NDC numbers", "Montreal≠UNFCCC"], "india": "India emphasises equity and development space while expanding renewables and long-term net-zero narratives. Keep three pledge anchors updated from official NDC documents.", "pyqAngle": "Treaty design statements; GHG/sinks science; COP finance language; India pledges.", "examSpine": "GHG science → UNFCCC/Kyoto/Paris → NDC/stocktake → India anchors → Montreal trap.", "quick": ["Redraw Kyoto vs Paris table", "List GHG + sink", "Define mitigation/adaptation/L&D", "Update India pledges", "Last 2 COP bullets"]}, {"slug": "protected-areas-wpa", "topicId": "env-biodiversity", "chance": 86, "title": "Protected Areas, WPA & Species", "blurb": "NP, WLS, Biosphere Reserves, Tiger Reserves and WPA schedules — densest biodiversity Prelims block.", "theme": "protected area categories, WPA and species–habitat matching", "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], "chanceNote": "Portion chance ~86% (stable-high). Theme counts across all 10 years; parent env-biodiversity ~85%.", "why": "Map memory + legal categories + flagship species create unambiguous MCQs.", "pyq": ["Protected area categories", "WPA schedules", "Species habitats", "Biosphere zones", "Tiger Reserves"], "facts": [["National Park", "Higher protection intensity in textbook contrasts"], ["Wildlife Sanctuary", "Protection with comparatively more flexible rights/activities"], ["Conservation/Community Reserves", "Community and landscape approaches under WPA narrative"], ["Biosphere Reserve", "Core/buffer/transition zoning — not identical to NP"], ["Tiger Reserve", "Critical tiger habitat + buffer under NTCA overlay"], ["WPA 1972", "Principal wildlife statute; schedules grade species protection"], ["Schedules logic", "Higher schedule generally means stricter prohibitions"], ["Ramsar overlay", "Wetlands of international importance often co-asked"], ["Corridors", "Connectivity beyond island PAs"], ["Invasive species", "Ecological disruption examples"], ["Flagship species matching", "GIB, dolphin, snow leopard, olive ridley — living list"], ["NTCA", "Governance hook for Project Tiger landscapes"], ["Ex situ vs in situ", "Zoos/gene banks vs habitat protection"], ["Biodiversity Act", "NBA/ABS outline level"], ["CITES", "International trade permit logic"], ["Human–wildlife conflict", "Edge habitats and mitigation themes"], ["Coastal links", "Turtles/mangroves bridge topics"], ["Critical Wildlife Habitat", "FRA interface — headline awareness"], ["IUCN vs Indian law", "Do not casually mix category systems"], ["Manage distinctive sites", "Not all 100+ NPs — uniqueness first"]], "traps": ["BR identical to NP", "All sanctuaries ban all humans", "IUCN=Indian legal categories", "Outdated schedules", "Tiger buffer = BR transition"], "table": {"title": "Indian PA categories", "headers": ["Category", "Core idea", "Discriminator"], "rows": [["National Park", "Strict PA", "Vs WLS intensity"], ["Wildlife Sanctuary", "More flexibility historically", "Rights/activities"], ["Biosphere Reserve", "Zoned landscape", "Not NP synonym"], ["Tiger Reserve", "CTH + buffer", "NTCA hook"]]}, "table2": null, "maps": ["Western Ghats", "Sundarbans", "Kaziranga", "Desert NP/GIB", "River dolphin stretches"], "must": ["NP vs WLS vs BR", "WPA schedules idea", "Tiger Reserve CTH+buffer", "In situ vs ex situ", "Flagship↔habitat pairs", "Corridors"], "india": "Revise distinctive PAs/species; track Ramsar and schedule CA on a one-page sheet.", "pyqAngle": "Matching lists and multi-statement questions on protected area categories, WPA and species–habitat matching.", "examSpine": "Definitions → table → India → traps for protected area categories, WPA and species–habitat matching.", "quick": ["Reproduce table", "5 must-remembers", "3 traps", "India anchor", "10 MCQs"]}, {"slug": "acts-congress-sessions", "topicId": "hist-modern", "chance": 84, "title": "Constitutional Acts & Congress Sessions", "blurb": "Regulating Acts to GOI 1935 plus landmark INC sessions — densest Modern India drill.", "theme": "constitutional Acts and INC sessions", "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], "chanceNote": "Portion chance ~84%. Yearly hits; parent hist-modern ~85%.", "why": "Date–provision–personality triples are ideal MCQ machinery.", "pyq": ["Charter/Councils Acts", "GOI 1919/1935", "INC sessions", "Separate electorates", "Dyarchy"], "facts": [["Regulating Act 1773", "Parliamentary regulation of Company; GG of Bengal primacy"], ["Pitt’s India Act 1784", "Dual control / Board of Control narrative"], ["Charter Act 1833", "Centralisation; GG of India; trade monopoly ends"], ["Charter Act 1853", "Open competition seed for civil services"], ["GOI Act 1858", "Crown rule after 1857"], ["Indian Councils Acts", "Gradual Indian association in councils"], ["Morley–Minto 1909", "Separate electorates flashpoint"], ["Montagu–Chelmsford 1919", "Dyarchy in provinces"], ["GOI Act 1935", "Provincial autonomy; federal scheme partly unimplemented"], ["1885 Bombay", "INC founding"], ["1907 Surat", "Moderates–Extremists split"], ["1916 Lucknow", "Congress–League pact / reunion themes"], ["1929 Lahore", "Purna Swaraj under Nehru"], ["1931 Karachi", "Rights/economic programme resolution themes"], ["1905 Swadeshi context", "Bengal partition political shock"], ["1920 Nagpur", "NCM organisational shifts"], ["Electorates politics", "Communal representation debates from 1909"], ["Federal failure 1935", "Princes/British politics blocked full federation"], ["Firsts card", "Women presidents and other firsts in matching lists"], ["Study spine", "One-page Acts + one-page sessions beats clutter"]], "traps": ["Purna Swaraj before 1929", "Mixing 1919 dyarchy with 1935 autonomy", "1909 electorates attributed to 1919", "Assuming 1935 federation fully worked"], "table": {"title": "Acts spine", "headers": ["Act", "Hook"], "rows": [["1773", "GG Bengal"], ["1833", "GG India"], ["1858", "Crown"], ["1909", "Separate electorates"], ["1919", "Dyarchy"], ["1935", "Provincial autonomy"]]}, "table2": {"title": "Sessions", "headers": ["Year", "Hook"], "rows": [["1885", "Founding"], ["1907", "Surat split"], ["1916", "Lucknow"], ["1929", "Purna Swaraj"], ["1931", "Karachi"]]}, "maps": [], "must": ["1773/1833/1858/1909/1919/1935", "Surat 1907", "Lucknow 1916", "Lahore 1929", "Dyarchy≠autonomy"], "india": "Treat Acts as constitutional pre-history; sessions as nationalist calendar.", "pyqAngle": "Matching lists and multi-statement questions on constitutional Acts and INC sessions.", "examSpine": "Definitions → table → India → traps for constitutional Acts and INC sessions.", "quick": ["Reproduce table", "5 must-remembers", "3 traps", "India anchor", "10 MCQs"]}, {"slug": "national-gandhian-movements", "topicId": "hist-modern", "chance": 82, "title": "National & Gandhian Mass Movements", "blurb": "Swadeshi to Quit India — phases, methods, social base and PYQ discriminators.", "theme": "nationalist and Gandhian mass movements", "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], "chanceNote": "Portion chance ~82%. Stable yearly; parent hist-modern ~85%.", "why": "Movement phases create decade-method matching questions.", "pyq": ["Non-Cooperation", "Civil Disobedience", "Quit India", "Revolutionary strand", "Early satyagrahas"], "facts": [["Moderates vs Extremists", "Petition politics vs Swadeshi/passive resistance accents"], ["Champaran 1917", "Indigo satyagraha — early Gandhi laboratory"], ["Kheda", "Revenue satyagraha"], ["Ahmedabad mill", "Labour satyagraha"], ["Rowlatt/Jallianwala", "1919 repression feeding NCM climate"], ["NCM 1920–22", "Boycott + Khilafat; Chauri Chaura withdrawal"], ["Swarajists", "Council entry debate after NCM"], ["CDM/Dandi 1930", "Salt satyagraha opens Civil Disobedience"], ["Gandhi–Irwin Pact", "Truce checkpoint"], ["Round Table Conferences", "Constitutional negotiation theatre"], ["Quit India 1942", "Do or Die; leaders jailed; spontaneous activity"], ["Revolutionary strand", "HSRA/Bhagat Singh; Surya Sen"], ["INA", "Subhas Bose; INA trials emotion"], ["Women in movements", "Visible participation — rising area"], ["Peasants/tribals", "Local uprisings complementary pool"], ["Methods lexicon", "Boycott, picketing, salt, underground 1942"], ["Social base", "Students, lawyers, peasants, business vary by phase"], ["Communal strands", "Avoid monocausal Congress-only narratives"], ["Simon boycott", "All-white commission controversy"], ["Post-war link", "Movements feed 1945–47 endgame without oversimplify"]], "traps": ["Salt March dated to NCM", "Chauri Chaura started Quit India", "Ignoring Khilafat–NCM link", "Collapsing Extremists with terrorists"], "table": {"title": "Phase sheet", "headers": ["Phase", "Hook"], "rows": [["Early satyagrahas", "Champaran/Kheda/Ahmedabad"], ["NCM", "1920–22 + Khilafat"], ["CDM", "Dandi 1930"], ["Quit India", "1942"], ["Revolutionary", "HSRA etc."]]}, "must": ["Early satyagrahas", "NCM+Khilafat", "Chauri Chaura", "Dandi/CDM", "Quit India 1942", "INA trials"], "india": "Build timeline wall 1917→1919→1920→1930→1942 with method verbs.", "table2": null, "maps": [], "pyqAngle": "Matching lists and multi-statement questions on nationalist and Gandhian mass movements.", "examSpine": "Definitions → table → India → traps for nationalist and Gandhian mass movements.", "quick": ["Reproduce table", "5 must-remembers", "3 traps", "India anchor", "10 MCQs"]}, {"slug": "fundamental-rights-dpsp", "topicId": "polity-const", "chance": 86, "title": "Fundamental Rights, DPSPs & Their Interplay", "blurb": "Articles, reasonable restrictions, enforceability contrasts and FR–DPSP harmony.", "theme": "Fundamental Rights, DPSPs and interplay", "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], "chanceNote": "Portion chance ~86%. Dense yearly hits; parent polity-const ~85%.", "why": "Article clusters and justiciability contrasts produce reliable marks.", "pyq": ["FR articles", "DPSP", "Reasonable restrictions", "Art 32", "Harmony doctrine"], "facts": [["Part III", "Enforceable Fundamental Rights"], ["Equality 14–18", "Equality before law, non-discrimination, titles"], ["Freedom Art 19", "Freedoms with reasonable restrictions grounds"], ["Arts 20–22", "Conviction protections and liberty/detention contours"], ["Art 21", "Life and personal liberty — expanded jurisprudence awareness"], ["Arts 23–24", "Against exploitation"], ["Arts 25–28", "Freedom of religion with limits"], ["Arts 29–30", "Culture and minority education rights"], ["Art 32", "Constitutional remedies; heart-and-soul lore"], ["Citizens vs persons", "Some rights only for citizens"], ["Part IV DPSP", "Non-justiciable but fundamental in governance (Art 37)"], ["DPSP classes", "Socialistic/Gandhian/liberal-intellectual memory aid"], ["Art 44 UCC", "DPSP status; frequent CA"], ["FR–DPSP history", "From conflict to harmonious construction"], ["Minerva Mills", "Harmony; limited amending power themes"], ["Emergency effects", "Historical suspension issues"], ["Reasonable restrictions", "Art 19 never absolute"], ["Writ toolkit link", "Connects to judiciary portion"], ["Property history bait", "Beware outdated absolute property options"], ["Horizontal/vertical", "Primarily State action focus"]], "traps": ["DPSPs enforceable like FRs", "All FRs for non-citizens equally", "Art 19 unrestricted", "Ignoring restriction grounds"], "table": {"title": "FR clusters", "headers": ["Cluster", "Articles"], "rows": [["Equality", "14–18"], ["Freedom", "19"], ["Life/process", "20–22"], ["Exploitation", "23–24"], ["Religion", "25–28"], ["Remedies", "32"]]}, "must": ["14–18/19/21/32", "DPSP non-justiciable", "Citizens vs persons", "Minerva Mills", "Reasonable restrictions"], "india": "Connect rights CA lightly to static article maps.", "table2": null, "maps": [], "pyqAngle": "Matching lists and multi-statement questions on Fundamental Rights, DPSPs and interplay.", "examSpine": "Definitions → table → India → traps for Fundamental Rights, DPSPs and interplay.", "quick": ["Reproduce table", "5 must-remembers", "3 traps", "India anchor", "10 MCQs"]}, {"slug": "basic-structure-amendment", "topicId": "polity-const", "chance": 80, "title": "Amendment Procedure & Basic Structure", "blurb": "Article 368 pathways and Kesavananda basic structure doctrine.", "theme": "constitutional amendment and basic structure", "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], "chanceNote": "Portion chance ~80%. Regular conceptual hits; parent polity-const ~85%.", "why": "Tests limits on constitutional change — conceptual depth.", "pyq": ["Art 368", "Basic structure", "Judicial review", "Federal ratification", "Kesavananda"], "facts": [["Art 368", "Power and procedure to amend"], ["Special majority", "Typical parliamentary pathway"], ["State ratification", "Some federal provisions need States"], ["Not ordinary law", "Distinct from simple legislation"], ["Kesavananda 1973", "Cannot destroy basic structure via 368"], ["Illustrative features", "Supremacy, judicial review, federalism, secularism, free elections"], ["Open list", "Essentials identified case-by-case"], ["Golaknath backdrop", "Earlier amendment–rights tension"], ["Election case", "Basic structure in political process context"], ["Minerva Mills", "Limited amending power; FR–DPSP harmony"], ["42nd Amendment", "Emergency-era expansive politics"], ["44th Amendment", "Corrective politics headline"], ["Judicial review link", "Often treated as essential"], ["Procedure vs substance", "Correct procedure cannot smash essentials"], ["Federalism shield", "Ratification + basic structure narrative"], ["Secularism/democracy", "Frequently cited essentials"], ["Not entire Part III frozen identically", "Targets constitutional identity essentials"], ["Constituent power debates", "Prelims wants outcome clarity"]], "traps": ["Unlimited amending power", "Basic structure as printed schedule", "Mixing ratification with Money Bill", "Wrong Kesavananda year"], "table": {"title": "Amendment & limits", "headers": ["Idea", "Hook"], "rows": [["Art 368", "Power/procedure"], ["Special majority", "Parliamentary path"], ["State ratification", "Federal features"], ["Basic structure", "Substantive limit"]]}, "must": ["Kesavananda 1973", "Art 368", "Ratification subset", "Feature examples", "42nd/44th context"], "india": "Doctrine is India’s identity shield versus absolute parliamentary sovereignty caricatures.", "table2": null, "maps": [], "pyqAngle": "Matching lists and multi-statement questions on constitutional amendment and basic structure.", "examSpine": "Definitions → table → India → traps for constitutional amendment and basic structure.", "quick": ["Reproduce table", "5 must-remembers", "3 traps", "India anchor", "10 MCQs"]}, {"slug": "parliament-procedures", "topicId": "polity-institutions", "chance": 83, "title": "Parliament: Devices, Sessions & Law-Making", "blurb": "Question Hour to Money Bills — devices and legislative process.", "theme": "parliamentary procedures and law-making", "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], "chanceNote": "Portion chance ~83%. Yearly procedural MCQs; parent polity-institutions ~85%.", "why": "Procedural distinctions are unambiguous when prepared.", "pyq": ["Parliamentary devices", "Money Bill Art 110", "Sessions", "Joint sitting", "Budget devices"], "facts": [["Question Hour", "Starred/unstarred/short notice"], ["Zero Hour", "Indian innovation on public matters"], ["Adjournment motion", "Discuss urgent public matter"], ["No-confidence", "LS responsibility test"], ["Privilege", "House privileges/breach"], ["Adjournment vs prorogation vs dissolution", "Pause vs session end vs House end"], ["Ordinary bills", "Both Houses; joint sitting possible in some deadlocks"], ["Money Bill Art 110", "LS path; Speaker certificate; RS limited"], ["Finance Bill niche", "Do not equate all money-related bills"], ["Constitution amendment bills", "Special majority / ratification link"], ["Joint sitting Art 108", "Not for Money/Constitution amendment in usual story"], ["Budget process", "Presentation, scrutiny, appropriation"], ["Guillotine", "Time-bound voting on demands"], ["Committees", "Scrutiny workhorses"], ["Ordinance Art 123", "When Houses not in session — conditions"], ["Whip/defection overlay", "Party discipline meets procedure"], ["RS specials", "Money Bill limits"], ["Speaker role", "Certification and order"], ["Calling attention", "Other device one-liners"], ["Lame-duck CA", "Static definitions primary"]], "traps": ["Money Bill like ordinary in RS", "Prorogation=dissolution", "Joint sitting for Money Bills", "Starred vs unstarred mix-up"], "table": {"title": "Session vocabulary", "headers": ["Term", "Meaning"], "rows": [["Adjournment", "Pause sitting"], ["Prorogation", "End session"], ["Dissolution", "End LS life"], ["Recess", "Between sessions"]]}, "must": ["Art 110", "Speaker certificate", "Adjourn/prorogue/dissolve", "Joint sitting scope", "Question types"], "india": "Answer Budget CA from Art 110 and device definitions first.", "table2": null, "maps": [], "pyqAngle": "Matching lists and multi-statement questions on parliamentary procedures and law-making.", "examSpine": "Definitions → table → India → traps for parliamentary procedures and law-making.", "quick": ["Reproduce table", "5 must-remembers", "3 traps", "India anchor", "10 MCQs"]}, {"slug": "judiciary-constitutional-bodies", "topicId": "polity-institutions", "chance": 81, "title": "Judiciary & Constitutional Bodies", "blurb": "SC/HC jurisdiction, writs, judicial review, EC/CAG/UPSC facts.", "theme": "higher judiciary and constitutional bodies", "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], "chanceNote": "Portion chance ~81%. Stable yearly; parent polity-institutions ~85%.", "why": "Independence safeguards and writ distinctions are perennial.", "pyq": ["Judicial review", "Writs", "EC", "CAG", "UPSC", "Finance Commission"], "facts": [["Judicial review", "Validity review of legislative/executive action"], ["SC original jurisdiction", "Federal disputes sketch"], ["Appellate jurisdiction", "Appeals routes"], ["Advisory jurisdiction", "President reference — non-binding tradition"], ["Five writs", "Habeas, mandamus, prohibition, certiorari, quo warranto"], ["Art 32 vs 226", "SC vs HC writ reach contrasts"], ["PIL", "Access expansion awareness"], ["Appointment debates", "Collegium/NJAC headline"], ["EC Art 324", "Election superintendence"], ["CAG", "Audit watchdog"], ["UPSC", "Recruitment constitutional body"], ["Finance Commission Art 280", "Devolution advice"], ["Constitutional vs statutory", "Creation source discriminator"], ["NHRC trap", "Statutory — not constitutional"], ["Removal difficulty", "Protects tenure"], ["Basic structure link", "Judicial review among essentials"], ["Tribunals", "Specialised adjudication awareness"], ["State EC/SFC", "State analogues"], ["Contempt/independence", "Protective doctrines outline"], ["AG office", "Related constitutional cast"]], "traps": ["NHRC as constitutional", "Writ purpose mix", "Advisory opinions as binding decrees", "CAG = PAC itself"], "table": {"title": "Writ sheet", "headers": ["Writ", "Cue"], "rows": [["Habeas corpus", "Produce person"], ["Mandamus", "Command to act"], ["Prohibition", "Stop lower court"], ["Certiorari", "Quash/transfer"], ["Quo warranto", "By what authority"]]}, "must": ["5 writs", "32 vs 226", "EC/CAG/UPSC/FC", "Statutory≠constitutional", "Judicial review"], "india": "Track appointment/EC CA lightly atop static design.", "table2": null, "maps": [], "pyqAngle": "Matching lists and multi-statement questions on higher judiciary and constitutional bodies.", "examSpine": "Definitions → table → India → traps for higher judiciary and constitutional bodies.", "quick": ["Reproduce table", "5 must-remembers", "3 traps", "India anchor", "10 MCQs"]}, {"slug": "inflation-monetary", "topicId": "econ-basics", "chance": 85, "title": "Inflation & Monetary Policy", "blurb": "CPI/WPI, inflation types, RBI/MPC tools and transmission.", "theme": "inflation measurement and monetary policy", "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], "chanceNote": "Portion chance ~85%. Yearly core; parent econ-basics ~85%.", "why": "Definitions + tool effects produce conceptual MCQs.", "pyq": ["CPI/WPI", "MPC", "Repo", "Inflation types", "Transmission"], "facts": [["Inflation", "Sustained rise in general price level"], ["CPI", "Consumer basket; policy-relevant in MPC era"], ["WPI", "Wholesale basket — comparative asks"], ["Headline vs core", "Core excludes volatile food/fuel analytically"], ["Demand-pull vs cost-push", "Demand excess vs input shocks"], ["Stagflation", "Low growth + high inflation"], ["MPC", "Sets policy repo under flexible inflation targeting"], ["Repo rate", "Liquidity injection rate — hike cools demand"], ["Absorption tools", "Reverse repo/SDF-era tools evolve"], ["CRR/SLR", "Quantum tools on lendable resources"], ["OMO", "Buy/sell G-secs for liquidity"], ["Transmission", "Imperfect pass-through to lending rates"], ["Real vs nominal", "Inflation-adjusted thinking"], ["Inflation targeting", "Target band anchors expectations"], ["Food inflation", "Supply shocks complicate pure monetary stories"], ["Base effect", "Distorts YoY reads"], ["Disinflation vs deflation", "Slowing inflation vs falling prices"], ["FX channel", "Stance interacts with capital flows"], ["Fiscal dominance risk", "Fiscal pressure complicates monetary narrative"], ["Prefer concepts", "Over memorising yesterday’s print"]], "traps": ["WPI=CPI baskets", "One item spike = inflation", "Disinflation=deflation", "Instant price cut after repo hike"], "table": {"title": "Tools → intent", "headers": ["Tool", "When tightened"], "rows": [["Repo hike", "Cool demand"], ["CRR hike", "Less lendable funds"], ["OMO sales", "Suck liquidity"], ["Communication", "Anchor expectations"]]}, "must": ["CPI vs WPI", "MPC/repo", "Demand-pull vs cost-push", "Disinflation≠deflation", "Transmission lag"], "india": "Revise current inflation target band from RBI materials before exam.", "table2": null, "maps": [], "pyqAngle": "Matching lists and multi-statement questions on inflation measurement and monetary policy.", "examSpine": "Definitions → table → India → traps for inflation measurement and monetary policy.", "quick": ["Reproduce table", "5 must-remembers", "3 traps", "India anchor", "10 MCQs"]}, {"slug": "fiscal-budget-national-income", "topicId": "econ-basics", "chance": 82, "title": "Fiscal Policy, Budget & National Income", "blurb": "Deficits, budget terms, GDP/GVA basics — stable high-weight block.", "theme": "fiscal policy, Budget concepts and national income", "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], "chanceNote": "Portion chance ~82%. Stable; parent econ-basics ~85%.", "why": "Deficit definitions and GDP basics are evergreen.", "pyq": ["Fiscal deficit", "Revenue deficit", "Primary deficit", "GDP/GVA", "Budget classifications"], "facts": [["Fiscal deficit", "Borrowing need beyond non-borrowed receipts"], ["Revenue deficit", "Revenue expenditure > revenue receipts"], ["Primary deficit", "FD minus interest payments"], ["Effective revenue deficit", "Indian adjustment lore for capital grants"], ["Capital vs revenue expenditure", "Asset-creating vs routine"], ["Capital vs revenue receipts", "Debt/asset vs tax/non-tax"], ["FRBM spirit", "Fiscal responsibility framework"], ["GDP", "Market value of domestic final output"], ["GVA", "Value added; relate via net product taxes"], ["Nominal vs real", "Current vs constant prices"], ["GDP deflator", "Links nominal/real"], ["GDP/GNP/NNI", "Know adjustment directions"], ["Budget process", "Presentation; vote on account vs full"], ["Finance/Appropriation Bills", "Tax and spending legal vehicles"], ["Off-budget caution", "Liabilities outside headline FD"], ["Crowding out", "Public borrowing vs private credit debate"], ["Countercyclical fiscal", "Stimulate in downturns — conditional"], ["Tax buoyancy outline", "Awareness"], ["Spending quality", "Subsidies vs capex composition"], ["NSO data source", "Institutional awareness"]], "traps": ["Mix FD and RD formulas", "Primary includes interest", "GDP = cash balance", "Vote-on-account always full Budget"], "table": {"title": "Deficit sheet", "headers": ["Metric", "Idea"], "rows": [["Revenue deficit", "Rev exp − rev receipts"], ["Fiscal deficit", "Borrowing need"], ["Primary deficit", "FD − interest"]]}, "must": ["FD/RD/PD", "Capital vs revenue", "GDP vs GVA", "Nominal vs real", "FRBM spirit"], "india": "Numbers change yearly; concepts in Budget at a Glance do not.", "table2": null, "maps": [], "pyqAngle": "Matching lists and multi-statement questions on fiscal policy, Budget concepts and national income.", "examSpine": "Definitions → table → India → traps for fiscal policy, Budget concepts and national income.", "quick": ["Reproduce table", "5 must-remembers", "3 traps", "India anchor", "10 MCQs"]}, {"slug": "external-sector", "topicId": "econ-schemes", "chance": 74, "title": "External Sector & Balance of Payments", "blurb": "CAD, capital account, forex and trade — economy–CA bridge.", "theme": "external sector and BoP", "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], "chanceNote": "Portion chance ~74%. Recurring; parent econ-schemes ~79%.", "why": "BoP identities mix static with CAD news.", "pyq": ["Current account", "Capital account", "Forex", "FDI/FPI", "Depreciation"], "facts": [["Current account", "Goods/services + income flows"], ["CAD", "Current outflows > inflows"], ["Capital account", "FDI, FPI, loans"], ["BoP identity", "Accounts balance with reserve changes"], ["Forex reserves", "Insurance and intervention ammo"], ["Appreciation/depreciation", "External value of rupee"], ["NEER/REER", "Effective exchange rate ideas"], ["FDI vs FPI", "Stable vs portfolio"], ["Trade balance vs CAD", "Goods alone vs broader CA"], ["Invisibles", "Services/remittances cushion"], ["Convertibility", "Current free vs capital caution"], ["External debt ratios", "Sustainability outline"], ["RBI intervention", "Buy/sell FX"], ["Terms of trade", "Export vs import prices"], ["Tariffs/quotas", "WTO-aware wording"], ["Oil/risk-off shocks", "CA overlays"], ["Remittances", "Stability source"], ["ECB/masala headlines", "Light touch"]], "traps": ["Trade deficit always = CAD", "Depreciation always raises reserves", "FDI=FPI", "Full capital convertibility assumed"], "table": {"title": "BoP map", "headers": ["Bucket", "Examples"], "rows": [["Current", "Goods, services, remittances"], ["Capital", "FDI/FPI/loans"], ["Reserves", "RBI FX changes"]]}, "must": ["CAD definition", "FDI≠FPI", "Depreciation sketch", "Reserves role", "Current convertibility"], "india": "Track CAD/reserves headlines but answer from BoP structure first.", "table2": null, "maps": [], "pyqAngle": "Matching lists and multi-statement questions on external sector and BoP.", "examSpine": "Definitions → table → India → traps for external sector and BoP.", "quick": ["Reproduce table", "5 must-remembers", "3 traps", "India anchor", "10 MCQs"]}, {"slug": "monsoon-climatology", "topicId": "geo-physical", "chance": 78, "title": "Monsoon & Climatology", "blurb": "Monsoon mechanism, jet streams, ENSO links and climate classification — physical geography staple.", "theme": "Indian monsoon and climatology", "chanceNote": "Portion chance ~78%. Steady across decade; parent geo-physical ~79%.", "why": "Mechanism statements and ENSO/monsoon links are classic Prelims geography.", "pyq": ["Monsoon onset", "Jet streams", "ENSO", "Climate classification", "Rainfall patterns"], "facts": [["Differential heating", "Land–sea thermal contrast sets monsoon stage"], ["ITC shift", "Seasonal migration of wind belts influences inflow"], ["Somali jet / Findlater", "Cross-equatorial flow into Arabian Sea branch narrative"], ["Southwest monsoon branches", "Arabian Sea and Bay of Bengal branches"], ["Orography", "Western Ghats and Himalaya shape rainfall distribution"], ["Break and active periods", "Intra-seasonal monsoon variability"], ["Northeast monsoon", "Tamil Nadu rainfall season contrast"], ["ENSO", "El Niño often linked to weaker monsoon — probabilistic not absolute"], ["IOD", "Indian Ocean Dipole modulates monsoon independently at times"], ["Western Disturbances", "Winter/spring precip in northwest India"], ["Jet streams", "Subtropical jet / easterly jet roles in onset narratives"], ["Climate classification", "Koeppen-type codes for India — revise map"], ["Climate change overlay", "Monsoon statistics shifting — careful wording"], ["Monsoon trough", "Location influences rainfall belts"], ["Bay lows/depressions", "Rain producers in peak season"], ["Retreating monsoon", "September–December transitions"], ["Rain-shadow", "Leeward dryness — Ghats example"], ["Mango showers / blossom showers", "Local pre-monsoon terms"], ["Onset criteria", "IMD operational definitions — conceptual"], ["Flood vs drought years", "Teleconnections + local factors"]], "traps": ["El Niño always means full monsoon failure", "Ignoring orography", "Mixing NE and SW monsoon regions", "Absolute jet-stream claims"], "table": {"title": "Monsoon quick map", "headers": ["Idea", "Hook"], "rows": [["SW monsoon", "June–Sep main"], ["NE monsoon", "TN focus"], ["ENSO", "Probabilistic link"], ["Orography", "Ghats/Himalaya"]]}, "must": ["Two SW branches", "Orography role", "ENSO probabilistic", "NE monsoon TN", "Jet/onset narrative", "Koeppen India map"], "india": "IMD onset/progress maps are CA; mechanism remains static spine.", "maps": ["Western Ghats rain-shadow", "Bay of Bengal branch path", "TN NE monsoon"], "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], "quick": ["Reproduce table", "5 must-remembers", "3 traps", "India anchor", "10 MCQs"], "pyqAngle": "Matching lists and statements on Indian monsoon and climatology.", "examSpine": "Definitions → table → India → traps."}, {"slug": "geomorphology-oceans", "topicId": "geo-physical", "chance": 72, "title": "Geomorphology & Oceanography", "blurb": "Landforms, plate tectonics, earthquakes/volcanoes and ocean currents — map/concept mix.", "theme": "geomorphology and oceanography", "chanceNote": "Portion chance ~72%. Recurring; parent geo-physical ~79%.", "why": "Process–landform matching and current maps are durable PYQ styles.", "pyq": ["Plate tectonics", "Earthquakes", "Landforms", "Ocean currents", "Coral reefs"], "facts": [["Plate boundaries", "Convergent/divergent/transform — earthquake/volcano logic"], ["Himalayan orogeny", "Collision continuum — seismic implications"], ["Weathering vs erosion", "In-situ decay vs transport removal"], ["Fluvial landforms", "Meanders, oxbow, deltas, terraces"], ["Glacial landforms", "Cirque, moraine — limited India but asked"], ["Coastal landforms", "Bars, lagoons, cliffs, mangroves interface"], ["Karst", "Limestone solution landscapes"], ["Earthquake focus/epicentre", "Definitions"], ["Tsunami generation", "Displacement of water column"], ["Volcanic types", "Shield vs composite outline"], ["Ocean currents", "Warm/cold; climate influence on coasts"], ["Upwelling", "Nutrient-rich fisheries link"], ["Tides", "Gravitational; spring/neap idea"], ["EEZ vs territorial sea", "UNCLOS vocabulary bridge"], ["Coral reefs", "Conditions: warm, clear, shallow — bleaching CA"], ["Continental shelf", "Resource and hazard relevance"], ["Cyclone ocean heat", "Warm SST energy source"], ["Seamounts/trenches", "Map terms"], ["Mass movements", "Landslides in Himalaya — DM bridge"], ["Isostasy outline", "Vertical adjustment idea"]], "traps": ["All plate edges identical hazards", "Cold currents always dry coasts absolutely", "Coral in cold deep seas", "Focus=epicentre"], "table": {"title": "Boundary hazards", "headers": ["Boundary", "Typical association"], "rows": [["Convergent", "Quakes/volcanoes/orogeny"], ["Divergent", "Rifting volcanism"], ["Transform", "Strike-slip quakes"]]}, "must": ["3 boundary types", "Weathering≠erosion", "Warm vs cold currents idea", "Coral conditions", "Focus vs epicentre"], "india": "Himalayan seismicity + Indian Ocean tsunami literacy + coral bleaching headlines.", "maps": ["Ring of Fire contrast", "Indian Ocean currents sketch", "Andaman trench awareness"], "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], "quick": ["Reproduce table", "5 must-remembers", "3 traps", "India anchor", "10 MCQs"], "pyqAngle": "Matching lists and statements on geomorphology and oceanography.", "examSpine": "Definitions → table → India → traps."}, {"slug": "physiography-drainage", "topicId": "geo-india", "chance": 80, "title": "Indian Physiography & Drainage", "blurb": "Himalaya, Peninsular block, Indo-Gangetic plains and drainage systems — India geography core.", "theme": "Indian physiography and drainage", "chanceNote": "Portion chance ~80%. Steady; parent geo-india ~77%.", "why": "Region–feature matching is the backbone of India physical geography Prelims.", "pyq": ["Himalayan ranges", "Peninsular plateaus", "Drainage patterns", "Passes", "Coastal plains"], "facts": [["Himalayan divisions", "Trans/Greater/Lesser/Siwalik longitudinal zonation"], ["Syntaxial bends", "NW and NE bends — map awareness"], ["Passes", "Strategic/historical — select list not encyclopedia"], ["Indo-Gangetic plain", "Alluvial fertility and flood regimes"], ["Peninsular plateau", "Old hard rock; Deccan traps; residual hills"], ["Western vs Eastern Ghats", "Continuity, elevation, rainfall contrasts"], ["Coastal plains", "West narrower; east wider deltas narrative"], ["Himalayan drainage", "Antecedent/tectonic influences; snow-fed"], ["Peninsular drainage", "Rain-fed; gentle gradients; east-flowing majors"], ["West-flowing exceptions", "Narmada/Tapi rift valleys — classic"], ["Ganga–Brahmaputra–Indus", "System personalities"], ["Godavari/Krishna/Kaveri/Mahanadi", "Peninsular east-flowing set"], ["Drainage patterns", "Dendritic/trellis/radial — rock structure links"], ["Water divides", "Western Ghats divide idea"], ["Lakes", "Wular, Chilika, Pulicat, Sambhar — type discrimination"], ["Islands", "Andaman-Nicobar tectonic; Lakshadweep coral"], ["Thar desert edge", "Physiographic transition"], ["Doab concept", "Land between rivers"], ["River interlinking debates", "Conceptual — not scheme spam"], ["Floodplains/khadar/bhangar", "Alluvial terms"]], "traps": ["All Himalayan rivers purely rain-fed", "Narmada east-flowing", "Eastern Ghats as continuous as Western", "Chilika as freshwater always"], "table": {"title": "Drainage contrast", "headers": ["Type", "Cue"], "rows": [["Himalayan rivers", "Snow+rain; long"], ["Peninsular", "Rain-fed; graded"], ["West-flowing", "Narmada/Tapi rifts"], ["East-flowing majors", "Deltaic mouths"]]}, "must": ["Himalayan zones", "W vs E Ghats", "Narmada/Tapi west", "Ganga system", "Dendritic etc.", "Island types"], "india": "Map practice weekly beats prose-only reading for this portion.", "maps": ["Major passes select", "Narmada rift", "Delta coasts", "Andaman vs Lakshadweep"], "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], "quick": ["Reproduce table", "5 must-remembers", "3 traps", "India anchor", "10 MCQs"], "pyqAngle": "Matching lists and statements on Indian physiography and drainage.", "examSpine": "Definitions → table → India → traps."}, {"slug": "agri-resources-minerals", "topicId": "geo-india", "chance": 70, "title": "Agriculture, Resources & Minerals", "blurb": "Crops, soils, mineral belts and energy resources — location questions.", "theme": "Indian agriculture, soils and mineral resources", "chanceNote": "Portion chance ~70%. Location matching; parent geo-india ~77%.", "why": "Crop–state and mineral–belt pairs are high-yield if drilled as tables.", "pyq": ["Crops", "Soils", "Mineral belts", "Energy resources", "Irrigation"], "facts": [["Black soils", "Regur; cotton; Deccan traps link"], ["Alluvial soils", "Northern plains; intensive agriculture"], ["Red/laterite", "Peninsular distributions; leaching"], ["Rice/wheat geography", "Rainfall/irrigation contrasts"], ["Millets revival", "Nutrition + dryland — CA–static"], ["Sugarcane/cotton/jute", "Locational factors"], ["Plantation crops", "South/NE niches"], ["Green Revolution regions", "Punjab-Haryana-West UP narrative + limits"], ["Irrigation types", "Canal/well/tank regional patterns"], ["Iron ore belts", "Odisha-Jharkhand-Chhattisgarh etc."], ["Bauxite/manganese/copper", "Select belts"], ["Coalfields", "Gondwana vs tertiary — Damodar etc."], ["Petroleum/gas basins", "Mumbai High, KG, Assam narrative"], ["Critical minerals CA", "Lithium/rare earth awareness"], ["Forest types link", "Resource geography overlap"], ["Fisheries", "Coastal and inland"], ["Horticulture belts", "Select examples"], ["Soil degradation", "Salinity/erosion statements"], ["Agro-climatic regions", "Planning idea"], ["Mineral policy CA", "Light overlay only"]], "traps": ["Black soil only in north India", "All coal in one state", "Millets need high water always", "Confusing bauxite and iron belts"], "table": {"title": "Soil–crop cues", "headers": ["Soil", "Cue crop/region"], "rows": [["Black/regur", "Cotton/Deccan"], ["Alluvial", "Rice-wheat plains"], ["Laterite", "Leached uplands"], ["Arid", "Rajasthan margins"]]}, "must": ["Black soil–cotton–Deccan", "Alluvial plains", "Major iron/coal belts", "Mumbai High", "Irrigation regionality"], "india": "One mineral map + one crop map handwritten > 50 pages unread.", "maps": ["Damodar coal", "Odisha iron", "Mumbai High", "Cotton Deccan"], "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], "quick": ["Reproduce table", "5 must-remembers", "3 traps", "India anchor", "10 MCQs"], "pyqAngle": "Matching lists and statements on Indian agriculture, soils and mineral resources.", "examSpine": "Definitions → table → India → traps."}, {"slug": "ivc-sites-culture", "topicId": "hist-ancient", "chance": 68, "title": "Indus Valley Civilization: Sites, Urban Culture & Decline", "blurb": "Map-ready sites, urban planning, crafts/trade and decline theories — hottest Ancient India slice.", "theme": "Indus Valley sites, culture and decline", "years": [2016, 2018, 2019, 2020, 2022, 2024, 2025], "chanceNote": "Hottest Ancient sub-portion (~68% portion chance). Site↔feature matching almost every alternate year; parent hist-ancient ~39% but this slice punches above.", "why": "Distinctive archaeological signatures create clean matching MCQs without dynastic lists.", "pyq": ["IVC sites & features", "Harappan crafts & trade", "Decline theories", "Urban planning"], "facts": [["Grid planning", "Streets, baked bricks, drainage — civic hygiene narrative"], ["Citadel–lower town", "Bipartite urban morphology"], ["Great Bath", "Mohenjo-daro public water structure classic"], ["Harappa granaries", "Warehouse complexes in textbook lore"], ["Lothal dockyard", "Maritime trade anchor — almost unique pairing"], ["Dholavira water", "Reservoirs; three-part city; signboard"], ["Kalibangan", "Ploughed field; fire altars"], ["Rakhigarhi", "Among largest settlements in India"], ["Chanhudaro crafts", "Bead-making specialisation"], ["Surkotada horse debate", "Handle carefully — contested"], ["Alamgirpur fringe", "Eastern cultural reach"], ["Seals & script", "Undeciphered; unicorn motif"], ["Weights & measures", "Administrative coordination signal"], ["Crafts", "Beads, shell, bronze/copper"], ["Meluhha link", "Mesopotamian trade narrative"], ["Agriculture base", "Wheat/barley etc.; pastoral mix"], ["Religion caution", "Pashupati/mother goddess — interpretive"], ["Decline multi-causal", "Climate, rivers, trade — not single invasion dogma"], ["Late Harappan", "Urban fade ≠ people vanish"], ["Vs Vedic contrast", "Different urban/ritual profile — trap area"]], "traps": ["IVC=Vedic culture", "Single-cause Aryan invasion decline only", "Dockyard not at Lothal", "Script deciphered conclusively"], "table": {"title": "Site↔feature gold", "headers": ["Site", "Feature"], "rows": [["Lothal", "Dockyard"], ["Dholavira", "Reservoirs/3-part"], ["Kalibangan", "Ploughed field"], ["Mohenjo-daro", "Great Bath"], ["Harappa", "Granaries"], ["Rakhigarhi", "Scale in India"]]}, "must": ["Lothal dockyard", "Dholavira water", "Kalibangan field", "Undeciphered script", "Multi-causal decline", "Not Vedic equate"], "india": "Prioritise Indian sites (Dholavira, Rakhigarhi, Lothal, Kalibangan) plus classic Pakistani type-sites for features.", "maps": ["Gujarat Harappan cluster", "Haryana Rakhigarhi", "Rajasthan Kalibangan", "Sindh/Punjab type-sites"], "examSpine": "Site table → urban traits → crafts/trade → decline → Vedic contrast trap.", "quick": ["Reproduce table", "5 must-remembers", "3 traps", "India anchor", "10 MCQs"], "pyqAngle": "Matching lists and statements on Indus Valley sites, culture and decline."}, {"slug": "buddhism-jainism", "topicId": "hist-ancient", "chance": 66, "title": "Buddhism & Jainism: Doctrines, Councils, Patronage", "blurb": "Doctrines, sangha, councils and royal patrons — second Ancient India magnet.", "theme": "Buddhism and Jainism doctrines and councils", "years": [2016, 2017, 2019, 2020, 2021, 2023, 2024], "chanceNote": "Portion chance ~66%. Councils/doctrines/patrons recur; parent hist-ancient ~39%.", "why": "Philosophy labels and council–king–place triples are MCQ-perfect.", "pyq": ["Buddhist councils", "Doctrines & symbols", "Jaina philosophy", "Patronage & sites"], "facts": [["Shramana context", "6th–5th c. BCE urban/Mahajanapada churn"], ["Four Noble Truths", "Dukkha; cause; cessation; path"], ["Eightfold Path", "Sila–samadhi–prajna grouping helps"], ["Three Jewels", "Buddha, Dhamma, Sangha"], ["Anatman/dependent origination", "Statement-level awareness"], ["Theravada/Mahayana evolution", "Bodhisattva ideal; careful labels"], ["1st council Rajgir", "After Buddha’s death tradition"], ["2nd Vaishali", "Monastic disputes"], ["3rd Pataliputra", "Ashoka / Moggaliputta Tissa tradition"], ["4th Kashmir tradition", "Kanishka / Sarvastivada–Mahayana ferment"], ["Mahavira", "24th Tirthankara; Rishabha first in tradition"], ["Tri-ratna Jain", "Right faith, knowledge, conduct"], ["Anekantavada/syadvada", "Many-sidedness; conditional predication"], ["Ahimsa/aparigraha", "Ethical centre / non-possession"], ["Digambara/Svetambara", "Disciplinary cultural differences outline"], ["Ashokan patronage", "Stupas/edicts visibility"], ["Symbols", "Dharmachakra, Bodhi tree, lotus"], ["Buddhist circuit", "Lumbini, Bodh Gaya, Sarnath, Kushinagar"], ["Art link", "Sanchi/Bharhut/Amaravati"], ["Social caution", "Do not cartoon ‘abolished caste overnight’"]], "traps": ["Mixing Three Jewels with Jain Tri-ratna", "Wrong council–king pairs", "Equating anekantavada with madhyamaka casually", "Ashoka as exclusive theocrat"], "table": {"title": "Councils", "headers": ["Council", "Place cue"], "rows": [["1st", "Rajgir"], ["2nd", "Vaishali"], ["3rd", "Pataliputra/Ashoka"], ["4th", "Kashmir/Kanishka tradition"]]}, "must": ["4NT + 8-fold", "Three Jewels", "Council places", "Jain Tri-ratna", "Anekantavada", "Ashoka 3rd / Kanishka 4th"], "india": "Map Buddhist circuit + Sanchi; Jaina centres like Shravanabelagola as culture bridge.", "maps": ["Buddhist circuit four sites", "Rajgir/Vaishali/Pataliputra", "Sanchi"], "quick": ["Reproduce table", "5 must-remembers", "3 traps", "India anchor", "10 MCQs"], "pyqAngle": "Matching lists and statements on Buddhism and Jainism doctrines and councils.", "examSpine": "Definitions → table → India → traps."}, {"slug": "maurya-gupta", "topicId": "hist-ancient", "chance": 64, "title": "Mauryas & Guptas: Polity, Dhamma, Culture & Science", "blurb": "Arthashastra statecraft, Ashokan Dhamma, Gupta administration and classical culture.", "theme": "Mauryan and Gupta polity and culture", "years": [2017, 2018, 2020, 2022, 2023, 2025], "chanceNote": "Portion chance ~64%. Edicts/Dhamma + Gupta culture/science; parent hist-ancient ~39%.", "why": "Epigraphy + ‘classical age’ debates dominate non-IVC Ancient polity–culture asks.", "pyq": ["Ashokan edicts & Dhamma", "Arthashastra", "Gupta culture & science", "Land grants"], "facts": [["Mauryan timeline cue", "Chandragupta–Bindusara–Ashoka"], ["Arthashastra", "Saptanga; espionage; revenue — ideal-type manual"], ["Megasthenes", "Fragmentary Indica via later writers — cautious use"], ["Ashokan edicts", "Prakrit; Brahmi (Kharosthi NW)"], ["RE XIII", "Kalinga remorse centrepiece"], ["Dhamma", "Ethical-social conduct; tolerance; welfare — not mere conversion campaign"], ["Dhamma-mahamattas", "Moral-administrative agents"], ["Provincial centres", "Taxila/Ujjain traditions"], ["Gupta arc", "Samudra/Chandra II peak narratives"], ["Land grants", "Agrahara etc. reshape local power"], ["Administration contrast", "Less ‘central machine’ than Mauryan ideal-types in textbooks"], ["Aryabhata", "Astronomy/maths card"], ["Kalidasa", "Classical Sanskrit aesthetics"], ["Early structural temples", "Art continuum"], ["Golden age trap", "Regionally uneven; hierarchies persist"], ["Coinage/trade", "Urban craft support"], ["Nalanda long arc", "Learning centres continuum"], ["Sangam bonus", "Chera-Chola-Pandya adjacent elimination power"], ["Sanchi/Sarnath landscape", "Ashokan Buddhist geography"], ["Decline nuances", "Pushyabhuti/later transitions — light"]], "traps": ["Dhamma = forced mass conversion only", "Arthashastra as CCTV of every district", "Golden age absolute praise", "Wrong edict script claims"], "table": {"title": "Maurya vs Gupta cues", "headers": ["Theme", "Maurya cue", "Gupta cue"], "rows": [["Sources", "Edicts/Arthashastra", "Literature/coins/grants"], ["State image", "Centralised ideal-type", "Land-grant networks"], ["Culture", "Dhamma/Buddhist landscape", "Classical Sanskrit/science"]]}, "must": ["RE XIII", "Brahmi/Prakrit", "Dhamma≠theocracy", "Saptanga", "Aryabhata", "Golden age nuance"], "india": "Pataliputra hub + Sanchi/Sarnath map + Gupta culture list.", "maps": ["Pataliputra", "Sanchi", "Taxila/Ujjain tradition"], "quick": ["Reproduce table", "5 must-remembers", "3 traps", "India anchor", "10 MCQs"], "pyqAngle": "Matching lists and statements on Mauryan and Gupta polity and culture.", "examSpine": "Definitions → table → India → traps."}, {"slug": "isro-space-defence", "topicId": "sci-space-defence", "chance": 76, "title": "ISRO, Space & Defence Tech", "blurb": "Launch vehicles, missions, missiles and dual-use space–defence literacy — rising theme.", "theme": "space missions and defence technology", "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], "chanceNote": "Portion chance ~76% (rising). Parent sci-space-defence ~75%. Missions/missiles CA–static blend.", "why": "Named missions and missile families create matching questions with rising frequency.", "pyq": ["ISRO missions", "Launch vehicles", "Missiles", "Space applications", "Nuclear/defence awareness"], "facts": [["PSLV/GSLV/LVM3", "Workhorse vs heavier lift narratives"], ["SSLV", "Small satellite launch niche"], ["Chandrayaan lineage", "Lunar exploration cards — refresh latest"], ["Mangalyaan", "Mars orbiter cost-effectiveness lore"], ["Gaganyaan", "Human spaceflight programme awareness"], ["NavIC", "Regional navigation — strategic autonomy"], ["Remote sensing", "Resource/disaster applications"], ["Satcom", "Communication/edutainment/governance uses"], ["Space debris/safety", "Emerging statement themes"], ["Missile families", "Agni/Prithvi/BrahMos — roles outline"], ["MRBM/IRBM/ICBM cues", "Range class vocabulary"], ["Missile defence sketch", "Awareness level"], ["Dual use", "Space tech civilian + strategic"], ["NSIL/IN-SPACe", "Institutional reform headlines"], ["Private sector entry", "Policy shift CA"], ["ASAT test awareness", "Strategic signalling literacy"], ["Cryogenic tech", "GSLV capability story"], ["Earth observation constellations", "Applications over alphabet soup"], ["Defence research bodies", "DRDO headline link"], ["Refresh cadence", "Living list of last 24 months missions"]], "traps": ["Mixing PSLV/GSLV capabilities casually", "Outdated mission status", "Every satellite is navigation", "Range class mix-ups"], "table": {"title": "Vehicle cues", "headers": ["Vehicle", "Cue"], "rows": [["PSLV", "Workhorse SSO etc."], ["GSLV", "Heavier/geo-capable lineage"], ["LVM3", "Heavy lift"], ["SSLV", "Small/quick"]]}, "must": ["PSLV vs GSLV/LVM3", "NavIC", "Chandrayaan/Gaganyaan refresh", "Missile family roles", "Applications > acronyms"], "india": "Maintain a 1-page living ISRO+missile sheet dated monthly before Prelims.", "maps": ["Sriharikota", "Downrange ocean safety narratives"], "quick": ["Reproduce table", "5 must-remembers", "3 traps", "India anchor", "10 MCQs"], "pyqAngle": "Matching lists and statements on space missions and defence technology.", "examSpine": "Definitions → table → India → traps."}, {"slug": "national-schemes-institutions", "topicId": "ca-national", "chance": 79, "title": "National Schemes & Institutions in News", "blurb": "How to study schemes/institutions with static anchors — high volume, ephemeral CA.", "theme": "national schemes and institutions in news", "chanceNote": "Portion chance ~79%. High volume all decade; parent ca-national ~83%. Ephemeral — revise last 12–18 months.", "why": "UPSC mixes scheme purpose with constitutional/statutory institutional facts.", "pyq": ["Schemes", "Reports", "Institutions", "Index rankings", "Cabinet decisions"], "facts": [["Static spine first", "Know ministry/act/body before scheme spam"], ["Scheme anatomy", "Objective, beneficiary, implementing ministry, funding pattern"], ["Avoid 100-scheme lists", "20 high-salience with anatomy beats 100 names"], ["Constitutional bodies", "Already in polity — CA only overlays personnel/events"], ["Statutory regulators", "RBI/SEBI/TRAI etc. purpose one-liners"], ["Think tanks/reports", "NITI, surveys — match report↔theme"], ["Indices", "HDI/MPI/hunger — know publisher caution"], ["Budget announcements", "Many are branding; extract mechanism"], ["Centrally sponsored vs central sector", "Funding discriminator"], ["DBT logic", "Targeting and leakage narrative"], ["Social sector umbrellas", "Health/education/livelihood families"], ["Infrastructure umbrellas", "Roads/ports/digital public goods"], ["Agriculture schemes", "MSP/insurance/irrigation — concept first"], ["Women/child schemes", "Recurring social sector"], ["Institution creation news", "New body? Know parent law/cabinet status"], ["Merger/renames", "Classic trap area"], ["International indices CA", "Verify year/publisher"], ["State schemes rarely", "Unless nationalised narrative"], ["Revision window", "Last 18 months + evergreen institutions"], ["Link to static", "Every CA bullet needs a static hook"]], "traps": ["Memorising only scheme names without objectives", "Calling statutory bodies constitutional", "Outdated ministry ownership", "Index publisher mix-ups"], "table": {"title": "Scheme anatomy card", "headers": ["Field", "Ask"], "rows": [["Objective", "What problem?"], ["Beneficiary", "Who?"], ["Ministry", "Who owns?"], ["Type", "CSS vs central sector"], ["Static hook", "Act/body/concept"]]}, "must": ["Scheme anatomy 5 fields", "CSS vs central sector", "Constitutional vs statutory", "18-month CA window", "Report↔theme matches"], "india": "Build a rolling Notion/notebook of 30 cards max; prune monthly.", "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], "maps": [], "quick": ["Reproduce table", "5 must-remembers", "3 traps", "India anchor", "10 MCQs"], "pyqAngle": "Matching lists and statements on national schemes and institutions in news.", "examSpine": "Definitions → table → India → traps."}, {"slug": "numeracy-di", "topicId": "csat-math", "chance": 90, "title": "CSAT Numeracy & Data Interpretation — High-Yield Patterns", "blurb": "Percentages, ratio, averages, time-work, TSD, SI/CI, number system and DI — CSAT quants spine.", "theme": "CSAT quantitative aptitude and DI patterns", "chanceNote": "Structural next-exam chance ~90% for numeracy block. CSAT math parent ~85%. Themes weighted by 10-year CSAT pattern frequency.", "why": "Qualifying paper rewards speed on recurring arith patterns more than exotic puzzles.", "pyq": ["Percentages", "Ratio/mixtures", "Averages", "Time-work", "Time-distance", "SI/CI", "DI", "Simplification"], "facts": [["Percent base discipline", "Always ask ‘percent of what?’"], ["Successive percent", "Multiply factors; avoid naive add"], ["Profit-loss", "SP/CP relations; marked price/discount chains"], ["Ratio parts", "Sum parts = total; mixtures allegation"], ["Replacement mixtures", "Quantity removed/added iterations"], ["Averages", "Sum = avg × n; weighted averages"], ["Time-work", "Rate = 1/days; LCM for combined"], ["Pipes/cisterns", "Inflow/outflow signed rates"], ["TSD", "Distance = speed × time; unit consistency km/h↔m/s"], ["Relative speed", "Same/opposite direction"], ["Trains", "Length adds when crossing; platforms"], ["Boats/streams", "Downstream/upstream = b±u"], ["SI", "PRT/100 linear"], ["CI basics", "Compound factor (1+r)^n — limited depth usually"], ["Number system", "HCF/LCM, remainders, divisibility"], ["Simplification", "BODMAS; fraction/decimal speed"], ["DI tables", "Read totals/legends before computing"], ["DI speed", "Approximate when options far apart"], ["Skip rule", "If >2 min without path, mark and return"], ["Worked steps habit", "Write rates/units — cuts silly errors"]], "traps": ["Wrong percent base", "Adding successive percents", "km/h left as m/s inconsistently", "CI/SI formula swap", "Reading wrong DI row"], "table": {"title": "Theme weight (study time cue)", "headers": ["Theme", "Weight cue"], "rows": [["Percent/P-L", "Very high"], ["Ratio/mixture", "High"], ["DI", "High when present"], ["TSD/Work", "High"], ["Averages", "Medium-high"], ["SI/CI", "Medium"], ["Number/simp", "Medium-high"]]}, "must": ["% base", "Successive multiply", "Work rates", "m/s = ×5/18", "SI=PRT/100", "DI read legend first", "Skip >2 min"], "india": "Grind dedicated CSAT Quants mocks in this hub; explanations show worked steps.", "examSpine": "Percent/ratio → work/TSD → SI → DI sets → skip discipline.", "quick": ["20% drills", "10 ratio/mixture", "10 work/TSD", "1 DI set", "Timed 20 Q"], "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], "maps": [], "pyqAngle": "Matching lists and statements on CSAT quantitative aptitude and DI patterns."}, {"slug": "biodiversity-hotspots-conventions", "topicId": "env-biodiversity", "chance": 72, "title": "Biodiversity Hotspots & Global Conventions", "blurb": "Hotspot criteria and CBD/CITES/CMS/Nagoya purpose map for Prelims.", "theme": "biodiversity hotspots and global environment conventions", "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], "chanceNote": "Portion chance ~72%. Steady; pairs with protected-areas. Parent ~85%.", "why": "Definitional criteria + treaty purpose one-liners are easy to mark.", "pyq": ["Hotspots", "CBD", "CITES", "Nagoya", "CMS"], "facts": [["Hotspot criteria", "High endemism + habitat loss/threat thresholds"], ["India-related hotspots", "Himalaya, Western Ghats, Indo-Burma, Sundaland (Nicobar)"], ["Endemism", "Species restricted to a region"], ["CBD", "Conservation, sustainable use, benefit sharing"], ["Nagoya Protocol", "Access and benefit sharing"], ["CITES", "International trade regulation via appendices"], ["CMS", "Migratory species cooperation"], ["Cartagena Protocol", "Biosafety/LMOs — distinct from Nagoya"], ["Protected area ≠ hotspot", "Scientific label vs legal tool"], ["Benefit sharing", "Genetic resources and TK ethics"], ["Appendices idea", "Different trade strictness"], ["Migratory flyways", "Birds link CMS and wetlands"], ["ABS India", "Biodiversity Act outline"], ["Marine biodiversity", "Reefs/mangroves/EEZ"], ["Invasive alien species", "CBD concern"], ["Aichi to GBF", "Targets evolve — verify CA labels"], ["Community knowledge", "PBR idea"], ["Synthetic biology edge", "Headline awareness only"]], "traps": ["Every forest is a hotspot unit", "Cartagena=Nagoya", "CITES bans all trade", "CBD=UNFCCC"], "table": {"title": "Convention purposes", "headers": ["Instrument", "Purpose"], "rows": [["CBD", "Biodiversity triad"], ["Nagoya", "ABS"], ["Cartagena", "Biosafety"], ["CITES", "Trade"], ["CMS", "Migratory"]]}, "maps": ["Western Ghats", "Eastern Himalaya", "Nicobar"], "must": ["Hotspot criteria", "India hotspot list", "CBD triad", "Nagoya≠Cartagena", "CITES=trade"], "india": "Western Ghats endemism examples + NBA outline.", "pyqAngle": "Hotspot definition; convention↔purpose match.", "examSpine": "Criteria → India list → convention table → ABS/biosafety split.", "quick": ["Criteria", "India list", "5 conventions", "2 traps", "10 MCQs"]}]
+[
+  {
+    "slug": "climate-unfccc-paris",
+    "topicId": "env-climate",
+    "chance": 88,
+    "title": "Climate Science, UNFCCC & Paris Agreement",
+    "blurb": "GHG physics, UNFCCC–Kyoto–Paris arc, NDCs/COP and India pledges — rising #1 environment portion.",
+    "theme": "climate science and the UNFCCC/Paris regime",
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "chanceNote": "Ranked among the highest next-exam-chance portions (~88%, rising). Appeared across 2016–2025; late-window COP/NDC weight exceeds early years. Parent topic env-climate ~91%.",
+    "why": "Blends durable science with living treaty politics and India’s diplomacy — ideal for mixed static–CA papers.",
+    "pyq": [
+      "Paris Agreement",
+      "NDCs",
+      "COP",
+      "GHGs",
+      "Mitigation/adaptation"
+    ],
+    "facts": [
+      [
+        "Enhanced greenhouse effect",
+        "Anthropogenic GHGs increase infrared absorption in the troposphere, raising global mean temperatures beyond the natural greenhouse baseline"
+      ],
+      [
+        "Major GHGs",
+        "CO2 (long-lived), CH4 (higher GWP, shorter life), N2O, and F-gases"
+      ],
+      [
+        "GWP",
+        "Compares warming of a gas to CO2 over a chosen time horizon"
+      ],
+      [
+        "Carbon sinks",
+        "Oceans, forests and soils remove CO2; not infinite offsets"
+      ],
+      [
+        "UNFCCC 1992",
+        "Framework convention creating COP process and CBDR-RC"
+      ],
+      [
+        "Kyoto Protocol",
+        "Historic Annex-I style quantified targets with flexibility mechanisms"
+      ],
+      [
+        "Paris Agreement 2015",
+        "Universal NDCs; temperature goals well below 2C / pursue 1.5C"
+      ],
+      [
+        "Global Stocktake",
+        "Collective progress check to inform stronger NDCs"
+      ],
+      [
+        "Transparency framework",
+        "Reporting/review rules building trust"
+      ],
+      [
+        "Mitigation",
+        "Actions that reduce emissions or enhance sinks"
+      ],
+      [
+        "Adaptation",
+        "Adjustments to limit harm from climate impacts"
+      ],
+      [
+        "Loss and damage",
+        "Agenda on residual irreversible harms"
+      ],
+      [
+        "CBDR-RC",
+        "Common but differentiated responsibilities and respective capabilities"
+      ],
+      [
+        "India narrative",
+        "Equity, intensity and non-fossil pledges, net-zero framing — verify latest NDC numbers"
+      ],
+      [
+        "Montreal contrast",
+        "Ozone treaty — do not merge into UNFCCC"
+      ],
+      [
+        "Co-benefits",
+        "Air quality and energy security gains from climate action"
+      ],
+      [
+        "Extremes literacy",
+        "Warming shifts probabilities of heat extremes"
+      ],
+      [
+        "Ocean acidification",
+        "CO2 dissolution alters carbonate chemistry"
+      ],
+      [
+        "COP theatre",
+        "Revise last 2–3 COP headlines as CA overlay"
+      ],
+      [
+        "Carbon budget idea",
+        "Finite CO2 consistent with a temperature target"
+      ]
+    ],
+    "traps": [
+      "Treating Kyoto and Paris as identical",
+      "Confusing Montreal with UNFCCC",
+      "NDCs as mere press releases",
+      "Net zero as overnight zero emissions",
+      "Collapsing mitigation/adaptation/L&D",
+      "Infinite forest offsets"
+    ],
+    "table": {
+      "title": "Treaty design contrast",
+      "headers": [
+        "Feature",
+        "Kyoto (classic)",
+        "Paris"
+      ],
+      "rows": [
+        [
+          "Participation",
+          "Annex-I focus historically",
+          "Near-universal NDCs"
+        ],
+        [
+          "Target style",
+          "Top-down quantified",
+          "Bottom-up NDCs"
+        ],
+        [
+          "Temperature goal",
+          "Not Paris-style 1.5/2 framing",
+          "Well below 2C; pursue 1.5C"
+        ],
+        [
+          "Ambition cycle",
+          "Commitment periods",
+          "NDC cycles + Stocktake"
+        ]
+      ]
+    },
+    "table2": {
+      "title": "Vocabulary triad",
+      "headers": [
+        "Term",
+        "Focus",
+        "Prelims cue"
+      ],
+      "rows": [
+        [
+          "Mitigation",
+          "Cut/sequester GHGs",
+          "Renewables, sinks"
+        ],
+        [
+          "Adaptation",
+          "Live with impacts",
+          "EWS, resilient infra"
+        ],
+        [
+          "Loss & damage",
+          "Residual harm finance/politics",
+          "Vulnerable nations"
+        ]
+      ]
+    },
+    "maps": [
+      "Himalayan cryosphere",
+      "Coastal vulnerability",
+      "SIDS L&D politics",
+      "India renewables geography"
+    ],
+    "must": [
+      "UNFCCC→Kyoto→Paris differences",
+      "GHGs + GWP idea",
+      "Paris NDCs/stocktake",
+      "CBDR-RC",
+      "Mitigation vs adaptation vs L&D",
+      "Refresh India NDC numbers",
+      "Montreal≠UNFCCC"
+    ],
+    "india": "India emphasises equity and development space while expanding renewables and long-term net-zero narratives. Keep three pledge anchors updated from official NDC documents.",
+    "pyqAngle": "Treaty design statements; GHG/sinks science; COP finance language; India pledges.",
+    "examSpine": "GHG science → UNFCCC/Kyoto/Paris → NDC/stocktake → India anchors → Montreal trap.",
+    "quick": [
+      "Redraw Kyoto vs Paris table",
+      "List GHG + sink",
+      "Define mitigation/adaptation/L&D",
+      "Update India pledges",
+      "Last 2 COP bullets"
+    ],
+    "extraSections": [
+      {
+        "heading": "Science spine for Prelims",
+        "body": "The enhanced greenhouse effect describes how anthropogenic greenhouse gases increase infrared absorption in the troposphere, raising global mean temperatures above the natural greenhouse baseline. CO2 is long-lived and central to fossil and land-use stories; CH4 has higher global warming potential but a shorter atmospheric lifetime; N2O and industrial F-gases complete the usual set. Global Warming Potential compares gases to CO2 over a chosen horizon (often 100 years in textbooks).\n\nCarbon sinks in oceans, forests and soils remove CO2 on different timescales — they are not infinite offsets for endless emissions. Ocean acidification from CO2 dissolution alters carbonate chemistry and is linked to, but distinct from, warming alone. Extremes literacy matters: warming shifts probabilities of heat extremes and influences heavy rainfall statistics without making every single storm a simple fingerprint slogan."
+      },
+      {
+        "heading": "Treaty arc: UNFCCC to Paris",
+        "body": "UNFCCC (1992) created the COP process and the equity principle of common but differentiated responsibilities and respective capabilities (CBDR-RC). Kyoto is remembered for Annex-I style quantified targets and flexibility mechanisms in the classic narrative. Paris (2015) shifted to near-universal Nationally Determined Contributions with temperature goals of well below 2°C and pursuit of 1.5°C, plus a Global Stocktake and transparency framework meant to ratchet ambition.\n\nDo not treat Kyoto and Paris as legally identical designs. Do not merge the Montreal Protocol (ozone-depleting substances) into UNFCCC casually. Mitigation cuts emissions or enhances sinks; adaptation limits harm from impacts already in the pipeline; loss and damage politics address residual irreversible harms for vulnerable states."
+      }
+    ]
+  },
+  {
+    "slug": "protected-areas-wpa",
+    "topicId": "env-biodiversity",
+    "chance": 86,
+    "title": "Protected Areas, WPA & Species",
+    "blurb": "NP, WLS, Biosphere Reserves, Tiger Reserves and WPA schedules — densest biodiversity Prelims block.",
+    "theme": "protected area categories, WPA and species–habitat matching",
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "chanceNote": "Portion chance ~86% (stable-high). Theme counts across all 10 years; parent env-biodiversity ~85%.",
+    "why": "Map memory + legal categories + flagship species create unambiguous MCQs.",
+    "pyq": [
+      "Protected area categories",
+      "WPA schedules",
+      "Species habitats",
+      "Biosphere zones",
+      "Tiger Reserves"
+    ],
+    "facts": [
+      [
+        "National Park",
+        "Higher protection intensity in textbook contrasts"
+      ],
+      [
+        "Wildlife Sanctuary",
+        "Protection with comparatively more flexible rights/activities"
+      ],
+      [
+        "Conservation/Community Reserves",
+        "Community and landscape approaches under WPA narrative"
+      ],
+      [
+        "Biosphere Reserve",
+        "Core/buffer/transition zoning — not identical to NP"
+      ],
+      [
+        "Tiger Reserve",
+        "Critical tiger habitat + buffer under NTCA overlay"
+      ],
+      [
+        "WPA 1972",
+        "Principal wildlife statute; schedules grade species protection"
+      ],
+      [
+        "Schedules logic",
+        "Higher schedule generally means stricter prohibitions"
+      ],
+      [
+        "Ramsar overlay",
+        "Wetlands of international importance often co-asked"
+      ],
+      [
+        "Corridors",
+        "Connectivity beyond island PAs"
+      ],
+      [
+        "Invasive species",
+        "Ecological disruption examples"
+      ],
+      [
+        "Flagship species matching",
+        "GIB, dolphin, snow leopard, olive ridley — living list"
+      ],
+      [
+        "NTCA",
+        "Governance hook for Project Tiger landscapes"
+      ],
+      [
+        "Ex situ vs in situ",
+        "Zoos/gene banks vs habitat protection"
+      ],
+      [
+        "Biodiversity Act",
+        "NBA/ABS outline level"
+      ],
+      [
+        "CITES",
+        "International trade permit logic"
+      ],
+      [
+        "Human–wildlife conflict",
+        "Edge habitats and mitigation themes"
+      ],
+      [
+        "Coastal links",
+        "Turtles/mangroves bridge topics"
+      ],
+      [
+        "Critical Wildlife Habitat",
+        "FRA interface — headline awareness"
+      ],
+      [
+        "IUCN vs Indian law",
+        "Do not casually mix category systems"
+      ],
+      [
+        "Manage distinctive sites",
+        "Not all 100+ NPs — uniqueness first"
+      ]
+    ],
+    "traps": [
+      "BR identical to NP",
+      "All sanctuaries ban all humans",
+      "IUCN=Indian legal categories",
+      "Outdated schedules",
+      "Tiger buffer = BR transition"
+    ],
+    "table": {
+      "title": "Indian PA categories",
+      "headers": [
+        "Category",
+        "Core idea",
+        "Discriminator"
+      ],
+      "rows": [
+        [
+          "National Park",
+          "Strict PA",
+          "Vs WLS intensity"
+        ],
+        [
+          "Wildlife Sanctuary",
+          "More flexibility historically",
+          "Rights/activities"
+        ],
+        [
+          "Biosphere Reserve",
+          "Zoned landscape",
+          "Not NP synonym"
+        ],
+        [
+          "Tiger Reserve",
+          "CTH + buffer",
+          "NTCA hook"
+        ]
+      ]
+    },
+    "table2": null,
+    "maps": [
+      "Western Ghats",
+      "Sundarbans",
+      "Kaziranga",
+      "Desert NP/GIB",
+      "River dolphin stretches"
+    ],
+    "must": [
+      "NP vs WLS vs BR",
+      "WPA schedules idea",
+      "Tiger Reserve CTH+buffer",
+      "In situ vs ex situ",
+      "Flagship↔habitat pairs",
+      "Corridors"
+    ],
+    "india": "Revise distinctive PAs/species; track Ramsar and schedule CA on a one-page sheet.",
+    "pyqAngle": "Matching lists and multi-statement questions on protected area categories, WPA and species–habitat matching.",
+    "examSpine": "Definitions → table → India → traps for protected area categories, WPA and species–habitat matching.",
+    "quick": [
+      "Reproduce table",
+      "5 must-remembers",
+      "3 traps",
+      "India anchor",
+      "10 MCQs"
+    ],
+    "extraSections": [
+      {
+        "heading": "Category discriminators",
+        "body": "National Parks are treated in textbook contrasts as higher-intensity protected areas with stricter activity controls than typical Wildlife Sanctuaries. Conservation and Community Reserves recognise community and landscape approaches under the Wildlife Protection Act narrative. Biosphere Reserves use a core/buffer/transition zoning idea inspired by UNESCO thinking and are not legal synonyms of National Parks. Tiger Reserves combine critical tiger habitat and buffer under the NTCA/Project Tiger overlay and can overlap other PA categories.\n\nCorridors matter because fragmentation turns protected areas into islands. In situ protection (habitat) contrasts with ex situ tools (zoos, gene banks). Ramsar wetland sites are often co-asked with PA maps."
+      }
+    ]
+  },
+  {
+    "slug": "acts-congress-sessions",
+    "topicId": "hist-modern",
+    "chance": 84,
+    "title": "Constitutional Acts & Congress Sessions",
+    "blurb": "Regulating Acts to GOI 1935 plus landmark INC sessions — densest Modern India drill.",
+    "theme": "constitutional Acts and INC sessions",
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "chanceNote": "Portion chance ~84%. Yearly hits; parent hist-modern ~85%.",
+    "why": "Date–provision–personality triples are ideal MCQ machinery.",
+    "pyq": [
+      "Charter/Councils Acts",
+      "GOI 1919/1935",
+      "INC sessions",
+      "Separate electorates",
+      "Dyarchy"
+    ],
+    "facts": [
+      [
+        "Regulating Act 1773",
+        "Parliamentary regulation of Company; GG of Bengal primacy"
+      ],
+      [
+        "Pitt’s India Act 1784",
+        "Dual control / Board of Control narrative"
+      ],
+      [
+        "Charter Act 1833",
+        "Centralisation; GG of India; trade monopoly ends"
+      ],
+      [
+        "Charter Act 1853",
+        "Open competition seed for civil services"
+      ],
+      [
+        "GOI Act 1858",
+        "Crown rule after 1857"
+      ],
+      [
+        "Indian Councils Acts",
+        "Gradual Indian association in councils"
+      ],
+      [
+        "Morley–Minto 1909",
+        "Separate electorates flashpoint"
+      ],
+      [
+        "Montagu–Chelmsford 1919",
+        "Dyarchy in provinces"
+      ],
+      [
+        "GOI Act 1935",
+        "Provincial autonomy; federal scheme partly unimplemented"
+      ],
+      [
+        "1885 Bombay",
+        "INC founding"
+      ],
+      [
+        "1907 Surat",
+        "Moderates–Extremists split"
+      ],
+      [
+        "1916 Lucknow",
+        "Congress–League pact / reunion themes"
+      ],
+      [
+        "1929 Lahore",
+        "Purna Swaraj under Nehru"
+      ],
+      [
+        "1931 Karachi",
+        "Rights/economic programme resolution themes"
+      ],
+      [
+        "1905 Swadeshi context",
+        "Bengal partition political shock"
+      ],
+      [
+        "1920 Nagpur",
+        "NCM organisational shifts"
+      ],
+      [
+        "Electorates politics",
+        "Communal representation debates from 1909"
+      ],
+      [
+        "Federal failure 1935",
+        "Princes/British politics blocked full federation"
+      ],
+      [
+        "Firsts card",
+        "Women presidents and other firsts in matching lists"
+      ],
+      [
+        "Study spine",
+        "One-page Acts + one-page sessions beats clutter"
+      ]
+    ],
+    "traps": [
+      "Purna Swaraj before 1929",
+      "Mixing 1919 dyarchy with 1935 autonomy",
+      "1909 electorates attributed to 1919",
+      "Assuming 1935 federation fully worked"
+    ],
+    "table": {
+      "title": "Acts spine",
+      "headers": [
+        "Act",
+        "Hook"
+      ],
+      "rows": [
+        [
+          "1773",
+          "GG Bengal"
+        ],
+        [
+          "1833",
+          "GG India"
+        ],
+        [
+          "1858",
+          "Crown"
+        ],
+        [
+          "1909",
+          "Separate electorates"
+        ],
+        [
+          "1919",
+          "Dyarchy"
+        ],
+        [
+          "1935",
+          "Provincial autonomy"
+        ]
+      ]
+    },
+    "table2": {
+      "title": "Sessions",
+      "headers": [
+        "Year",
+        "Hook"
+      ],
+      "rows": [
+        [
+          "1885",
+          "Founding"
+        ],
+        [
+          "1907",
+          "Surat split"
+        ],
+        [
+          "1916",
+          "Lucknow"
+        ],
+        [
+          "1929",
+          "Purna Swaraj"
+        ],
+        [
+          "1931",
+          "Karachi"
+        ]
+      ]
+    },
+    "maps": [],
+    "must": [
+      "1773/1833/1858/1909/1919/1935",
+      "Surat 1907",
+      "Lucknow 1916",
+      "Lahore 1929",
+      "Dyarchy≠autonomy"
+    ],
+    "india": "Treat Acts as constitutional pre-history; sessions as nationalist calendar.",
+    "pyqAngle": "Matching lists and multi-statement questions on constitutional Acts and INC sessions.",
+    "examSpine": "Definitions → table → India → traps for constitutional Acts and INC sessions.",
+    "quick": [
+      "Reproduce table",
+      "5 must-remembers",
+      "3 traps",
+      "India anchor",
+      "10 MCQs"
+    ]
+  },
+  {
+    "slug": "national-gandhian-movements",
+    "topicId": "hist-modern",
+    "chance": 82,
+    "title": "National & Gandhian Mass Movements",
+    "blurb": "Swadeshi to Quit India — phases, methods, social base and PYQ discriminators.",
+    "theme": "nationalist and Gandhian mass movements",
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "chanceNote": "Portion chance ~82%. Stable yearly; parent hist-modern ~85%.",
+    "why": "Movement phases create decade-method matching questions.",
+    "pyq": [
+      "Non-Cooperation",
+      "Civil Disobedience",
+      "Quit India",
+      "Revolutionary strand",
+      "Early satyagrahas"
+    ],
+    "facts": [
+      [
+        "Moderates vs Extremists",
+        "Petition politics vs Swadeshi/passive resistance accents"
+      ],
+      [
+        "Champaran 1917",
+        "Indigo satyagraha — early Gandhi laboratory"
+      ],
+      [
+        "Kheda",
+        "Revenue satyagraha"
+      ],
+      [
+        "Ahmedabad mill",
+        "Labour satyagraha"
+      ],
+      [
+        "Rowlatt/Jallianwala",
+        "1919 repression feeding NCM climate"
+      ],
+      [
+        "NCM 1920–22",
+        "Boycott + Khilafat; Chauri Chaura withdrawal"
+      ],
+      [
+        "Swarajists",
+        "Council entry debate after NCM"
+      ],
+      [
+        "CDM/Dandi 1930",
+        "Salt satyagraha opens Civil Disobedience"
+      ],
+      [
+        "Gandhi–Irwin Pact",
+        "Truce checkpoint"
+      ],
+      [
+        "Round Table Conferences",
+        "Constitutional negotiation theatre"
+      ],
+      [
+        "Quit India 1942",
+        "Do or Die; leaders jailed; spontaneous activity"
+      ],
+      [
+        "Revolutionary strand",
+        "HSRA/Bhagat Singh; Surya Sen"
+      ],
+      [
+        "INA",
+        "Subhas Bose; INA trials emotion"
+      ],
+      [
+        "Women in movements",
+        "Visible participation — rising area"
+      ],
+      [
+        "Peasants/tribals",
+        "Local uprisings complementary pool"
+      ],
+      [
+        "Methods lexicon",
+        "Boycott, picketing, salt, underground 1942"
+      ],
+      [
+        "Social base",
+        "Students, lawyers, peasants, business vary by phase"
+      ],
+      [
+        "Communal strands",
+        "Avoid monocausal Congress-only narratives"
+      ],
+      [
+        "Simon boycott",
+        "All-white commission controversy"
+      ],
+      [
+        "Post-war link",
+        "Movements feed 1945–47 endgame without oversimplify"
+      ]
+    ],
+    "traps": [
+      "Salt March dated to NCM",
+      "Chauri Chaura started Quit India",
+      "Ignoring Khilafat–NCM link",
+      "Collapsing Extremists with terrorists"
+    ],
+    "table": {
+      "title": "Phase sheet",
+      "headers": [
+        "Phase",
+        "Hook"
+      ],
+      "rows": [
+        [
+          "Early satyagrahas",
+          "Champaran/Kheda/Ahmedabad"
+        ],
+        [
+          "NCM",
+          "1920–22 + Khilafat"
+        ],
+        [
+          "CDM",
+          "Dandi 1930"
+        ],
+        [
+          "Quit India",
+          "1942"
+        ],
+        [
+          "Revolutionary",
+          "HSRA etc."
+        ]
+      ]
+    },
+    "must": [
+      "Early satyagrahas",
+      "NCM+Khilafat",
+      "Chauri Chaura",
+      "Dandi/CDM",
+      "Quit India 1942",
+      "INA trials"
+    ],
+    "india": "Build timeline wall 1917→1919→1920→1930→1942 with method verbs.",
+    "table2": null,
+    "maps": [],
+    "pyqAngle": "Matching lists and multi-statement questions on nationalist and Gandhian mass movements.",
+    "examSpine": "Definitions → table → India → traps for nationalist and Gandhian mass movements.",
+    "quick": [
+      "Reproduce table",
+      "5 must-remembers",
+      "3 traps",
+      "India anchor",
+      "10 MCQs"
+    ]
+  },
+  {
+    "slug": "fundamental-rights-dpsp",
+    "topicId": "polity-const",
+    "chance": 86,
+    "title": "Fundamental Rights, DPSPs & Their Interplay",
+    "blurb": "Articles, reasonable restrictions, enforceability contrasts and FR–DPSP harmony.",
+    "theme": "Fundamental Rights, DPSPs and interplay",
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "chanceNote": "Portion chance ~86%. Dense yearly hits; parent polity-const ~85%.",
+    "why": "Article clusters and justiciability contrasts produce reliable marks.",
+    "pyq": [
+      "FR articles",
+      "DPSP",
+      "Reasonable restrictions",
+      "Art 32",
+      "Harmony doctrine"
+    ],
+    "facts": [
+      [
+        "Part III",
+        "Enforceable Fundamental Rights"
+      ],
+      [
+        "Equality 14–18",
+        "Equality before law, non-discrimination, titles"
+      ],
+      [
+        "Freedom Art 19",
+        "Freedoms with reasonable restrictions grounds"
+      ],
+      [
+        "Arts 20–22",
+        "Conviction protections and liberty/detention contours"
+      ],
+      [
+        "Art 21",
+        "Life and personal liberty — expanded jurisprudence awareness"
+      ],
+      [
+        "Arts 23–24",
+        "Against exploitation"
+      ],
+      [
+        "Arts 25–28",
+        "Freedom of religion with limits"
+      ],
+      [
+        "Arts 29–30",
+        "Culture and minority education rights"
+      ],
+      [
+        "Art 32",
+        "Constitutional remedies; heart-and-soul lore"
+      ],
+      [
+        "Citizens vs persons",
+        "Some rights only for citizens"
+      ],
+      [
+        "Part IV DPSP",
+        "Non-justiciable but fundamental in governance (Art 37)"
+      ],
+      [
+        "DPSP classes",
+        "Socialistic/Gandhian/liberal-intellectual memory aid"
+      ],
+      [
+        "Art 44 UCC",
+        "DPSP status; frequent CA"
+      ],
+      [
+        "FR–DPSP history",
+        "From conflict to harmonious construction"
+      ],
+      [
+        "Minerva Mills",
+        "Harmony; limited amending power themes"
+      ],
+      [
+        "Emergency effects",
+        "Historical suspension issues"
+      ],
+      [
+        "Reasonable restrictions",
+        "Art 19 never absolute"
+      ],
+      [
+        "Writ toolkit link",
+        "Connects to judiciary portion"
+      ],
+      [
+        "Property history bait",
+        "Beware outdated absolute property options"
+      ],
+      [
+        "Horizontal/vertical",
+        "Primarily State action focus"
+      ]
+    ],
+    "traps": [
+      "DPSPs enforceable like FRs",
+      "All FRs for non-citizens equally",
+      "Art 19 unrestricted",
+      "Ignoring restriction grounds"
+    ],
+    "table": {
+      "title": "FR clusters",
+      "headers": [
+        "Cluster",
+        "Articles"
+      ],
+      "rows": [
+        [
+          "Equality",
+          "14–18"
+        ],
+        [
+          "Freedom",
+          "19"
+        ],
+        [
+          "Life/process",
+          "20–22"
+        ],
+        [
+          "Exploitation",
+          "23–24"
+        ],
+        [
+          "Religion",
+          "25–28"
+        ],
+        [
+          "Remedies",
+          "32"
+        ]
+      ]
+    },
+    "must": [
+      "14–18/19/21/32",
+      "DPSP non-justiciable",
+      "Citizens vs persons",
+      "Minerva Mills",
+      "Reasonable restrictions"
+    ],
+    "india": "Connect rights CA lightly to static article maps.",
+    "table2": null,
+    "maps": [],
+    "pyqAngle": "Matching lists and multi-statement questions on Fundamental Rights, DPSPs and interplay.",
+    "examSpine": "Definitions → table → India → traps for Fundamental Rights, DPSPs and interplay.",
+    "quick": [
+      "Reproduce table",
+      "5 must-remembers",
+      "3 traps",
+      "India anchor",
+      "10 MCQs"
+    ],
+    "extraSections": [
+      {
+        "heading": "FR clusters you must own",
+        "body": "Part III rights are enforceable. Equality cluster Arts 14-18; freedoms under Art 19 with reasonable restrictions; Arts 20-22 on conviction protections and liberty/detention contours; Art 21 life and personal liberty (jurisprudentially expansive); Arts 23-24 against exploitation; Arts 25-28 religion with limits; Arts 29-30 cultural and minority education rights; Art 32 constitutional remedies. Some rights are citizens-only — a classic discriminator.\n\nPart IV DPSPs are non-justiciable but fundamental in governance (Art 37). FR-DPSP history moved from conflict narratives toward harmonious construction (Minerva Mills themes). Art 19 is never absolute; property history is a frequent outdated-option trap."
+      }
+    ]
+  },
+  {
+    "slug": "basic-structure-amendment",
+    "topicId": "polity-const",
+    "chance": 80,
+    "title": "Amendment Procedure & Basic Structure",
+    "blurb": "Article 368 pathways and Kesavananda basic structure doctrine.",
+    "theme": "constitutional amendment and basic structure",
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "chanceNote": "Portion chance ~80%. Regular conceptual hits; parent polity-const ~85%.",
+    "why": "Tests limits on constitutional change — conceptual depth.",
+    "pyq": [
+      "Art 368",
+      "Basic structure",
+      "Judicial review",
+      "Federal ratification",
+      "Kesavananda"
+    ],
+    "facts": [
+      [
+        "Art 368",
+        "Power and procedure to amend"
+      ],
+      [
+        "Special majority",
+        "Typical parliamentary pathway"
+      ],
+      [
+        "State ratification",
+        "Some federal provisions need States"
+      ],
+      [
+        "Not ordinary law",
+        "Distinct from simple legislation"
+      ],
+      [
+        "Kesavananda 1973",
+        "Cannot destroy basic structure via 368"
+      ],
+      [
+        "Illustrative features",
+        "Supremacy, judicial review, federalism, secularism, free elections"
+      ],
+      [
+        "Open list",
+        "Essentials identified case-by-case"
+      ],
+      [
+        "Golaknath backdrop",
+        "Earlier amendment–rights tension"
+      ],
+      [
+        "Election case",
+        "Basic structure in political process context"
+      ],
+      [
+        "Minerva Mills",
+        "Limited amending power; FR–DPSP harmony"
+      ],
+      [
+        "42nd Amendment",
+        "Emergency-era expansive politics"
+      ],
+      [
+        "44th Amendment",
+        "Corrective politics headline"
+      ],
+      [
+        "Judicial review link",
+        "Often treated as essential"
+      ],
+      [
+        "Procedure vs substance",
+        "Correct procedure cannot smash essentials"
+      ],
+      [
+        "Federalism shield",
+        "Ratification + basic structure narrative"
+      ],
+      [
+        "Secularism/democracy",
+        "Frequently cited essentials"
+      ],
+      [
+        "Not entire Part III frozen identically",
+        "Targets constitutional identity essentials"
+      ],
+      [
+        "Constituent power debates",
+        "Prelims wants outcome clarity"
+      ]
+    ],
+    "traps": [
+      "Unlimited amending power",
+      "Basic structure as printed schedule",
+      "Mixing ratification with Money Bill",
+      "Wrong Kesavananda year"
+    ],
+    "table": {
+      "title": "Amendment & limits",
+      "headers": [
+        "Idea",
+        "Hook"
+      ],
+      "rows": [
+        [
+          "Art 368",
+          "Power/procedure"
+        ],
+        [
+          "Special majority",
+          "Parliamentary path"
+        ],
+        [
+          "State ratification",
+          "Federal features"
+        ],
+        [
+          "Basic structure",
+          "Substantive limit"
+        ]
+      ]
+    },
+    "must": [
+      "Kesavananda 1973",
+      "Art 368",
+      "Ratification subset",
+      "Feature examples",
+      "42nd/44th context"
+    ],
+    "india": "Doctrine is India’s identity shield versus absolute parliamentary sovereignty caricatures.",
+    "table2": null,
+    "maps": [],
+    "pyqAngle": "Matching lists and multi-statement questions on constitutional amendment and basic structure.",
+    "examSpine": "Definitions → table → India → traps for constitutional amendment and basic structure.",
+    "quick": [
+      "Reproduce table",
+      "5 must-remembers",
+      "3 traps",
+      "India anchor",
+      "10 MCQs"
+    ]
+  },
+  {
+    "slug": "parliament-procedures",
+    "topicId": "polity-institutions",
+    "chance": 83,
+    "title": "Parliament: Devices, Sessions & Law-Making",
+    "blurb": "Question Hour to Money Bills — devices and legislative process.",
+    "theme": "parliamentary procedures and law-making",
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "chanceNote": "Portion chance ~83%. Yearly procedural MCQs; parent polity-institutions ~85%.",
+    "why": "Procedural distinctions are unambiguous when prepared.",
+    "pyq": [
+      "Parliamentary devices",
+      "Money Bill Art 110",
+      "Sessions",
+      "Joint sitting",
+      "Budget devices"
+    ],
+    "facts": [
+      [
+        "Question Hour",
+        "Starred/unstarred/short notice"
+      ],
+      [
+        "Zero Hour",
+        "Indian innovation on public matters"
+      ],
+      [
+        "Adjournment motion",
+        "Discuss urgent public matter"
+      ],
+      [
+        "No-confidence",
+        "LS responsibility test"
+      ],
+      [
+        "Privilege",
+        "House privileges/breach"
+      ],
+      [
+        "Adjournment vs prorogation vs dissolution",
+        "Pause vs session end vs House end"
+      ],
+      [
+        "Ordinary bills",
+        "Both Houses; joint sitting possible in some deadlocks"
+      ],
+      [
+        "Money Bill Art 110",
+        "LS path; Speaker certificate; RS limited"
+      ],
+      [
+        "Finance Bill niche",
+        "Do not equate all money-related bills"
+      ],
+      [
+        "Constitution amendment bills",
+        "Special majority / ratification link"
+      ],
+      [
+        "Joint sitting Art 108",
+        "Not for Money/Constitution amendment in usual story"
+      ],
+      [
+        "Budget process",
+        "Presentation, scrutiny, appropriation"
+      ],
+      [
+        "Guillotine",
+        "Time-bound voting on demands"
+      ],
+      [
+        "Committees",
+        "Scrutiny workhorses"
+      ],
+      [
+        "Ordinance Art 123",
+        "When Houses not in session — conditions"
+      ],
+      [
+        "Whip/defection overlay",
+        "Party discipline meets procedure"
+      ],
+      [
+        "RS specials",
+        "Money Bill limits"
+      ],
+      [
+        "Speaker role",
+        "Certification and order"
+      ],
+      [
+        "Calling attention",
+        "Other device one-liners"
+      ],
+      [
+        "Lame-duck CA",
+        "Static definitions primary"
+      ]
+    ],
+    "traps": [
+      "Money Bill like ordinary in RS",
+      "Prorogation=dissolution",
+      "Joint sitting for Money Bills",
+      "Starred vs unstarred mix-up"
+    ],
+    "table": {
+      "title": "Session vocabulary",
+      "headers": [
+        "Term",
+        "Meaning"
+      ],
+      "rows": [
+        [
+          "Adjournment",
+          "Pause sitting"
+        ],
+        [
+          "Prorogation",
+          "End session"
+        ],
+        [
+          "Dissolution",
+          "End LS life"
+        ],
+        [
+          "Recess",
+          "Between sessions"
+        ]
+      ]
+    },
+    "must": [
+      "Art 110",
+      "Speaker certificate",
+      "Adjourn/prorogue/dissolve",
+      "Joint sitting scope",
+      "Question types"
+    ],
+    "india": "Answer Budget CA from Art 110 and device definitions first.",
+    "table2": null,
+    "maps": [],
+    "pyqAngle": "Matching lists and multi-statement questions on parliamentary procedures and law-making.",
+    "examSpine": "Definitions → table → India → traps for parliamentary procedures and law-making.",
+    "quick": [
+      "Reproduce table",
+      "5 must-remembers",
+      "3 traps",
+      "India anchor",
+      "10 MCQs"
+    ]
+  },
+  {
+    "slug": "judiciary-constitutional-bodies",
+    "topicId": "polity-institutions",
+    "chance": 81,
+    "title": "Judiciary & Constitutional Bodies",
+    "blurb": "SC/HC jurisdiction, writs, judicial review, EC/CAG/UPSC facts.",
+    "theme": "higher judiciary and constitutional bodies",
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "chanceNote": "Portion chance ~81%. Stable yearly; parent polity-institutions ~85%.",
+    "why": "Independence safeguards and writ distinctions are perennial.",
+    "pyq": [
+      "Judicial review",
+      "Writs",
+      "EC",
+      "CAG",
+      "UPSC",
+      "Finance Commission"
+    ],
+    "facts": [
+      [
+        "Judicial review",
+        "Validity review of legislative/executive action"
+      ],
+      [
+        "SC original jurisdiction",
+        "Federal disputes sketch"
+      ],
+      [
+        "Appellate jurisdiction",
+        "Appeals routes"
+      ],
+      [
+        "Advisory jurisdiction",
+        "President reference — non-binding tradition"
+      ],
+      [
+        "Five writs",
+        "Habeas, mandamus, prohibition, certiorari, quo warranto"
+      ],
+      [
+        "Art 32 vs 226",
+        "SC vs HC writ reach contrasts"
+      ],
+      [
+        "PIL",
+        "Access expansion awareness"
+      ],
+      [
+        "Appointment debates",
+        "Collegium/NJAC headline"
+      ],
+      [
+        "EC Art 324",
+        "Election superintendence"
+      ],
+      [
+        "CAG",
+        "Audit watchdog"
+      ],
+      [
+        "UPSC",
+        "Recruitment constitutional body"
+      ],
+      [
+        "Finance Commission Art 280",
+        "Devolution advice"
+      ],
+      [
+        "Constitutional vs statutory",
+        "Creation source discriminator"
+      ],
+      [
+        "NHRC trap",
+        "Statutory — not constitutional"
+      ],
+      [
+        "Removal difficulty",
+        "Protects tenure"
+      ],
+      [
+        "Basic structure link",
+        "Judicial review among essentials"
+      ],
+      [
+        "Tribunals",
+        "Specialised adjudication awareness"
+      ],
+      [
+        "State EC/SFC",
+        "State analogues"
+      ],
+      [
+        "Contempt/independence",
+        "Protective doctrines outline"
+      ],
+      [
+        "AG office",
+        "Related constitutional cast"
+      ]
+    ],
+    "traps": [
+      "NHRC as constitutional",
+      "Writ purpose mix",
+      "Advisory opinions as binding decrees",
+      "CAG = PAC itself"
+    ],
+    "table": {
+      "title": "Writ sheet",
+      "headers": [
+        "Writ",
+        "Cue"
+      ],
+      "rows": [
+        [
+          "Habeas corpus",
+          "Produce person"
+        ],
+        [
+          "Mandamus",
+          "Command to act"
+        ],
+        [
+          "Prohibition",
+          "Stop lower court"
+        ],
+        [
+          "Certiorari",
+          "Quash/transfer"
+        ],
+        [
+          "Quo warranto",
+          "By what authority"
+        ]
+      ]
+    },
+    "must": [
+      "5 writs",
+      "32 vs 226",
+      "EC/CAG/UPSC/FC",
+      "Statutory≠constitutional",
+      "Judicial review"
+    ],
+    "india": "Track appointment/EC CA lightly atop static design.",
+    "table2": null,
+    "maps": [],
+    "pyqAngle": "Matching lists and multi-statement questions on higher judiciary and constitutional bodies.",
+    "examSpine": "Definitions → table → India → traps for higher judiciary and constitutional bodies.",
+    "quick": [
+      "Reproduce table",
+      "5 must-remembers",
+      "3 traps",
+      "India anchor",
+      "10 MCQs"
+    ]
+  },
+  {
+    "slug": "inflation-monetary",
+    "topicId": "econ-basics",
+    "chance": 85,
+    "title": "Inflation & Monetary Policy",
+    "blurb": "CPI/WPI, inflation types, RBI/MPC tools and transmission.",
+    "theme": "inflation measurement and monetary policy",
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "chanceNote": "Portion chance ~85%. Yearly core; parent econ-basics ~85%.",
+    "why": "Definitions + tool effects produce conceptual MCQs.",
+    "pyq": [
+      "CPI/WPI",
+      "MPC",
+      "Repo",
+      "Inflation types",
+      "Transmission"
+    ],
+    "facts": [
+      [
+        "Inflation",
+        "Sustained rise in general price level"
+      ],
+      [
+        "CPI",
+        "Consumer basket; policy-relevant in MPC era"
+      ],
+      [
+        "WPI",
+        "Wholesale basket — comparative asks"
+      ],
+      [
+        "Headline vs core",
+        "Core excludes volatile food/fuel analytically"
+      ],
+      [
+        "Demand-pull vs cost-push",
+        "Demand excess vs input shocks"
+      ],
+      [
+        "Stagflation",
+        "Low growth + high inflation"
+      ],
+      [
+        "MPC",
+        "Sets policy repo under flexible inflation targeting"
+      ],
+      [
+        "Repo rate",
+        "Liquidity injection rate — hike cools demand"
+      ],
+      [
+        "Absorption tools",
+        "Reverse repo/SDF-era tools evolve"
+      ],
+      [
+        "CRR/SLR",
+        "Quantum tools on lendable resources"
+      ],
+      [
+        "OMO",
+        "Buy/sell G-secs for liquidity"
+      ],
+      [
+        "Transmission",
+        "Imperfect pass-through to lending rates"
+      ],
+      [
+        "Real vs nominal",
+        "Inflation-adjusted thinking"
+      ],
+      [
+        "Inflation targeting",
+        "Target band anchors expectations"
+      ],
+      [
+        "Food inflation",
+        "Supply shocks complicate pure monetary stories"
+      ],
+      [
+        "Base effect",
+        "Distorts YoY reads"
+      ],
+      [
+        "Disinflation vs deflation",
+        "Slowing inflation vs falling prices"
+      ],
+      [
+        "FX channel",
+        "Stance interacts with capital flows"
+      ],
+      [
+        "Fiscal dominance risk",
+        "Fiscal pressure complicates monetary narrative"
+      ],
+      [
+        "Prefer concepts",
+        "Over memorising yesterday’s print"
+      ]
+    ],
+    "traps": [
+      "WPI=CPI baskets",
+      "One item spike = inflation",
+      "Disinflation=deflation",
+      "Instant price cut after repo hike"
+    ],
+    "table": {
+      "title": "Tools → intent",
+      "headers": [
+        "Tool",
+        "When tightened"
+      ],
+      "rows": [
+        [
+          "Repo hike",
+          "Cool demand"
+        ],
+        [
+          "CRR hike",
+          "Less lendable funds"
+        ],
+        [
+          "OMO sales",
+          "Suck liquidity"
+        ],
+        [
+          "Communication",
+          "Anchor expectations"
+        ]
+      ]
+    },
+    "must": [
+      "CPI vs WPI",
+      "MPC/repo",
+      "Demand-pull vs cost-push",
+      "Disinflation≠deflation",
+      "Transmission lag"
+    ],
+    "india": "Revise current inflation target band from RBI materials before exam.",
+    "table2": null,
+    "maps": [],
+    "pyqAngle": "Matching lists and multi-statement questions on inflation measurement and monetary policy.",
+    "examSpine": "Definitions → table → India → traps for inflation measurement and monetary policy.",
+    "quick": [
+      "Reproduce table",
+      "5 must-remembers",
+      "3 traps",
+      "India anchor",
+      "10 MCQs"
+    ],
+    "extraSections": [
+      {
+        "heading": "Inflation measurement and types",
+        "body": "Inflation is a sustained rise in the general price level — not a one-item spike. CPI tracks a consumer basket and is policy-relevant in the MPC era; WPI tracks a wholesale basket. Headline versus core distinguishes volatile food/fuel components analytically. Demand-pull versus cost-push separates excess demand stories from input-shock stories; stagflation pairs low growth with high inflation.\n\nDisinflation is slowing inflation; deflation is falling prices — do not swap them. Base effects can distort year-on-year reads. Prefer concepts over memorising yesterday’s print."
+      },
+      {
+        "heading": "MPC tools and transmission",
+        "body": "The Monetary Policy Committee sets the policy repo rate under flexible inflation targeting. A repo hike aims to cool demand; CRR/SLR and open-market operations adjust lendable funds and liquidity; communication anchors expectations. Transmission to lending rates is imperfect and lagged — so options promising instant price cuts after a hike are weak.\n\nFood inflation and supply shocks complicate pure monetary narratives. Fiscal dominance risk describes fiscal pressure complicating monetary policy. Revise India’s current inflation target band from official RBI materials before the exam."
+      }
+    ]
+  },
+  {
+    "slug": "fiscal-budget-national-income",
+    "topicId": "econ-basics",
+    "chance": 82,
+    "title": "Fiscal Policy, Budget & National Income",
+    "blurb": "Deficits, budget terms, GDP/GVA basics — stable high-weight block.",
+    "theme": "fiscal policy, Budget concepts and national income",
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "chanceNote": "Portion chance ~82%. Stable; parent econ-basics ~85%.",
+    "why": "Deficit definitions and GDP basics are evergreen.",
+    "pyq": [
+      "Fiscal deficit",
+      "Revenue deficit",
+      "Primary deficit",
+      "GDP/GVA",
+      "Budget classifications"
+    ],
+    "facts": [
+      [
+        "Fiscal deficit",
+        "Borrowing need beyond non-borrowed receipts"
+      ],
+      [
+        "Revenue deficit",
+        "Revenue expenditure > revenue receipts"
+      ],
+      [
+        "Primary deficit",
+        "FD minus interest payments"
+      ],
+      [
+        "Effective revenue deficit",
+        "Indian adjustment lore for capital grants"
+      ],
+      [
+        "Capital vs revenue expenditure",
+        "Asset-creating vs routine"
+      ],
+      [
+        "Capital vs revenue receipts",
+        "Debt/asset vs tax/non-tax"
+      ],
+      [
+        "FRBM spirit",
+        "Fiscal responsibility framework"
+      ],
+      [
+        "GDP",
+        "Market value of domestic final output"
+      ],
+      [
+        "GVA",
+        "Value added; relate via net product taxes"
+      ],
+      [
+        "Nominal vs real",
+        "Current vs constant prices"
+      ],
+      [
+        "GDP deflator",
+        "Links nominal/real"
+      ],
+      [
+        "GDP/GNP/NNI",
+        "Know adjustment directions"
+      ],
+      [
+        "Budget process",
+        "Presentation; vote on account vs full"
+      ],
+      [
+        "Finance/Appropriation Bills",
+        "Tax and spending legal vehicles"
+      ],
+      [
+        "Off-budget caution",
+        "Liabilities outside headline FD"
+      ],
+      [
+        "Crowding out",
+        "Public borrowing vs private credit debate"
+      ],
+      [
+        "Countercyclical fiscal",
+        "Stimulate in downturns — conditional"
+      ],
+      [
+        "Tax buoyancy outline",
+        "Awareness"
+      ],
+      [
+        "Spending quality",
+        "Subsidies vs capex composition"
+      ],
+      [
+        "NSO data source",
+        "Institutional awareness"
+      ]
+    ],
+    "traps": [
+      "Mix FD and RD formulas",
+      "Primary includes interest",
+      "GDP = cash balance",
+      "Vote-on-account always full Budget"
+    ],
+    "table": {
+      "title": "Deficit sheet",
+      "headers": [
+        "Metric",
+        "Idea"
+      ],
+      "rows": [
+        [
+          "Revenue deficit",
+          "Rev exp − rev receipts"
+        ],
+        [
+          "Fiscal deficit",
+          "Borrowing need"
+        ],
+        [
+          "Primary deficit",
+          "FD − interest"
+        ]
+      ]
+    },
+    "must": [
+      "FD/RD/PD",
+      "Capital vs revenue",
+      "GDP vs GVA",
+      "Nominal vs real",
+      "FRBM spirit"
+    ],
+    "india": "Numbers change yearly; concepts in Budget at a Glance do not.",
+    "table2": null,
+    "maps": [],
+    "pyqAngle": "Matching lists and multi-statement questions on fiscal policy, Budget concepts and national income.",
+    "examSpine": "Definitions → table → India → traps for fiscal policy, Budget concepts and national income.",
+    "quick": [
+      "Reproduce table",
+      "5 must-remembers",
+      "3 traps",
+      "India anchor",
+      "10 MCQs"
+    ]
+  },
+  {
+    "slug": "external-sector",
+    "topicId": "econ-schemes",
+    "chance": 74,
+    "title": "External Sector & Balance of Payments",
+    "blurb": "CAD, capital account, forex and trade — economy–CA bridge.",
+    "theme": "external sector and BoP",
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "chanceNote": "Portion chance ~74%. Recurring; parent econ-schemes ~79%.",
+    "why": "BoP identities mix static with CAD news.",
+    "pyq": [
+      "Current account",
+      "Capital account",
+      "Forex",
+      "FDI/FPI",
+      "Depreciation"
+    ],
+    "facts": [
+      [
+        "Current account",
+        "Goods/services + income flows"
+      ],
+      [
+        "CAD",
+        "Current outflows > inflows"
+      ],
+      [
+        "Capital account",
+        "FDI, FPI, loans"
+      ],
+      [
+        "BoP identity",
+        "Accounts balance with reserve changes"
+      ],
+      [
+        "Forex reserves",
+        "Insurance and intervention ammo"
+      ],
+      [
+        "Appreciation/depreciation",
+        "External value of rupee"
+      ],
+      [
+        "NEER/REER",
+        "Effective exchange rate ideas"
+      ],
+      [
+        "FDI vs FPI",
+        "Stable vs portfolio"
+      ],
+      [
+        "Trade balance vs CAD",
+        "Goods alone vs broader CA"
+      ],
+      [
+        "Invisibles",
+        "Services/remittances cushion"
+      ],
+      [
+        "Convertibility",
+        "Current free vs capital caution"
+      ],
+      [
+        "External debt ratios",
+        "Sustainability outline"
+      ],
+      [
+        "RBI intervention",
+        "Buy/sell FX"
+      ],
+      [
+        "Terms of trade",
+        "Export vs import prices"
+      ],
+      [
+        "Tariffs/quotas",
+        "WTO-aware wording"
+      ],
+      [
+        "Oil/risk-off shocks",
+        "CA overlays"
+      ],
+      [
+        "Remittances",
+        "Stability source"
+      ],
+      [
+        "ECB/masala headlines",
+        "Light touch"
+      ]
+    ],
+    "traps": [
+      "Trade deficit always = CAD",
+      "Depreciation always raises reserves",
+      "FDI=FPI",
+      "Full capital convertibility assumed"
+    ],
+    "table": {
+      "title": "BoP map",
+      "headers": [
+        "Bucket",
+        "Examples"
+      ],
+      "rows": [
+        [
+          "Current",
+          "Goods, services, remittances"
+        ],
+        [
+          "Capital",
+          "FDI/FPI/loans"
+        ],
+        [
+          "Reserves",
+          "RBI FX changes"
+        ]
+      ]
+    },
+    "must": [
+      "CAD definition",
+      "FDI≠FPI",
+      "Depreciation sketch",
+      "Reserves role",
+      "Current convertibility"
+    ],
+    "india": "Track CAD/reserves headlines but answer from BoP structure first.",
+    "table2": null,
+    "maps": [],
+    "pyqAngle": "Matching lists and multi-statement questions on external sector and BoP.",
+    "examSpine": "Definitions → table → India → traps for external sector and BoP.",
+    "quick": [
+      "Reproduce table",
+      "5 must-remembers",
+      "3 traps",
+      "India anchor",
+      "10 MCQs"
+    ]
+  },
+  {
+    "slug": "monsoon-climatology",
+    "topicId": "geo-physical",
+    "chance": 78,
+    "title": "Monsoon & Climatology",
+    "blurb": "Monsoon mechanism, jet streams, ENSO links and climate classification — physical geography staple.",
+    "theme": "Indian monsoon and climatology",
+    "chanceNote": "Portion chance ~78%. Steady across decade; parent geo-physical ~79%.",
+    "why": "Mechanism statements and ENSO/monsoon links are classic Prelims geography.",
+    "pyq": [
+      "Monsoon onset",
+      "Jet streams",
+      "ENSO",
+      "Climate classification",
+      "Rainfall patterns"
+    ],
+    "facts": [
+      [
+        "Differential heating",
+        "Land–sea thermal contrast sets monsoon stage"
+      ],
+      [
+        "ITC shift",
+        "Seasonal migration of wind belts influences inflow"
+      ],
+      [
+        "Somali jet / Findlater",
+        "Cross-equatorial flow into Arabian Sea branch narrative"
+      ],
+      [
+        "Southwest monsoon branches",
+        "Arabian Sea and Bay of Bengal branches"
+      ],
+      [
+        "Orography",
+        "Western Ghats and Himalaya shape rainfall distribution"
+      ],
+      [
+        "Break and active periods",
+        "Intra-seasonal monsoon variability"
+      ],
+      [
+        "Northeast monsoon",
+        "Tamil Nadu rainfall season contrast"
+      ],
+      [
+        "ENSO",
+        "El Niño often linked to weaker monsoon — probabilistic not absolute"
+      ],
+      [
+        "IOD",
+        "Indian Ocean Dipole modulates monsoon independently at times"
+      ],
+      [
+        "Western Disturbances",
+        "Winter/spring precip in northwest India"
+      ],
+      [
+        "Jet streams",
+        "Subtropical jet / easterly jet roles in onset narratives"
+      ],
+      [
+        "Climate classification",
+        "Koeppen-type codes for India — revise map"
+      ],
+      [
+        "Climate change overlay",
+        "Monsoon statistics shifting — careful wording"
+      ],
+      [
+        "Monsoon trough",
+        "Location influences rainfall belts"
+      ],
+      [
+        "Bay lows/depressions",
+        "Rain producers in peak season"
+      ],
+      [
+        "Retreating monsoon",
+        "September–December transitions"
+      ],
+      [
+        "Rain-shadow",
+        "Leeward dryness — Ghats example"
+      ],
+      [
+        "Mango showers / blossom showers",
+        "Local pre-monsoon terms"
+      ],
+      [
+        "Onset criteria",
+        "IMD operational definitions — conceptual"
+      ],
+      [
+        "Flood vs drought years",
+        "Teleconnections + local factors"
+      ]
+    ],
+    "traps": [
+      "El Niño always means full monsoon failure",
+      "Ignoring orography",
+      "Mixing NE and SW monsoon regions",
+      "Absolute jet-stream claims"
+    ],
+    "table": {
+      "title": "Monsoon quick map",
+      "headers": [
+        "Idea",
+        "Hook"
+      ],
+      "rows": [
+        [
+          "SW monsoon",
+          "June–Sep main"
+        ],
+        [
+          "NE monsoon",
+          "TN focus"
+        ],
+        [
+          "ENSO",
+          "Probabilistic link"
+        ],
+        [
+          "Orography",
+          "Ghats/Himalaya"
+        ]
+      ]
+    },
+    "must": [
+      "Two SW branches",
+      "Orography role",
+      "ENSO probabilistic",
+      "NE monsoon TN",
+      "Jet/onset narrative",
+      "Koeppen India map"
+    ],
+    "india": "IMD onset/progress maps are CA; mechanism remains static spine.",
+    "maps": [
+      "Western Ghats rain-shadow",
+      "Bay of Bengal branch path",
+      "TN NE monsoon"
+    ],
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "quick": [
+      "Reproduce table",
+      "5 must-remembers",
+      "3 traps",
+      "India anchor",
+      "10 MCQs"
+    ],
+    "pyqAngle": "Matching lists and statements on Indian monsoon and climatology.",
+    "examSpine": "Definitions → table → India → traps."
+  },
+  {
+    "slug": "geomorphology-oceans",
+    "topicId": "geo-physical",
+    "chance": 72,
+    "title": "Geomorphology & Oceanography",
+    "blurb": "Landforms, plate tectonics, earthquakes/volcanoes and ocean currents — map/concept mix.",
+    "theme": "geomorphology and oceanography",
+    "chanceNote": "Portion chance ~72%. Recurring; parent geo-physical ~79%.",
+    "why": "Process–landform matching and current maps are durable PYQ styles.",
+    "pyq": [
+      "Plate tectonics",
+      "Earthquakes",
+      "Landforms",
+      "Ocean currents",
+      "Coral reefs"
+    ],
+    "facts": [
+      [
+        "Plate boundaries",
+        "Convergent/divergent/transform — earthquake/volcano logic"
+      ],
+      [
+        "Himalayan orogeny",
+        "Collision continuum — seismic implications"
+      ],
+      [
+        "Weathering vs erosion",
+        "In-situ decay vs transport removal"
+      ],
+      [
+        "Fluvial landforms",
+        "Meanders, oxbow, deltas, terraces"
+      ],
+      [
+        "Glacial landforms",
+        "Cirque, moraine — limited India but asked"
+      ],
+      [
+        "Coastal landforms",
+        "Bars, lagoons, cliffs, mangroves interface"
+      ],
+      [
+        "Karst",
+        "Limestone solution landscapes"
+      ],
+      [
+        "Earthquake focus/epicentre",
+        "Definitions"
+      ],
+      [
+        "Tsunami generation",
+        "Displacement of water column"
+      ],
+      [
+        "Volcanic types",
+        "Shield vs composite outline"
+      ],
+      [
+        "Ocean currents",
+        "Warm/cold; climate influence on coasts"
+      ],
+      [
+        "Upwelling",
+        "Nutrient-rich fisheries link"
+      ],
+      [
+        "Tides",
+        "Gravitational; spring/neap idea"
+      ],
+      [
+        "EEZ vs territorial sea",
+        "UNCLOS vocabulary bridge"
+      ],
+      [
+        "Coral reefs",
+        "Conditions: warm, clear, shallow — bleaching CA"
+      ],
+      [
+        "Continental shelf",
+        "Resource and hazard relevance"
+      ],
+      [
+        "Cyclone ocean heat",
+        "Warm SST energy source"
+      ],
+      [
+        "Seamounts/trenches",
+        "Map terms"
+      ],
+      [
+        "Mass movements",
+        "Landslides in Himalaya — DM bridge"
+      ],
+      [
+        "Isostasy outline",
+        "Vertical adjustment idea"
+      ]
+    ],
+    "traps": [
+      "All plate edges identical hazards",
+      "Cold currents always dry coasts absolutely",
+      "Coral in cold deep seas",
+      "Focus=epicentre"
+    ],
+    "table": {
+      "title": "Boundary hazards",
+      "headers": [
+        "Boundary",
+        "Typical association"
+      ],
+      "rows": [
+        [
+          "Convergent",
+          "Quakes/volcanoes/orogeny"
+        ],
+        [
+          "Divergent",
+          "Rifting volcanism"
+        ],
+        [
+          "Transform",
+          "Strike-slip quakes"
+        ]
+      ]
+    },
+    "must": [
+      "3 boundary types",
+      "Weathering≠erosion",
+      "Warm vs cold currents idea",
+      "Coral conditions",
+      "Focus vs epicentre"
+    ],
+    "india": "Himalayan seismicity + Indian Ocean tsunami literacy + coral bleaching headlines.",
+    "maps": [
+      "Ring of Fire contrast",
+      "Indian Ocean currents sketch",
+      "Andaman trench awareness"
+    ],
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "quick": [
+      "Reproduce table",
+      "5 must-remembers",
+      "3 traps",
+      "India anchor",
+      "10 MCQs"
+    ],
+    "pyqAngle": "Matching lists and statements on geomorphology and oceanography.",
+    "examSpine": "Definitions → table → India → traps."
+  },
+  {
+    "slug": "physiography-drainage",
+    "topicId": "geo-india",
+    "chance": 80,
+    "title": "Indian Physiography & Drainage",
+    "blurb": "Himalaya, Peninsular block, Indo-Gangetic plains and drainage systems — India geography core.",
+    "theme": "Indian physiography and drainage",
+    "chanceNote": "Portion chance ~80%. Steady; parent geo-india ~77%.",
+    "why": "Region–feature matching is the backbone of India physical geography Prelims.",
+    "pyq": [
+      "Himalayan ranges",
+      "Peninsular plateaus",
+      "Drainage patterns",
+      "Passes",
+      "Coastal plains"
+    ],
+    "facts": [
+      [
+        "Himalayan divisions",
+        "Trans/Greater/Lesser/Siwalik longitudinal zonation"
+      ],
+      [
+        "Syntaxial bends",
+        "NW and NE bends — map awareness"
+      ],
+      [
+        "Passes",
+        "Strategic/historical — select list not encyclopedia"
+      ],
+      [
+        "Indo-Gangetic plain",
+        "Alluvial fertility and flood regimes"
+      ],
+      [
+        "Peninsular plateau",
+        "Old hard rock; Deccan traps; residual hills"
+      ],
+      [
+        "Western vs Eastern Ghats",
+        "Continuity, elevation, rainfall contrasts"
+      ],
+      [
+        "Coastal plains",
+        "West narrower; east wider deltas narrative"
+      ],
+      [
+        "Himalayan drainage",
+        "Antecedent/tectonic influences; snow-fed"
+      ],
+      [
+        "Peninsular drainage",
+        "Rain-fed; gentle gradients; east-flowing majors"
+      ],
+      [
+        "West-flowing exceptions",
+        "Narmada/Tapi rift valleys — classic"
+      ],
+      [
+        "Ganga–Brahmaputra–Indus",
+        "System personalities"
+      ],
+      [
+        "Godavari/Krishna/Kaveri/Mahanadi",
+        "Peninsular east-flowing set"
+      ],
+      [
+        "Drainage patterns",
+        "Dendritic/trellis/radial — rock structure links"
+      ],
+      [
+        "Water divides",
+        "Western Ghats divide idea"
+      ],
+      [
+        "Lakes",
+        "Wular, Chilika, Pulicat, Sambhar — type discrimination"
+      ],
+      [
+        "Islands",
+        "Andaman-Nicobar tectonic; Lakshadweep coral"
+      ],
+      [
+        "Thar desert edge",
+        "Physiographic transition"
+      ],
+      [
+        "Doab concept",
+        "Land between rivers"
+      ],
+      [
+        "River interlinking debates",
+        "Conceptual — not scheme spam"
+      ],
+      [
+        "Floodplains/khadar/bhangar",
+        "Alluvial terms"
+      ]
+    ],
+    "traps": [
+      "All Himalayan rivers purely rain-fed",
+      "Narmada east-flowing",
+      "Eastern Ghats as continuous as Western",
+      "Chilika as freshwater always"
+    ],
+    "table": {
+      "title": "Drainage contrast",
+      "headers": [
+        "Type",
+        "Cue"
+      ],
+      "rows": [
+        [
+          "Himalayan rivers",
+          "Snow+rain; long"
+        ],
+        [
+          "Peninsular",
+          "Rain-fed; graded"
+        ],
+        [
+          "West-flowing",
+          "Narmada/Tapi rifts"
+        ],
+        [
+          "East-flowing majors",
+          "Deltaic mouths"
+        ]
+      ]
+    },
+    "must": [
+      "Himalayan zones",
+      "W vs E Ghats",
+      "Narmada/Tapi west",
+      "Ganga system",
+      "Dendritic etc.",
+      "Island types"
+    ],
+    "india": "Map practice weekly beats prose-only reading for this portion.",
+    "maps": [
+      "Major passes select",
+      "Narmada rift",
+      "Delta coasts",
+      "Andaman vs Lakshadweep"
+    ],
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "quick": [
+      "Reproduce table",
+      "5 must-remembers",
+      "3 traps",
+      "India anchor",
+      "10 MCQs"
+    ],
+    "pyqAngle": "Matching lists and statements on Indian physiography and drainage.",
+    "examSpine": "Definitions → table → India → traps."
+  },
+  {
+    "slug": "agri-resources-minerals",
+    "topicId": "geo-india",
+    "chance": 70,
+    "title": "Agriculture, Resources & Minerals",
+    "blurb": "Crops, soils, mineral belts and energy resources — location questions.",
+    "theme": "Indian agriculture, soils and mineral resources",
+    "chanceNote": "Portion chance ~70%. Location matching; parent geo-india ~77%.",
+    "why": "Crop–state and mineral–belt pairs are high-yield if drilled as tables.",
+    "pyq": [
+      "Crops",
+      "Soils",
+      "Mineral belts",
+      "Energy resources",
+      "Irrigation"
+    ],
+    "facts": [
+      [
+        "Black soils",
+        "Regur; cotton; Deccan traps link"
+      ],
+      [
+        "Alluvial soils",
+        "Northern plains; intensive agriculture"
+      ],
+      [
+        "Red/laterite",
+        "Peninsular distributions; leaching"
+      ],
+      [
+        "Rice/wheat geography",
+        "Rainfall/irrigation contrasts"
+      ],
+      [
+        "Millets revival",
+        "Nutrition + dryland — CA–static"
+      ],
+      [
+        "Sugarcane/cotton/jute",
+        "Locational factors"
+      ],
+      [
+        "Plantation crops",
+        "South/NE niches"
+      ],
+      [
+        "Green Revolution regions",
+        "Punjab-Haryana-West UP narrative + limits"
+      ],
+      [
+        "Irrigation types",
+        "Canal/well/tank regional patterns"
+      ],
+      [
+        "Iron ore belts",
+        "Odisha-Jharkhand-Chhattisgarh etc."
+      ],
+      [
+        "Bauxite/manganese/copper",
+        "Select belts"
+      ],
+      [
+        "Coalfields",
+        "Gondwana vs tertiary — Damodar etc."
+      ],
+      [
+        "Petroleum/gas basins",
+        "Mumbai High, KG, Assam narrative"
+      ],
+      [
+        "Critical minerals CA",
+        "Lithium/rare earth awareness"
+      ],
+      [
+        "Forest types link",
+        "Resource geography overlap"
+      ],
+      [
+        "Fisheries",
+        "Coastal and inland"
+      ],
+      [
+        "Horticulture belts",
+        "Select examples"
+      ],
+      [
+        "Soil degradation",
+        "Salinity/erosion statements"
+      ],
+      [
+        "Agro-climatic regions",
+        "Planning idea"
+      ],
+      [
+        "Mineral policy CA",
+        "Light overlay only"
+      ]
+    ],
+    "traps": [
+      "Black soil only in north India",
+      "All coal in one state",
+      "Millets need high water always",
+      "Confusing bauxite and iron belts"
+    ],
+    "table": {
+      "title": "Soil–crop cues",
+      "headers": [
+        "Soil",
+        "Cue crop/region"
+      ],
+      "rows": [
+        [
+          "Black/regur",
+          "Cotton/Deccan"
+        ],
+        [
+          "Alluvial",
+          "Rice-wheat plains"
+        ],
+        [
+          "Laterite",
+          "Leached uplands"
+        ],
+        [
+          "Arid",
+          "Rajasthan margins"
+        ]
+      ]
+    },
+    "must": [
+      "Black soil–cotton–Deccan",
+      "Alluvial plains",
+      "Major iron/coal belts",
+      "Mumbai High",
+      "Irrigation regionality"
+    ],
+    "india": "One mineral map + one crop map handwritten > 50 pages unread.",
+    "maps": [
+      "Damodar coal",
+      "Odisha iron",
+      "Mumbai High",
+      "Cotton Deccan"
+    ],
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "quick": [
+      "Reproduce table",
+      "5 must-remembers",
+      "3 traps",
+      "India anchor",
+      "10 MCQs"
+    ],
+    "pyqAngle": "Matching lists and statements on Indian agriculture, soils and mineral resources.",
+    "examSpine": "Definitions → table → India → traps."
+  },
+  {
+    "slug": "ivc-sites-culture",
+    "topicId": "hist-ancient",
+    "chance": 68,
+    "title": "Indus Valley Civilization: Sites, Urban Culture & Decline",
+    "blurb": "Map-ready sites, urban planning, crafts/trade and decline theories — hottest Ancient India slice.",
+    "theme": "Indus Valley sites, culture and decline",
+    "years": [
+      2016,
+      2018,
+      2019,
+      2020,
+      2022,
+      2024,
+      2025
+    ],
+    "chanceNote": "Hottest Ancient sub-portion (~68% portion chance). Site↔feature matching almost every alternate year; parent hist-ancient ~39% but this slice punches above.",
+    "why": "Distinctive archaeological signatures create clean matching MCQs without dynastic lists.",
+    "pyq": [
+      "IVC sites & features",
+      "Harappan crafts & trade",
+      "Decline theories",
+      "Urban planning"
+    ],
+    "facts": [
+      [
+        "Grid planning",
+        "Streets, baked bricks, drainage — civic hygiene narrative"
+      ],
+      [
+        "Citadel–lower town",
+        "Bipartite urban morphology"
+      ],
+      [
+        "Great Bath",
+        "Mohenjo-daro public water structure classic"
+      ],
+      [
+        "Harappa granaries",
+        "Warehouse complexes in textbook lore"
+      ],
+      [
+        "Lothal dockyard",
+        "Maritime trade anchor — almost unique pairing"
+      ],
+      [
+        "Dholavira water",
+        "Reservoirs; three-part city; signboard"
+      ],
+      [
+        "Kalibangan",
+        "Ploughed field; fire altars"
+      ],
+      [
+        "Rakhigarhi",
+        "Among largest settlements in India"
+      ],
+      [
+        "Chanhudaro crafts",
+        "Bead-making specialisation"
+      ],
+      [
+        "Surkotada horse debate",
+        "Handle carefully — contested"
+      ],
+      [
+        "Alamgirpur fringe",
+        "Eastern cultural reach"
+      ],
+      [
+        "Seals & script",
+        "Undeciphered; unicorn motif"
+      ],
+      [
+        "Weights & measures",
+        "Administrative coordination signal"
+      ],
+      [
+        "Crafts",
+        "Beads, shell, bronze/copper"
+      ],
+      [
+        "Meluhha link",
+        "Mesopotamian trade narrative"
+      ],
+      [
+        "Agriculture base",
+        "Wheat/barley etc.; pastoral mix"
+      ],
+      [
+        "Religion caution",
+        "Pashupati/mother goddess — interpretive"
+      ],
+      [
+        "Decline multi-causal",
+        "Climate, rivers, trade — not single invasion dogma"
+      ],
+      [
+        "Late Harappan",
+        "Urban fade ≠ people vanish"
+      ],
+      [
+        "Vs Vedic contrast",
+        "Different urban/ritual profile — trap area"
+      ]
+    ],
+    "traps": [
+      "IVC=Vedic culture",
+      "Single-cause Aryan invasion decline only",
+      "Dockyard not at Lothal",
+      "Script deciphered conclusively"
+    ],
+    "table": {
+      "title": "Site↔feature gold",
+      "headers": [
+        "Site",
+        "Feature"
+      ],
+      "rows": [
+        [
+          "Lothal",
+          "Dockyard"
+        ],
+        [
+          "Dholavira",
+          "Reservoirs/3-part"
+        ],
+        [
+          "Kalibangan",
+          "Ploughed field"
+        ],
+        [
+          "Mohenjo-daro",
+          "Great Bath"
+        ],
+        [
+          "Harappa",
+          "Granaries"
+        ],
+        [
+          "Rakhigarhi",
+          "Scale in India"
+        ]
+      ]
+    },
+    "must": [
+      "Lothal dockyard",
+      "Dholavira water",
+      "Kalibangan field",
+      "Undeciphered script",
+      "Multi-causal decline",
+      "Not Vedic equate"
+    ],
+    "india": "Prioritise Indian sites (Dholavira, Rakhigarhi, Lothal, Kalibangan) plus classic Pakistani type-sites for features.",
+    "maps": [
+      "Gujarat Harappan cluster",
+      "Haryana Rakhigarhi",
+      "Rajasthan Kalibangan",
+      "Sindh/Punjab type-sites"
+    ],
+    "examSpine": "Site table → urban traits → crafts/trade → decline → Vedic contrast trap.",
+    "quick": [
+      "Reproduce table",
+      "5 must-remembers",
+      "3 traps",
+      "India anchor",
+      "10 MCQs"
+    ],
+    "pyqAngle": "Matching lists and statements on Indus Valley sites, culture and decline."
+  },
+  {
+    "slug": "buddhism-jainism",
+    "topicId": "hist-ancient",
+    "chance": 66,
+    "title": "Buddhism & Jainism: Doctrines, Councils, Patronage",
+    "blurb": "Doctrines, sangha, councils and royal patrons — second Ancient India magnet.",
+    "theme": "Buddhism and Jainism doctrines and councils",
+    "years": [
+      2016,
+      2017,
+      2019,
+      2020,
+      2021,
+      2023,
+      2024
+    ],
+    "chanceNote": "Portion chance ~66%. Councils/doctrines/patrons recur; parent hist-ancient ~39%.",
+    "why": "Philosophy labels and council–king–place triples are MCQ-perfect.",
+    "pyq": [
+      "Buddhist councils",
+      "Doctrines & symbols",
+      "Jaina philosophy",
+      "Patronage & sites"
+    ],
+    "facts": [
+      [
+        "Shramana context",
+        "6th–5th c. BCE urban/Mahajanapada churn"
+      ],
+      [
+        "Four Noble Truths",
+        "Dukkha; cause; cessation; path"
+      ],
+      [
+        "Eightfold Path",
+        "Sila–samadhi–prajna grouping helps"
+      ],
+      [
+        "Three Jewels",
+        "Buddha, Dhamma, Sangha"
+      ],
+      [
+        "Anatman/dependent origination",
+        "Statement-level awareness"
+      ],
+      [
+        "Theravada/Mahayana evolution",
+        "Bodhisattva ideal; careful labels"
+      ],
+      [
+        "1st council Rajgir",
+        "After Buddha’s death tradition"
+      ],
+      [
+        "2nd Vaishali",
+        "Monastic disputes"
+      ],
+      [
+        "3rd Pataliputra",
+        "Ashoka / Moggaliputta Tissa tradition"
+      ],
+      [
+        "4th Kashmir tradition",
+        "Kanishka / Sarvastivada–Mahayana ferment"
+      ],
+      [
+        "Mahavira",
+        "24th Tirthankara; Rishabha first in tradition"
+      ],
+      [
+        "Tri-ratna Jain",
+        "Right faith, knowledge, conduct"
+      ],
+      [
+        "Anekantavada/syadvada",
+        "Many-sidedness; conditional predication"
+      ],
+      [
+        "Ahimsa/aparigraha",
+        "Ethical centre / non-possession"
+      ],
+      [
+        "Digambara/Svetambara",
+        "Disciplinary cultural differences outline"
+      ],
+      [
+        "Ashokan patronage",
+        "Stupas/edicts visibility"
+      ],
+      [
+        "Symbols",
+        "Dharmachakra, Bodhi tree, lotus"
+      ],
+      [
+        "Buddhist circuit",
+        "Lumbini, Bodh Gaya, Sarnath, Kushinagar"
+      ],
+      [
+        "Art link",
+        "Sanchi/Bharhut/Amaravati"
+      ],
+      [
+        "Social caution",
+        "Do not cartoon ‘abolished caste overnight’"
+      ]
+    ],
+    "traps": [
+      "Mixing Three Jewels with Jain Tri-ratna",
+      "Wrong council–king pairs",
+      "Equating anekantavada with madhyamaka casually",
+      "Ashoka as exclusive theocrat"
+    ],
+    "table": {
+      "title": "Councils",
+      "headers": [
+        "Council",
+        "Place cue"
+      ],
+      "rows": [
+        [
+          "1st",
+          "Rajgir"
+        ],
+        [
+          "2nd",
+          "Vaishali"
+        ],
+        [
+          "3rd",
+          "Pataliputra/Ashoka"
+        ],
+        [
+          "4th",
+          "Kashmir/Kanishka tradition"
+        ]
+      ]
+    },
+    "must": [
+      "4NT + 8-fold",
+      "Three Jewels",
+      "Council places",
+      "Jain Tri-ratna",
+      "Anekantavada",
+      "Ashoka 3rd / Kanishka 4th"
+    ],
+    "india": "Map Buddhist circuit + Sanchi; Jaina centres like Shravanabelagola as culture bridge.",
+    "maps": [
+      "Buddhist circuit four sites",
+      "Rajgir/Vaishali/Pataliputra",
+      "Sanchi"
+    ],
+    "quick": [
+      "Reproduce table",
+      "5 must-remembers",
+      "3 traps",
+      "India anchor",
+      "10 MCQs"
+    ],
+    "pyqAngle": "Matching lists and statements on Buddhism and Jainism doctrines and councils.",
+    "examSpine": "Definitions → table → India → traps."
+  },
+  {
+    "slug": "maurya-gupta",
+    "topicId": "hist-ancient",
+    "chance": 64,
+    "title": "Mauryas & Guptas: Polity, Dhamma, Culture & Science",
+    "blurb": "Arthashastra statecraft, Ashokan Dhamma, Gupta administration and classical culture.",
+    "theme": "Mauryan and Gupta polity and culture",
+    "years": [
+      2017,
+      2018,
+      2020,
+      2022,
+      2023,
+      2025
+    ],
+    "chanceNote": "Portion chance ~64%. Edicts/Dhamma + Gupta culture/science; parent hist-ancient ~39%.",
+    "why": "Epigraphy + ‘classical age’ debates dominate non-IVC Ancient polity–culture asks.",
+    "pyq": [
+      "Ashokan edicts & Dhamma",
+      "Arthashastra",
+      "Gupta culture & science",
+      "Land grants"
+    ],
+    "facts": [
+      [
+        "Mauryan timeline cue",
+        "Chandragupta–Bindusara–Ashoka"
+      ],
+      [
+        "Arthashastra",
+        "Saptanga; espionage; revenue — ideal-type manual"
+      ],
+      [
+        "Megasthenes",
+        "Fragmentary Indica via later writers — cautious use"
+      ],
+      [
+        "Ashokan edicts",
+        "Prakrit; Brahmi (Kharosthi NW)"
+      ],
+      [
+        "RE XIII",
+        "Kalinga remorse centrepiece"
+      ],
+      [
+        "Dhamma",
+        "Ethical-social conduct; tolerance; welfare — not mere conversion campaign"
+      ],
+      [
+        "Dhamma-mahamattas",
+        "Moral-administrative agents"
+      ],
+      [
+        "Provincial centres",
+        "Taxila/Ujjain traditions"
+      ],
+      [
+        "Gupta arc",
+        "Samudra/Chandra II peak narratives"
+      ],
+      [
+        "Land grants",
+        "Agrahara etc. reshape local power"
+      ],
+      [
+        "Administration contrast",
+        "Less ‘central machine’ than Mauryan ideal-types in textbooks"
+      ],
+      [
+        "Aryabhata",
+        "Astronomy/maths card"
+      ],
+      [
+        "Kalidasa",
+        "Classical Sanskrit aesthetics"
+      ],
+      [
+        "Early structural temples",
+        "Art continuum"
+      ],
+      [
+        "Golden age trap",
+        "Regionally uneven; hierarchies persist"
+      ],
+      [
+        "Coinage/trade",
+        "Urban craft support"
+      ],
+      [
+        "Nalanda long arc",
+        "Learning centres continuum"
+      ],
+      [
+        "Sangam bonus",
+        "Chera-Chola-Pandya adjacent elimination power"
+      ],
+      [
+        "Sanchi/Sarnath landscape",
+        "Ashokan Buddhist geography"
+      ],
+      [
+        "Decline nuances",
+        "Pushyabhuti/later transitions — light"
+      ]
+    ],
+    "traps": [
+      "Dhamma = forced mass conversion only",
+      "Arthashastra as CCTV of every district",
+      "Golden age absolute praise",
+      "Wrong edict script claims"
+    ],
+    "table": {
+      "title": "Maurya vs Gupta cues",
+      "headers": [
+        "Theme",
+        "Maurya cue",
+        "Gupta cue"
+      ],
+      "rows": [
+        [
+          "Sources",
+          "Edicts/Arthashastra",
+          "Literature/coins/grants"
+        ],
+        [
+          "State image",
+          "Centralised ideal-type",
+          "Land-grant networks"
+        ],
+        [
+          "Culture",
+          "Dhamma/Buddhist landscape",
+          "Classical Sanskrit/science"
+        ]
+      ]
+    },
+    "must": [
+      "RE XIII",
+      "Brahmi/Prakrit",
+      "Dhamma≠theocracy",
+      "Saptanga",
+      "Aryabhata",
+      "Golden age nuance"
+    ],
+    "india": "Pataliputra hub + Sanchi/Sarnath map + Gupta culture list.",
+    "maps": [
+      "Pataliputra",
+      "Sanchi",
+      "Taxila/Ujjain tradition"
+    ],
+    "quick": [
+      "Reproduce table",
+      "5 must-remembers",
+      "3 traps",
+      "India anchor",
+      "10 MCQs"
+    ],
+    "pyqAngle": "Matching lists and statements on Mauryan and Gupta polity and culture.",
+    "examSpine": "Definitions → table → India → traps."
+  },
+  {
+    "slug": "isro-space-defence",
+    "topicId": "sci-space-defence",
+    "chance": 76,
+    "title": "ISRO, Space & Defence Tech",
+    "blurb": "Launch vehicles, missions, missiles and dual-use space–defence literacy — rising theme.",
+    "theme": "space missions and defence technology",
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "chanceNote": "Portion chance ~76% (rising). Parent sci-space-defence ~75%. Missions/missiles CA–static blend.",
+    "why": "Named missions and missile families create matching questions with rising frequency.",
+    "pyq": [
+      "ISRO missions",
+      "Launch vehicles",
+      "Missiles",
+      "Space applications",
+      "Nuclear/defence awareness"
+    ],
+    "facts": [
+      [
+        "PSLV/GSLV/LVM3",
+        "Workhorse vs heavier lift narratives"
+      ],
+      [
+        "SSLV",
+        "Small satellite launch niche"
+      ],
+      [
+        "Chandrayaan lineage",
+        "Lunar exploration cards — refresh latest"
+      ],
+      [
+        "Mangalyaan",
+        "Mars orbiter cost-effectiveness lore"
+      ],
+      [
+        "Gaganyaan",
+        "Human spaceflight programme awareness"
+      ],
+      [
+        "NavIC",
+        "Regional navigation — strategic autonomy"
+      ],
+      [
+        "Remote sensing",
+        "Resource/disaster applications"
+      ],
+      [
+        "Satcom",
+        "Communication/edutainment/governance uses"
+      ],
+      [
+        "Space debris/safety",
+        "Emerging statement themes"
+      ],
+      [
+        "Missile families",
+        "Agni/Prithvi/BrahMos — roles outline"
+      ],
+      [
+        "MRBM/IRBM/ICBM cues",
+        "Range class vocabulary"
+      ],
+      [
+        "Missile defence sketch",
+        "Awareness level"
+      ],
+      [
+        "Dual use",
+        "Space tech civilian + strategic"
+      ],
+      [
+        "NSIL/IN-SPACe",
+        "Institutional reform headlines"
+      ],
+      [
+        "Private sector entry",
+        "Policy shift CA"
+      ],
+      [
+        "ASAT test awareness",
+        "Strategic signalling literacy"
+      ],
+      [
+        "Cryogenic tech",
+        "GSLV capability story"
+      ],
+      [
+        "Earth observation constellations",
+        "Applications over alphabet soup"
+      ],
+      [
+        "Defence research bodies",
+        "DRDO headline link"
+      ],
+      [
+        "Refresh cadence",
+        "Living list of last 24 months missions"
+      ]
+    ],
+    "traps": [
+      "Mixing PSLV/GSLV capabilities casually",
+      "Outdated mission status",
+      "Every satellite is navigation",
+      "Range class mix-ups"
+    ],
+    "table": {
+      "title": "Vehicle cues",
+      "headers": [
+        "Vehicle",
+        "Cue"
+      ],
+      "rows": [
+        [
+          "PSLV",
+          "Workhorse SSO etc."
+        ],
+        [
+          "GSLV",
+          "Heavier/geo-capable lineage"
+        ],
+        [
+          "LVM3",
+          "Heavy lift"
+        ],
+        [
+          "SSLV",
+          "Small/quick"
+        ]
+      ]
+    },
+    "must": [
+      "PSLV vs GSLV/LVM3",
+      "NavIC",
+      "Chandrayaan/Gaganyaan refresh",
+      "Missile family roles",
+      "Applications > acronyms"
+    ],
+    "india": "Maintain a 1-page living ISRO+missile sheet dated monthly before Prelims.",
+    "maps": [
+      "Sriharikota",
+      "Downrange ocean safety narratives"
+    ],
+    "quick": [
+      "Reproduce table",
+      "5 must-remembers",
+      "3 traps",
+      "India anchor",
+      "10 MCQs"
+    ],
+    "pyqAngle": "Matching lists and statements on space missions and defence technology.",
+    "examSpine": "Definitions → table → India → traps."
+  },
+  {
+    "slug": "national-schemes-institutions",
+    "topicId": "ca-national",
+    "chance": 79,
+    "title": "National Schemes & Institutions in News",
+    "blurb": "How to study schemes/institutions with static anchors — high volume, ephemeral CA.",
+    "theme": "national schemes and institutions in news",
+    "chanceNote": "Portion chance ~79%. High volume all decade; parent ca-national ~83%. Ephemeral — revise last 12–18 months.",
+    "why": "UPSC mixes scheme purpose with constitutional/statutory institutional facts.",
+    "pyq": [
+      "Schemes",
+      "Reports",
+      "Institutions",
+      "Index rankings",
+      "Cabinet decisions"
+    ],
+    "facts": [
+      [
+        "Static spine first",
+        "Know ministry/act/body before scheme spam"
+      ],
+      [
+        "Scheme anatomy",
+        "Objective, beneficiary, implementing ministry, funding pattern"
+      ],
+      [
+        "Avoid 100-scheme lists",
+        "20 high-salience with anatomy beats 100 names"
+      ],
+      [
+        "Constitutional bodies",
+        "Already in polity — CA only overlays personnel/events"
+      ],
+      [
+        "Statutory regulators",
+        "RBI/SEBI/TRAI etc. purpose one-liners"
+      ],
+      [
+        "Think tanks/reports",
+        "NITI, surveys — match report↔theme"
+      ],
+      [
+        "Indices",
+        "HDI/MPI/hunger — know publisher caution"
+      ],
+      [
+        "Budget announcements",
+        "Many are branding; extract mechanism"
+      ],
+      [
+        "Centrally sponsored vs central sector",
+        "Funding discriminator"
+      ],
+      [
+        "DBT logic",
+        "Targeting and leakage narrative"
+      ],
+      [
+        "Social sector umbrellas",
+        "Health/education/livelihood families"
+      ],
+      [
+        "Infrastructure umbrellas",
+        "Roads/ports/digital public goods"
+      ],
+      [
+        "Agriculture schemes",
+        "MSP/insurance/irrigation — concept first"
+      ],
+      [
+        "Women/child schemes",
+        "Recurring social sector"
+      ],
+      [
+        "Institution creation news",
+        "New body? Know parent law/cabinet status"
+      ],
+      [
+        "Merger/renames",
+        "Classic trap area"
+      ],
+      [
+        "International indices CA",
+        "Verify year/publisher"
+      ],
+      [
+        "State schemes rarely",
+        "Unless nationalised narrative"
+      ],
+      [
+        "Revision window",
+        "Last 18 months + evergreen institutions"
+      ],
+      [
+        "Link to static",
+        "Every CA bullet needs a static hook"
+      ]
+    ],
+    "traps": [
+      "Memorising only scheme names without objectives",
+      "Calling statutory bodies constitutional",
+      "Outdated ministry ownership",
+      "Index publisher mix-ups"
+    ],
+    "table": {
+      "title": "Scheme anatomy card",
+      "headers": [
+        "Field",
+        "Ask"
+      ],
+      "rows": [
+        [
+          "Objective",
+          "What problem?"
+        ],
+        [
+          "Beneficiary",
+          "Who?"
+        ],
+        [
+          "Ministry",
+          "Who owns?"
+        ],
+        [
+          "Type",
+          "CSS vs central sector"
+        ],
+        [
+          "Static hook",
+          "Act/body/concept"
+        ]
+      ]
+    },
+    "must": [
+      "Scheme anatomy 5 fields",
+      "CSS vs central sector",
+      "Constitutional vs statutory",
+      "18-month CA window",
+      "Report↔theme matches"
+    ],
+    "india": "Build a rolling Notion/notebook of 30 cards max; prune monthly.",
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "maps": [],
+    "quick": [
+      "Reproduce table",
+      "5 must-remembers",
+      "3 traps",
+      "India anchor",
+      "10 MCQs"
+    ],
+    "pyqAngle": "Matching lists and statements on national schemes and institutions in news.",
+    "examSpine": "Definitions → table → India → traps."
+  },
+  {
+    "slug": "numeracy-di",
+    "topicId": "csat-math",
+    "chance": 90,
+    "title": "CSAT Numeracy & Data Interpretation — High-Yield Patterns",
+    "blurb": "Percentages, ratio, averages, time-work, TSD, SI/CI, number system and DI — CSAT quants spine.",
+    "theme": "CSAT quantitative aptitude and DI patterns",
+    "chanceNote": "Structural next-exam chance ~90% for numeracy block. CSAT math parent ~85%. Themes weighted by 10-year CSAT pattern frequency.",
+    "why": "Qualifying paper rewards speed on recurring arith patterns more than exotic puzzles.",
+    "pyq": [
+      "Percentages",
+      "Ratio/mixtures",
+      "Averages",
+      "Time-work",
+      "Time-distance",
+      "SI/CI",
+      "DI",
+      "Simplification"
+    ],
+    "facts": [
+      [
+        "Percent base discipline",
+        "Always ask ‘percent of what?’"
+      ],
+      [
+        "Successive percent",
+        "Multiply factors; avoid naive add"
+      ],
+      [
+        "Profit-loss",
+        "SP/CP relations; marked price/discount chains"
+      ],
+      [
+        "Ratio parts",
+        "Sum parts = total; mixtures allegation"
+      ],
+      [
+        "Replacement mixtures",
+        "Quantity removed/added iterations"
+      ],
+      [
+        "Averages",
+        "Sum = avg × n; weighted averages"
+      ],
+      [
+        "Time-work",
+        "Rate = 1/days; LCM for combined"
+      ],
+      [
+        "Pipes/cisterns",
+        "Inflow/outflow signed rates"
+      ],
+      [
+        "TSD",
+        "Distance = speed × time; unit consistency km/h↔m/s"
+      ],
+      [
+        "Relative speed",
+        "Same/opposite direction"
+      ],
+      [
+        "Trains",
+        "Length adds when crossing; platforms"
+      ],
+      [
+        "Boats/streams",
+        "Downstream/upstream = b±u"
+      ],
+      [
+        "SI",
+        "PRT/100 linear"
+      ],
+      [
+        "CI basics",
+        "Compound factor (1+r)^n — limited depth usually"
+      ],
+      [
+        "Number system",
+        "HCF/LCM, remainders, divisibility"
+      ],
+      [
+        "Simplification",
+        "BODMAS; fraction/decimal speed"
+      ],
+      [
+        "DI tables",
+        "Read totals/legends before computing"
+      ],
+      [
+        "DI speed",
+        "Approximate when options far apart"
+      ],
+      [
+        "Skip rule",
+        "If >2 min without path, mark and return"
+      ],
+      [
+        "Worked steps habit",
+        "Write rates/units — cuts silly errors"
+      ]
+    ],
+    "traps": [
+      "Wrong percent base",
+      "Adding successive percents",
+      "km/h left as m/s inconsistently",
+      "CI/SI formula swap",
+      "Reading wrong DI row"
+    ],
+    "table": {
+      "title": "Theme weight (study time cue)",
+      "headers": [
+        "Theme",
+        "Weight cue"
+      ],
+      "rows": [
+        [
+          "Percent/P-L",
+          "Very high"
+        ],
+        [
+          "Ratio/mixture",
+          "High"
+        ],
+        [
+          "DI",
+          "High when present"
+        ],
+        [
+          "TSD/Work",
+          "High"
+        ],
+        [
+          "Averages",
+          "Medium-high"
+        ],
+        [
+          "SI/CI",
+          "Medium"
+        ],
+        [
+          "Number/simp",
+          "Medium-high"
+        ]
+      ]
+    },
+    "must": [
+      "% base",
+      "Successive multiply",
+      "Work rates",
+      "m/s = ×5/18",
+      "SI=PRT/100",
+      "DI read legend first",
+      "Skip >2 min"
+    ],
+    "india": "Grind dedicated CSAT Quants mocks in this hub; explanations show worked steps.",
+    "examSpine": "Percent/ratio → work/TSD → SI → DI sets → skip discipline.",
+    "quick": [
+      "20% drills",
+      "10 ratio/mixture",
+      "10 work/TSD",
+      "1 DI set",
+      "Timed 20 Q"
+    ],
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "maps": [],
+    "pyqAngle": "Matching lists and statements on CSAT quantitative aptitude and DI patterns."
+  },
+  {
+    "slug": "biodiversity-hotspots-conventions",
+    "topicId": "env-biodiversity",
+    "chance": 72,
+    "title": "Biodiversity Hotspots & Global Conventions",
+    "blurb": "Hotspot criteria and CBD/CITES/CMS/Nagoya purpose map for Prelims.",
+    "theme": "biodiversity hotspots and global environment conventions",
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "chanceNote": "Portion chance ~72%. Steady; pairs with protected-areas. Parent ~85%.",
+    "why": "Definitional criteria + treaty purpose one-liners are easy to mark.",
+    "pyq": [
+      "Hotspots",
+      "CBD",
+      "CITES",
+      "Nagoya",
+      "CMS"
+    ],
+    "facts": [
+      [
+        "Hotspot criteria",
+        "High endemism + habitat loss/threat thresholds"
+      ],
+      [
+        "India-related hotspots",
+        "Himalaya, Western Ghats, Indo-Burma, Sundaland (Nicobar)"
+      ],
+      [
+        "Endemism",
+        "Species restricted to a region"
+      ],
+      [
+        "CBD",
+        "Conservation, sustainable use, benefit sharing"
+      ],
+      [
+        "Nagoya Protocol",
+        "Access and benefit sharing"
+      ],
+      [
+        "CITES",
+        "International trade regulation via appendices"
+      ],
+      [
+        "CMS",
+        "Migratory species cooperation"
+      ],
+      [
+        "Cartagena Protocol",
+        "Biosafety/LMOs — distinct from Nagoya"
+      ],
+      [
+        "Protected area ≠ hotspot",
+        "Scientific label vs legal tool"
+      ],
+      [
+        "Benefit sharing",
+        "Genetic resources and TK ethics"
+      ],
+      [
+        "Appendices idea",
+        "Different trade strictness"
+      ],
+      [
+        "Migratory flyways",
+        "Birds link CMS and wetlands"
+      ],
+      [
+        "ABS India",
+        "Biodiversity Act outline"
+      ],
+      [
+        "Marine biodiversity",
+        "Reefs/mangroves/EEZ"
+      ],
+      [
+        "Invasive alien species",
+        "CBD concern"
+      ],
+      [
+        "Aichi to GBF",
+        "Targets evolve — verify CA labels"
+      ],
+      [
+        "Community knowledge",
+        "PBR idea"
+      ],
+      [
+        "Synthetic biology edge",
+        "Headline awareness only"
+      ]
+    ],
+    "traps": [
+      "Every forest is a hotspot unit",
+      "Cartagena=Nagoya",
+      "CITES bans all trade",
+      "CBD=UNFCCC"
+    ],
+    "table": {
+      "title": "Convention purposes",
+      "headers": [
+        "Instrument",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "CBD",
+          "Biodiversity triad"
+        ],
+        [
+          "Nagoya",
+          "ABS"
+        ],
+        [
+          "Cartagena",
+          "Biosafety"
+        ],
+        [
+          "CITES",
+          "Trade"
+        ],
+        [
+          "CMS",
+          "Migratory"
+        ]
+      ]
+    },
+    "maps": [
+      "Western Ghats",
+      "Eastern Himalaya",
+      "Nicobar"
+    ],
+    "must": [
+      "Hotspot criteria",
+      "India hotspot list",
+      "CBD triad",
+      "Nagoya≠Cartagena",
+      "CITES=trade"
+    ],
+    "india": "Western Ghats endemism examples + NBA outline.",
+    "pyqAngle": "Hotspot definition; convention↔purpose match.",
+    "examSpine": "Criteria → India list → convention table → ABS/biosafety split.",
+    "quick": [
+      "Criteria",
+      "India list",
+      "5 conventions",
+      "2 traps",
+      "10 MCQs"
+    ]
+  }
+]

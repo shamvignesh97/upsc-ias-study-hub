@@ -1,7 +1,5 @@
-import type { StudyArticle } from "./types";
-
-export const histArticles: StudyArticle[] = [
-  {
+{
+  "ivc-sites-culture": {
     "slug": "ivc-sites-culture",
     "topicId": "hist-ancient",
     "title": "Indus Valley Civilization: Sites, Urban Culture & Decline",
@@ -197,7 +195,7 @@ export const histArticles: StudyArticle[] = [
       }
     ]
   },
-  {
+  "buddhism-jainism": {
     "slug": "buddhism-jainism",
     "topicId": "hist-ancient",
     "title": "Buddhism & Jainism: Doctrines, Councils, Patronage",
@@ -342,7 +340,7 @@ export const histArticles: StudyArticle[] = [
       }
     ]
   },
-  {
+  "maurya-gupta": {
     "slug": "maurya-gupta",
     "topicId": "hist-ancient",
     "title": "Mauryas & Guptas: Polity, Dhamma, Culture & Science",
@@ -479,164 +477,5 @@ export const histArticles: StudyArticle[] = [
         "body": "Ashokan edict language/script, Dhamma content, Arthashastra concepts, and Gupta science/culture statements are the recurring pattern. Match king to event carefully; eliminate anachronistic temple styles; distrust options that turn Dhamma into forced mass conversion only."
       }
     ]
-  },
-  {
-    "slug": "bhakti-sufi",
-    "topicId": "hist-medieval",
-    "title": "Bhakti & Sufi Movements: Saints, Ideas, Social Impact",
-    "blurb": "Nirguna–Saguna saints and Sufi silsilas — devotion, social critique and culture overlap.",
-    "portionChance": 36,
-    "pyqThemes": [
-      "Bhakti saints & teachings",
-      "Sufi orders",
-      "Social impact"
-    ],
-    "whyUpscAsks": "High overlap with culture and society; personality–teaching matching is MCQ-friendly.",
-    "mustRemember": [
-      "Kabir, Nanak, Basavanna, Chaitanya, Mirabai, Tulsidas — map idea to saint",
-      "Chishti (Ajmer) vs Suhrawardi accents",
-      "Nirguna vs Saguna devotion"
-    ],
-    "mapFacts": [
-      "Ajmer — Chishti centre",
-      "Punjab — Nanak; Bengal — Chaitanya; Maharashtra — Warkari saints"
-    ],
-    "sections": [
-      {
-        "heading": "Bhakti spectrum",
-        "body": "Bhakti traditions emphasised personal devotion over pure ritual brokerage. Nirguna streams (Kabir, Nanak) stressed formless divine and social critique of caste hypocrisy; Saguna streams (Tulsidas, Mirabai, Chaitanya) centred on Rama/Krishna devotion with regional literatures. Basavanna and Virashaiva movements in Karnataka, Warkari saints in Maharashtra, and Alvars/Nayanars in the Tamil bhakti deep past all feed matching questions."
-      },
-      {
-        "heading": "Sufi silsilas",
-        "body": "Sufi orders adapted Islamic mysticism to Indian social landscapes. Chishti openness to local cultural forms (Ajmer’s Khwaja Muinuddin) contrasts with more court-leaning Suhrawardi patterns in textbook contrasts. Khanqahs, langars, and music (sama) appear in culture–society questions. Avoid crude “Sufi = syncretic always” absolutism; study order-by-order."
-      },
-      {
-        "heading": "Why UPSC asks",
-        "body": "Saints produce clean option rows; social impact statements test whether you overclaim egalitarianism. Tie architecture (dargahs) and literature (vernacular) to Art & Culture."
-      }
-    ]
-  },
-  {
-    "slug": "sultanate-mughal-admin",
-    "topicId": "hist-medieval",
-    "title": "Delhi Sultanate & Mughal Administration",
-    "blurb": "Iqta, market control, Mansabdari and Zabti — institutions over battle lists.",
-    "portionChance": 34,
-    "pyqThemes": [
-      "Iqta & market reforms",
-      "Mansabdari/Zabti",
-      "Mughal institutions"
-    ],
-    "whyUpscAsks": "Institutional continuity/change questions dominate medieval polity PYQs.",
-    "mustRemember": [
-      "Alauddin Khalji — market/price control experiments",
-      "Iqta — revenue–military assignment logic",
-      "Mansabdari zat/sawar; Zabti/Todar Mal bandobast"
-    ],
-    "sections": [
-      {
-        "heading": "Sultanate institutional core",
-        "body": "Focus on iqta as a revenue–service mechanism, nobility factions, and Alauddin Khalji’s market regulations (grain prices, checks on hoarding) as classic Prelims fodder. Tughlaq experiments (token currency, capital shifts) are cautionary “innovation risk” tales — know outcomes at headline level."
-      },
-      {
-        "heading": "Mughal administrative grammar",
-        "body": "Mansabdari ranked nobles (zat/sawar); jagirdari linked salary claims to revenue assignments; Zabti measurement–assessment traditions associated with Todar Mal. Akbar’s sulh-i-kul and religious discussions at Ibadat Khana appear in culture–polity crossovers. Decline narratives should stress jagir crisis and regional assertiveness rather than only “weak later kings”."
-      },
-      {
-        "heading": "Architecture bridge",
-        "body": "Indo-Islamic arches, domes, gardens and city building (Fatehpur Sikri, Shahjahanabad) overlap culture-arch questions — keep dynasty↔monument pairs tight."
-      }
-    ]
-  },
-  {
-    "slug": "acts-congress-sessions",
-    "topicId": "hist-modern",
-    "title": "Constitutional Acts & Congress Sessions",
-    "blurb": "Regulating Acts to 1935 + landmark INC sessions — highest-frequency Modern India drill.",
-    "portionChance": 48,
-    "pyqThemes": [
-      "Charter/Councils Acts",
-      "GOI Act 1919/1935",
-      "INC sessions & presidents"
-    ],
-    "whyUpscAsks": "Acts and sessions yield date–provision–personality triples ideal for Prelims.",
-    "mustRemember": [
-      "1773 Regulating; 1833 centralisation; 1858 Crown; 1909 Morley–Minto; 1919 Montagu–Chelmsford; 1935 provincial autonomy",
-      "1905 Swadeshi context; 1907 Surat split; 1916 Lucknow Pact; 1929 Lahore Purna Swaraj"
-    ],
-    "sections": [
-      {
-        "heading": "Acts as a spine",
-        "body": "Build a one-page timeline: Company regulation (1773, 1784 Pitt’s India Act), Charter Acts (1833/1853), 1858 transfer to Crown, Indian Councils Acts, 1909 separate electorates flashpoint, 1919 dyarchy in provinces, 1935 provincial autonomy and federal scheme (partly unimplemented). For each, remember 1–2 operative features only — depth beats trivia sprawl."
-      },
-      {
-        "heading": "Congress sessions that matter",
-        "body": "Match year–place–resolution: 1885 Bombay founding; 1907 Surat split (Extremists/Moderates); 1916 Lucknow Pact; 1920 Nagpur non-cooperation organisational shifts; 1929 Lahore Purna Swaraj; 1931 Karachi resolution on fundamental rights/national economic plan themes. Presidents and firsts (woman president, etc.) appear in matching lists."
-      },
-      {
-        "heading": "Exam tactic",
-        "body": "When stuck, eliminate anachronisms (Purna Swaraj before 1929) and mix-ups between 1919 dyarchy vs 1935 autonomy."
-      }
-    ]
-  },
-  {
-    "slug": "national-gandhian-movements",
-    "topicId": "hist-modern",
-    "title": "National & Gandhian Mass Movements",
-    "blurb": "Swadeshi to Quit India — phases, methods, social base and why questions repeat.",
-    "portionChance": 46,
-    "pyqThemes": [
-      "Non-Cooperation",
-      "Civil Disobedience/Salt",
-      "Quit India",
-      "Revolutionary strand"
-    ],
-    "whyUpscAsks": "Movement chronology and method differences are perennial discriminators.",
-    "mustRemember": [
-      "1919–22 NCM + Khilafat; 1930 Salt March/CDM; 1942 Quit India",
-      "Champaran, Kheda, Ahmedabad — early satyagrahas",
-      "INA & INA trials — later nationalist emotion"
-    ],
-    "sections": [
-      {
-        "heading": "Phase logic",
-        "body": "Study nationalism as shifting strategies: Moderates’ petition politics; Extremists’ Swadeshi; Gandhian mass satyagraha; revolutionary terrorism; Left and peasant/worker strands; Subhas/INA. UPSC tests whether you can place a method in the right decade."
-      },
-      {
-        "heading": "Gandhian experiments",
-        "body": "Champaran (indigo), Kheda (revenue), Ahmedabad (mill workers) precede all-India NCM. Non-Cooperation paired with Khilafat; Chauri Chaura halted the movement. Civil Disobedience opened with Dandi; Round Table Conferences and Gandhi–Irwin Pact are checkpoint facts. Quit India (1942) under “Do or Die” amid wartime repression — leaders imprisoned, spontaneous parallel activity."
-      },
-      {
-        "heading": "Beyond Gandhi",
-        "body": "Keep bullets on Bhagat Singh/HSRA, Surya Sen, women in movements, and peasant/tribal uprisings as complementary PYQ pools."
-      }
-    ]
-  },
-  {
-    "slug": "socio-religious-reform",
-    "topicId": "hist-modern",
-    "title": "Socio-Religious Reform Movements",
-    "blurb": "Brahmo, Arya, Aligarh, Ramakrishna Mission — reformers and programmes.",
-    "portionChance": 32,
-    "pyqThemes": [
-      "Reform organisations",
-      "Women reformers",
-      "Education & social laws"
-    ],
-    "whyUpscAsks": "Organisation–founder–idea matching is a stable Modern India sub-theme.",
-    "mustRemember": [
-      "Raja Rammohan Roy — Brahmo; Dayananda — Arya Samaj/Shuddhi; Syed Ahmed Khan — Aligarh",
-      "Jyotiba Phule, Savitribai, Pandita Ramabai, Tarabai Shinde"
-    ],
-    "sections": [
-      {
-        "heading": "Reform map",
-        "body": "Classify movements by region and emphasis: Bengal Renaissance/Brahmo; Maharashtra social radicals; Arya Samaj in Punjab/north; Aligarh modernism among Muslims; Singh Sabha; Parsi and other community reforms. Note press, schools, and legal campaigns against sati/child marriage as linked arenas."
-      },
-      {
-        "heading": "Exam focus",
-        "body": "Founder ↔ organisation ↔ one signature idea. Women reformers increasingly appear — prepare a short list."
-      }
-    ]
   }
-];
+}

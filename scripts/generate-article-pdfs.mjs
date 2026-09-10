@@ -2,7 +2,7 @@
  * Build-time PDF generator for high-probability reading articles.
  * Bundles src/data/articles via esbuild, then writes public/articles/{topicId}/{slug}.pdf
  * plus a combined high-prob-portions.pdf per topic.
- * Deep articles aim for multi-page (≈5–12) A4 output.
+ * Renders real article body only — clean typography, Unicode via DejaVu, no padding pages.
  */
 import fs from "fs";
 import path from "path";
@@ -15,6 +15,9 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
 const outRoot = path.join(root, "public", "articles");
 const bundlePath = path.join(root, "scripts", ".articles-bundle.cjs");
+
+const FONT_REG = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf";
+const FONT_BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf";
 
 await esbuild.build({
   entryPoints: [path.join(root, "src/data/articles/index.ts")],
@@ -32,93 +35,121 @@ function ensureDir(d) {
   fs.mkdirSync(d, { recursive: true });
 }
 
-function addFooter(doc, pageNum) {
-  const bottom = doc.page.height - 40;
-  doc.fontSize(8).fillColor("#94a3b8").text(
-    `UPSC IAS Study Hub · Original notes · Page ${pageNum}`,
-    50,
-    bottom,
-    { width: doc.page.width - 100, align: "center" },
-  );
+/** Normalize punctuation so PDF text stays readable even if a glyph is missing. */
+function cleanText(s) {
+  return String(s ?? "")
+    .replace(/\uFEFF/g, "")
+    .replace(/[\u2018\u2019\u201A\u201B]/g, "'")
+    .replace(/[\u201C\u201D\u201E\u201F]/g, '"')
+    .replace(/[\u2013\u2014\u2212]/g, " - ")
+    .replace(/\u2026/g, "...")
+    .replace(/[\u2190\u2192\u2194\u21D2\u21D4]/g, " -> ")
+    .replace(/↔/g, " <-> ")
+    .replace(/→/g, " -> ")
+    .replace(/≠/g, " != ")
+    .replace(/≤/g, "<=")
+    .replace(/≥/g, ">=")
+    .replace(/°/g, " deg ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
-function ensureSpace(doc, state, need = 80) {
-  if (doc.y > doc.page.height - need) {
-    addFooter(doc, state.page);
+function registerFonts(doc) {
+  if (fs.existsSync(FONT_REG)) {
+    doc.registerFont("Body", FONT_REG);
+    doc.registerFont("Heading", fs.existsSync(FONT_BOLD) ? FONT_BOLD : FONT_REG);
+  } else {
+    doc.registerFont("Body", "Helvetica");
+    doc.registerFont("Heading", "Helvetica-Bold");
+  }
+}
+
+function addFooter(doc, pageNum) {
+  // Writing inside the bottom margin without clearing it makes PDFKit spawn blank pages
+  const prevBottom = doc.page.margins.bottom;
+  doc.page.margins.bottom = 0;
+  doc.font("Body").fontSize(8).fillColor("#94a3b8").text(
+    `UPSC IAS Study Hub · Original notes · Page ${pageNum}`,
+    50,
+    doc.page.height - 40,
+    { width: doc.page.width - 100, align: "center", lineBreak: false },
+  );
+  doc.page.margins.bottom = prevBottom;
+}
+
+function ensureSpace(doc, state, need = 72) {
+  const limit = doc.page.height - 56;
+  if (doc.y > limit - need) {
     doc.addPage();
     state.page += 1;
   }
 }
 
 function writeParagraph(doc, state, text, opts = {}) {
-  ensureSpace(doc, state, 60);
-  doc.fontSize(opts.size || 10).fillColor(opts.color || "#1e293b").text(text, {
+  const t = cleanText(text);
+  if (!t) return;
+  ensureSpace(doc, state, 56);
+  doc.font("Body").fontSize(opts.size || 10).fillColor(opts.color || "#1e293b").text(t, {
     align: opts.align || "justify",
-    lineGap: 2,
+    lineGap: 2.5,
   });
-  doc.moveDown(opts.after ?? 0.55);
+  doc.moveDown(opts.after ?? 0.5);
 }
 
 function writeHeading(doc, state, text) {
-  ensureSpace(doc, state, 100);
-  doc.moveDown(0.2);
-  doc.fontSize(12).fillColor("#0f172a").text(text, { align: "left" });
-  doc.moveDown(0.35);
+  const t = cleanText(text);
+  if (!t) return;
+  ensureSpace(doc, state, 88);
+  doc.moveDown(0.15);
+  doc.font("Heading").fontSize(12).fillColor("#0f172a").text(t, { align: "left" });
+  doc.moveDown(0.3);
 }
 
 function writeBullets(doc, state, items, bullet = "•") {
   for (const item of items) {
-    ensureSpace(doc, state, 50);
-    doc.fontSize(10).fillColor("#1e293b").text(`${bullet} ${item}`, { lineGap: 1.5 });
-    doc.moveDown(0.25);
+    const t = cleanText(item);
+    if (!t) continue;
+    ensureSpace(doc, state, 44);
+    doc.font("Body").fontSize(10).fillColor("#1e293b").text(`${bullet} ${t}`, {
+      lineGap: 1.5,
+      paragraphGap: 2,
+    });
+    doc.moveDown(0.2);
   }
-  doc.moveDown(0.35);
+  doc.moveDown(0.3);
 }
 
 function writeTable(doc, state, table) {
   writeHeading(doc, state, table.title || "Table");
-  const headers = table.headers || [];
-  const rows = table.rows || [];
-  const usable = doc.page.width - 100;
-  const colW = usable / Math.max(headers.length, 1);
+  const headers = (table.headers || []).map(cleanText);
+  const rows = (table.rows || []).map((r) => r.map(cleanText));
+  if (!headers.length) return;
 
-  ensureSpace(doc, state, 40 + rows.length * 18);
-  doc.fontSize(9).fillColor("#0f172a");
-  let x0 = 50;
-  const y0 = doc.y;
-  headers.forEach((h, i) => {
-    doc.text(String(h), x0 + i * colW, y0, { width: colW - 6, continued: false });
-  });
-  doc.moveDown(0.4);
-  doc.moveTo(50, doc.y).lineTo(doc.page.width - 50, doc.y).strokeColor("#cbd5e1").stroke();
+  // Flow-based rows avoid absolute-position drawing that can spawn blank PDFKit pages
+  ensureSpace(doc, state, 48);
+  doc.font("Heading").fontSize(9).fillColor("#0f172a").text(headers.join(" | "), { lineGap: 1 });
+  doc.moveDown(0.15);
+  doc.moveTo(50, doc.y).lineTo(doc.page.width - 50, doc.y).strokeColor("#cbd5e1").lineWidth(0.5).stroke();
   doc.moveDown(0.3);
 
   for (const row of rows) {
-    ensureSpace(doc, state, 36);
-    const y = doc.y;
-    let maxH = 0;
-    row.forEach((cell, i) => {
-      const h = doc.heightOfString(String(cell), { width: colW - 6 });
-      if (h > maxH) maxH = h;
-      doc.fontSize(9).fillColor("#1e293b").text(String(cell), 50 + i * colW, y, {
-        width: colW - 6,
-      });
-    });
-    doc.y = y + maxH + 6;
+    ensureSpace(doc, state, 40);
+    doc.font("Body").fontSize(9).fillColor("#1e293b").text(row.join(" -- "), { lineGap: 1.5 });
+    doc.moveDown(0.22);
   }
-  doc.moveDown(0.6);
+  doc.moveDown(0.45);
 }
 
 function writeArticleBody(doc, state, article) {
   if (article.chanceNote) {
-    writeHeading(doc, state, "Why this article (PYQ probability)");
+    writeHeading(doc, state, "Why this portion (PYQ lens)");
     writeParagraph(doc, state, article.chanceNote, { color: "#92400e" });
     if (article.yearsAppeared?.length) {
       writeParagraph(
         doc,
         state,
         `Years appeared (synthesis): ${article.yearsAppeared.join(", ")}`,
-        { size: 9, color: "#64748b", after: 0.4 },
+        { size: 9, color: "#64748b", after: 0.35 },
       );
     }
   }
@@ -126,9 +157,11 @@ function writeArticleBody(doc, state, article) {
   writeHeading(doc, state, "Why UPSC asks this");
   writeParagraph(doc, state, article.whyUpscAsks);
 
-  for (const section of article.sections) {
+  for (const section of article.sections || []) {
     writeHeading(doc, state, section.heading);
-    writeParagraph(doc, state, section.body);
+    // Support multi-paragraph bodies separated by blank lines
+    const parts = String(section.body || "").split(/\n\s*\n/);
+    for (const part of parts) writeParagraph(doc, state, part);
   }
 
   if (article.tables?.length) {
@@ -142,7 +175,7 @@ function writeArticleBody(doc, state, article) {
 
   if (article.commonTraps?.length) {
     writeHeading(doc, state, "Common traps");
-    writeBullets(doc, state, article.commonTraps, "✗");
+    writeBullets(doc, state, article.commonTraps, "x");
   }
 
   writeHeading(doc, state, "Must remember");
@@ -150,13 +183,25 @@ function writeArticleBody(doc, state, article) {
 
   if (article.quickRevision?.length) {
     writeHeading(doc, state, "Quick revision checklist");
-    writeBullets(doc, state, article.quickRevision, "☐");
+    writeBullets(doc, state, article.quickRevision, "[ ]");
   }
 
-  ensureSpace(doc, state, 60);
-  doc.fontSize(8).fillColor("#64748b").text(
-    "Educational prioritisation heuristic — not an official UPSC prediction. © UPSC IAS Study Hub original notes.",
-  );
+  ensureSpace(doc, state, 40);
+  doc
+    .font("Body")
+    .fontSize(8)
+    .fillColor("#64748b")
+    .text(
+      "Educational prioritisation heuristic - not an official UPSC prediction. (c) UPSC IAS Study Hub original notes.",
+    );
+}
+
+function finalizeFooters(doc) {
+  const pages = doc.bufferedPageRange();
+  for (let i = 0; i < pages.count; i++) {
+    doc.switchToPage(pages.start + i);
+    addFooter(doc, i + 1);
+  }
 }
 
 function writeArticlePdf(filePath, article, topicTitle) {
@@ -165,45 +210,47 @@ function writeArticlePdf(filePath, article, topicTitle) {
       margin: 50,
       size: "A4",
       bufferPages: true,
+      autoFirstPage: true,
       info: {
         Title: article.title,
         Author: "UPSC IAS Study Hub",
-        Subject: `High-chance portion notes — ${topicTitle || article.topicId}`,
+        Subject: `High-chance portion notes - ${topicTitle || article.topicId}`,
       },
     });
+    registerFonts(doc);
     const stream = fs.createWriteStream(filePath);
     doc.pipe(stream);
     const state = { page: 1 };
 
-    doc.fontSize(8).fillColor("#666").text(
-      "UPSC IAS Study Hub · Original study notes (not NCERT/UPSC verbatim) · Multi-page depth edition",
-    );
-    doc.moveDown(0.5);
-    doc.fontSize(16).fillColor("#0f172a").text(article.title, { align: "left" });
-    doc.moveDown(0.3);
-    doc.fontSize(10).fillColor("#334155").text(article.blurb);
-    doc.moveDown(0.4);
     doc
+      .font("Body")
+      .fontSize(8)
+      .fillColor("#666")
+      .text("UPSC IAS Study Hub · Original study notes (not NCERT/UPSC verbatim)");
+    doc.moveDown(0.45);
+    doc.font("Heading").fontSize(16).fillColor("#0f172a").text(cleanText(article.title), {
+      align: "left",
+    });
+    doc.moveDown(0.25);
+    doc.font("Body").fontSize(10).fillColor("#334155").text(cleanText(article.blurb));
+    doc.moveDown(0.35);
+    doc
+      .font("Body")
       .fontSize(9)
       .fillColor("#92400e")
       .text(
         `Portion focus ~${article.portionChance}% · Topic: ${topicTitle || article.topicId}`,
       );
-    doc.moveDown(0.3);
+    doc.moveDown(0.25);
     doc
+      .font("Body")
       .fontSize(9)
       .fillColor("#475569")
-      .text(`PYQ themes: ${(article.pyqThemes || []).join(" · ")}`);
-    doc.moveDown(0.8);
+      .text(`PYQ themes: ${(article.pyqThemes || []).map(cleanText).join(" · ")}`);
+    doc.moveDown(0.7);
 
     writeArticleBody(doc, state, article);
-
-    // footer on all pages
-    const pages = doc.bufferedPageRange();
-    for (let i = 0; i < pages.count; i++) {
-      doc.switchToPage(pages.start + i);
-      addFooter(doc, i + 1);
-    }
+    finalizeFooters(doc);
 
     doc.end();
     stream.on("finish", resolve);
@@ -214,40 +261,42 @@ function writeArticlePdf(filePath, article, topicTitle) {
 function writeCombinedPdf(filePath, articles, topicId) {
   return new Promise((resolve, reject) => {
     const doc = new PDFDocument({ margin: 50, size: "A4", bufferPages: true });
+    registerFonts(doc);
     const stream = fs.createWriteStream(filePath);
     doc.pipe(stream);
     const state = { page: 1 };
 
-    doc.fontSize(18).fillColor("#0f172a").text(`High-chance portions — ${topicId}`);
+    doc.font("Heading").fontSize(18).fillColor("#0f172a").text(`High-chance portions - ${topicId}`);
     doc.moveDown(0.3);
-    doc.fontSize(10).fillColor("#475569").text(
-      "Combined original study articles for this topic’s highest-probability PYQ themes (deep edition).",
-    );
-    doc.moveDown(1);
+    doc
+      .font("Body")
+      .fontSize(10)
+      .fillColor("#475569")
+      .text(
+        "Combined original study articles for this topic's highest-probability PYQ themes.",
+      );
+    doc.moveDown(0.9);
 
     for (let i = 0; i < articles.length; i++) {
       const article = articles[i];
       if (i > 0) {
-        addFooter(doc, state.page);
         doc.addPage();
         state.page += 1;
       }
-      doc.fontSize(14).fillColor("#0f172a").text(article.title);
-      doc.moveDown(0.3);
+      doc.font("Heading").fontSize(14).fillColor("#0f172a").text(cleanText(article.title));
+      doc.moveDown(0.25);
       doc
+        .font("Body")
         .fontSize(9)
         .fillColor("#92400e")
-        .text(`~${article.portionChance}% · ${(article.pyqThemes || []).join(" · ")}`);
+        .text(
+          `~${article.portionChance}% · ${(article.pyqThemes || []).map(cleanText).join(" · ")}`,
+        );
       doc.moveDown(0.4);
       writeArticleBody(doc, state, article);
     }
 
-    const pages = doc.bufferedPageRange();
-    for (let i = 0; i < pages.count; i++) {
-      doc.switchToPage(pages.start + i);
-      addFooter(doc, i + 1);
-    }
-
+    finalizeFooters(doc);
     doc.end();
     stream.on("finish", resolve);
     stream.on("error", reject);
