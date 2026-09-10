@@ -8,10 +8,12 @@ import { sciCaArticles } from "./sci-ca";
 import { cultureArticles } from "./culture";
 import { csatArticles } from "./csat";
 import { mainsArticles } from "./mains";
+import { deepArticleKey, deepArticleMap, deepArticles } from "./deep/generated";
 
-export type { StudyArticle, ArticleSection } from "./types";
+export type { StudyArticle, ArticleSection, ArticleTable } from "./types";
+export { deepArticles } from "./deep/generated";
 
-export const allArticles: StudyArticle[] = [
+const baseArticles: StudyArticle[] = [
   ...histArticles,
   ...geoArticles,
   ...polityArticles,
@@ -23,6 +25,20 @@ export const allArticles: StudyArticle[] = [
   ...mainsArticles,
 ];
 
+/** Merge deep high-chance expansions over thin base stubs (same topicId+slug). */
+function mergeArticles(): StudyArticle[] {
+  const map = new Map<string, StudyArticle>();
+  for (const a of baseArticles) {
+    map.set(deepArticleKey(a.topicId, a.slug), a);
+  }
+  for (const a of deepArticles) {
+    map.set(deepArticleKey(a.topicId, a.slug), a);
+  }
+  return [...map.values()];
+}
+
+export const allArticles: StudyArticle[] = mergeArticles();
+
 export function getArticlesByTopic(topicId: string): StudyArticle[] {
   return allArticles
     .filter((a) => a.topicId === topicId)
@@ -30,7 +46,7 @@ export function getArticlesByTopic(topicId: string): StudyArticle[] {
 }
 
 export function getArticle(topicId: string, slug: string): StudyArticle | undefined {
-  return allArticles.find((a) => a.topicId === topicId && a.slug === slug);
+  return deepArticleMap[deepArticleKey(topicId, slug)] ?? allArticles.find((a) => a.topicId === topicId && a.slug === slug);
 }
 
 export function getArticlePdfPath(topicId: string, slug: string): string {
@@ -51,4 +67,8 @@ export function countArticles(): { total: number; byTopic: Record<string, number
     byTopic[a.topicId] = (byTopic[a.topicId] ?? 0) + 1;
   }
   return { total: allArticles.length, byTopic };
+}
+
+export function countDeepArticles(): number {
+  return deepArticles.length;
 }

@@ -168,7 +168,7 @@ export interface QuizTrackMeta {
 }
 
 
-export type MockKind = "gs1" | "csat";
+export type MockKind = "gs1" | "csat" | "csat-quants";
 
 export interface MockQuestion extends QuizQuestion {
   /** Estimated next-exam theme chance % from PYQ analysis (0–100). */

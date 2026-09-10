@@ -1,7 +1,13 @@
 import Disclaimer from "@/components/Disclaimer";
 import { ANALYSIS_YEARS, NEXT_EXAM_YEAR } from "@/lib/pyq-probability";
+import { getRankedPortions } from "@/data/portion-frequency";
+import { countDeepArticles } from "@/data/articles";
 
 export default function MethodologyPage() {
+  const gsPortions = getRankedPortions({ paper: "prelims-gs", limit: 20 });
+  const quantPortions = getRankedPortions({ paper: "prelims-csat", limit: 10 });
+  const deepCount = countDeepArticles();
+
   return (
     <div className="mx-auto max-w-3xl space-y-6">
       <div>
@@ -15,6 +21,60 @@ export default function MethodologyPage() {
 
       <Disclaimer />
 
+      <section className="space-y-3 rounded-xl border border-amber-200 bg-amber-50 p-5 text-sm leading-relaxed text-amber-950 shadow-sm">
+        <h2 className="text-lg font-semibold">Why these articles (deep PDFs)</h2>
+        <p>
+          We deepen <strong>{deepCount}</strong> portion articles chosen by the portion-level
+          2016–2025 model (topic frequency × recency × syllabus weight). Ancient India’s hottest
+          slices (IVC, Buddhism/Jainism, Maurya–Gupta) stay in the deep set even when the parent
+          topic sits mid-pack, because those sub-portions still clear the high-yield bar.
+        </p>
+        <p>
+          Each deep article aims for multi-page PDF depth (roughly 5–12 pages when printed): intro,
+          core concepts, tables, must-remember, traps, PYQ angle, quick revision.
+        </p>
+      </section>
+
+      <section className="space-y-3 rounded-xl border border-slate-200 bg-white p-5 text-sm leading-relaxed text-slate-700 shadow-sm">
+        <h2 className="text-lg font-semibold text-slate-900">
+          Highest next-exam-chance portions — Prelims GS
+        </h2>
+        <ol className="list-decimal space-y-2 pl-5">
+          {gsPortions.map((p) => (
+            <li key={p.id}>
+              <span className="font-semibold text-slate-900">
+                ~{p.probability}% {p.trend}
+              </span>{" "}
+              — {p.title}{" "}
+              <span className="text-slate-500">
+                ({p.yearsAppeared.length} yrs · ~{p.totalAppearances} themes) — {p.notes}
+              </span>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section className="space-y-3 rounded-xl border border-slate-200 bg-white p-5 text-sm leading-relaxed text-slate-700 shadow-sm">
+        <h2 className="text-lg font-semibold text-slate-900">
+          CSAT quants themes (structural frequency)
+        </h2>
+        <p>
+          CSAT is qualifying (~33%). Rankings below mean skill-necessity / pattern recurrence in
+          numeracy — grind these in dedicated CSAT Quants mocks.
+        </p>
+        <ol className="list-decimal space-y-2 pl-5">
+          {quantPortions.map((p) => (
+            <li key={p.id}>
+              <span className="font-semibold text-slate-900">~{p.probability}%</span> — {p.title}
+              {p.patternTag ? (
+                <span className="text-slate-500"> · tag {p.patternTag}</span>
+              ) : null}{" "}
+              <span className="text-slate-500">— {p.notes}</span>
+            </li>
+          ))}
+        </ol>
+      </section>
+
       <section className="space-y-3 rounded-xl border border-slate-200 bg-white p-5 text-sm leading-relaxed text-slate-700 shadow-sm">
         <h2 className="text-lg font-semibold text-slate-900">Data we use</h2>
         <ul className="list-disc space-y-2 pl-5">
@@ -22,6 +82,10 @@ export default function MethodologyPage() {
             <strong>Topic-wise year counts:</strong> approximate theme/question appearances for each
             syllabus topic across the last ~10 Prelims/Mains cycles (educational synthesis of widely
             discussed PYQ weightage patterns — not scraped verbatim papers).
+          </li>
+          <li>
+            <strong>Portion-level counts:</strong> hotter sub-themes inside topics (e.g. IVC sites,
+            FR/DPSP, Paris/NDCs, CSAT percentages) for article selection.
           </li>
           <li>
             <strong>Syllabus weight (1–5):</strong> structural importance in the official syllabus
@@ -76,6 +140,7 @@ export default function MethodologyPage() {
           </li>
           <li>Big % meter, trend (rising / stable / falling), years appeared</li>
           <li>Short “why this score” from PYQ notes + frequency</li>
+          <li>Deep Read + Download PDF on high-chance portion articles</li>
           <li>Full rationale blurb and frequency score on topic pages</li>
         </ul>
         <p className="pt-2">

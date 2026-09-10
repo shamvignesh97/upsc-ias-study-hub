@@ -4,20 +4,30 @@ import {
   getArticlePdfPath,
   getTopicCombinedPdfPath,
 } from "@/data/articles";
+import { getRankedPortions } from "@/data/portion-frequency";
 
 export default function HighProbArticles({ topicId }: { topicId: string }) {
   const articles = getArticlesByTopic(topicId);
   if (!articles.length) return null;
 
   const combinedPdf = getTopicCombinedPdfPath(topicId);
+  const ranked = getRankedPortions({ paper: "all" }).filter((p) => p.topicId === topicId);
+  const whyBlurb =
+    ranked.length > 0
+      ? `Chosen via 2016–2025 PYQ portion model: ${ranked
+          .slice(0, 3)
+          .map((p) => `${p.title} ~${p.probability}% (${p.trend})`)
+          .join("; ")}.`
+      : "Focused original notes on the PYQ themes that drive this topic’s score — not full-syllabus dumps.";
 
   return (
     <section className="rounded-xl border border-amber-200 bg-gradient-to-b from-amber-50 to-white p-5 shadow-sm">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
           <h2 className="text-lg font-semibold text-slate-900">Read: high-chance portions</h2>
-          <p className="mt-1 text-sm text-slate-600">
-            Focused original notes on the PYQ themes that drive this topic&apos;s score — not full-syllabus dumps.
+          <p className="mt-1 text-sm text-slate-600">{whyBlurb}</p>
+          <p className="mt-1 text-xs text-slate-500">
+            Deep multi-page PDFs for top portions (intro, concepts, tables, traps, PYQ angle, quick revision).
           </p>
         </div>
         <a
@@ -31,10 +41,7 @@ export default function HighProbArticles({ topicId }: { topicId: string }) {
 
       <ul className="mt-4 space-y-3">
         {articles.map((a) => (
-          <li
-            key={a.slug}
-            className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm"
-          >
+          <li key={a.slug} className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
             <div className="flex flex-wrap items-start justify-between gap-2">
               <div className="min-w-0 flex-1">
                 <div className="flex flex-wrap items-center gap-2">
@@ -44,6 +51,12 @@ export default function HighProbArticles({ topicId }: { topicId: string }) {
                   </span>
                 </div>
                 <p className="mt-1 text-sm text-slate-600">{a.blurb}</p>
+                {a.chanceNote ? (
+                  <p className="mt-2 text-xs text-amber-900">
+                    <span className="font-semibold">Why: </span>
+                    {a.chanceNote}
+                  </p>
+                ) : null}
                 <p className="mt-2 text-xs text-slate-500">
                   <span className="font-semibold text-slate-700">PYQ themes: </span>
                   {a.pyqThemes.join(" · ")}

@@ -57,11 +57,22 @@ export default async function ArticlePage({
               Topic: {topic.chanceLabel}
             </span>
           ) : null}
+          {article.yearsAppeared && article.yearsAppeared.length > 0 ? (
+            <span className="inline-flex rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-medium text-slate-700">
+              PYQ years: {article.yearsAppeared[0]}–{article.yearsAppeared[article.yearsAppeared.length - 1]} ({article.yearsAppeared.length} yrs)
+            </span>
+          ) : null}
         </div>
         <p className="rounded-lg bg-slate-50 px-3 py-2 text-sm text-slate-700">
           <span className="font-semibold text-slate-900">PYQ themes that drove selection: </span>
           {article.pyqThemes.join(" · ")}
         </p>
+        {article.chanceNote ? (
+          <p className="rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-950">
+            <span className="font-semibold">Why this article: </span>
+            {article.chanceNote}
+          </p>
+        ) : null}
         <ArticlePdfActions topicId={topicId} slug={slug} />
       </header>
 
@@ -79,12 +90,53 @@ export default async function ArticlePage({
         ))}
       </div>
 
+      {article.tables && article.tables.length > 0
+        ? article.tables.map((t) => (
+            <section key={t.title} className="overflow-x-auto rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+              <h2 className="text-lg font-semibold">{t.title}</h2>
+              <table className="mt-3 w-full border-collapse text-left text-sm">
+                <thead>
+                  <tr className="border-b border-slate-200 bg-slate-50">
+                    {t.headers.map((h) => (
+                      <th key={h} className="px-2 py-2 font-semibold text-slate-800">
+                        {h}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {t.rows.map((row, i) => (
+                    <tr key={i} className="border-b border-slate-100">
+                      {row.map((cell, j) => (
+                        <td key={j} className="px-2 py-2 text-slate-700">
+                          {cell}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </section>
+          ))
+        : null}
+
       {article.mapFacts && article.mapFacts.length > 0 ? (
         <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
           <h2 className="text-lg font-semibold">Map / list facts</h2>
           <ul className="mt-3 list-disc space-y-1.5 pl-5 text-sm text-slate-700">
             {article.mapFacts.map((f) => (
               <li key={f}>{f}</li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
+
+      {article.commonTraps && article.commonTraps.length > 0 ? (
+        <section className="rounded-xl border border-rose-200 bg-rose-50 p-5">
+          <h2 className="text-lg font-semibold text-rose-950">Common traps</h2>
+          <ul className="mt-3 list-disc space-y-1.5 pl-5 text-sm text-rose-950">
+            {article.commonTraps.map((m) => (
+              <li key={m}>{m}</li>
             ))}
           </ul>
         </section>
@@ -98,6 +150,17 @@ export default async function ArticlePage({
           ))}
         </ul>
       </section>
+
+      {article.quickRevision && article.quickRevision.length > 0 ? (
+        <section className="rounded-xl border border-emerald-200 bg-emerald-50 p-5">
+          <h2 className="text-lg font-semibold text-emerald-950">Quick revision checklist</h2>
+          <ul className="mt-3 list-disc space-y-1.5 pl-5 text-sm text-emerald-950">
+            {article.quickRevision.map((m) => (
+              <li key={m}>{m}</li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
 
       <div className="print:hidden">
         <Disclaimer compact />

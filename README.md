@@ -63,3 +63,10 @@ npm start
 ## License
 
 Educational MVP for personal study use.
+
+
+## High-chance deep articles & CSAT Quants
+
+- Portion ranking (2016–2025) drives which articles get multi-page PDF depth — see `/methodology`.
+- Dedicated **CSAT Quants** mocks (Q1–Q4) live under `/mock` for numeracy grind with worked explanations.
+- Regenerate article PDFs: `npm run gen:article-pdfs` (also runs on `prebuild`).

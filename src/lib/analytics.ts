@@ -61,7 +61,7 @@ export function buildAnalytics(history: MockAttemptSummary[]): AnalyticsSummary 
   }));
 
   const gs1 = history.filter((a) => a.kind === "gs1");
-  const csat = history.filter((a) => a.kind === "csat");
+  const csat = history.filter((a) => a.kind === "csat" || a.kind === "csat-quants");
   const avgAccuracy = history.length
     ? Math.round(history.reduce((s, a) => s + a.accuracy, 0) / history.length)
     : 0;

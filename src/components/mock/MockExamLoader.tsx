@@ -19,7 +19,7 @@ export default function MockExamLoader({
 
   useEffect(() => {
     let cancelled = false;
-    if (kind !== "gs1" && kind !== "csat") {
+    if (kind !== "gs1" && kind !== "csat" && kind !== "csat-quants") {
       setError("Unknown mock type");
       return;
     }

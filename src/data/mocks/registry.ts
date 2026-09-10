@@ -13,6 +13,10 @@ export const mockPapers: MockPaperMeta[] = [
   { id: "csat-d", kind: "csat", key: "d", title: "CSAT Paper II — Mock D", subtitle: "80 MCQs · 2 hours · Fourth distinct set", questionCount: 80, durationMinutes: 120 },
   { id: "csat-e", kind: "csat", key: "e", title: "CSAT Paper II — Mock E", subtitle: "80 MCQs · 2 hours · Fifth distinct set", questionCount: 80, durationMinutes: 120 },
   { id: "csat-f", kind: "csat", key: "f", title: "CSAT Paper II — Mock F", subtitle: "80 MCQs · 2 hours · Sixth distinct set", questionCount: 80, durationMinutes: 120 },
+  { id: "csat-quants-q1", kind: "csat-quants", key: "q1", title: "CSAT Quants Mock Q1", subtitle: "40 numeracy MCQs · 60 min · High-prob patterns (%, ratio, work, TSD, SI/CI, DI)", questionCount: 40, durationMinutes: 60 },
+  { id: "csat-quants-q2", kind: "csat-quants", key: "q2", title: "CSAT Quants Mock Q2", subtitle: "40 numeracy MCQs · 60 min · Alternate high-prob set", questionCount: 40, durationMinutes: 60 },
+  { id: "csat-quants-q3", kind: "csat-quants", key: "q3", title: "CSAT Quants Mock Q3", subtitle: "40 numeracy MCQs · 60 min · Third quants grind set", questionCount: 40, durationMinutes: 60 },
+  { id: "csat-quants-q4", kind: "csat-quants", key: "q4", title: "CSAT Quants Mock Q4", subtitle: "40 numeracy MCQs · 60 min · Fourth quants grind set", questionCount: 40, durationMinutes: 60 },
 ];
 
 export function getMockPaperMeta(kind: string, key: string) {

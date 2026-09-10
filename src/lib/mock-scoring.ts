@@ -26,6 +26,13 @@ export function qualifyingThreshold(kind: MockKind): { label: string; score: num
       note: `Prelims GS Paper I cutoff varies yearly; treat ~${GS1_CUTOFF_BAND.low}–${GS1_CUTOFF_BAND.high}/200 as a flexible study heuristic (not official).`,
     };
   }
+  if (kind === "csat-quants") {
+    return {
+      label: "CSAT Quants heuristic (≈33%)",
+      score: -1, // resolved against paper max in scoreAnswers
+      note: "CSAT Quants drill uses CSAT marking (+2.5 / −0.83). Heuristic pass ≈33% of this paper's max marks.",
+    };
+  }
   const score = Math.round((CSAT_QUALIFYING.ratio * CSAT_QUALIFYING.max) * 100) / 100;
   return {
     label: "CSAT qualifying (≈33%)",
@@ -78,6 +85,10 @@ export function scoreAnswers(
   // Round to 2 decimals for display stability
   raw = Math.round(raw * 100) / 100;
 
+  const passScore =
+    threshold.score < 0 ? Math.round(max * CSAT_QUALIFYING.ratio * 100) / 100 : threshold.score;
+  const thresholdResolved = { ...threshold, score: passScore };
+
   return {
     rawScore: raw,
     maxScore: max,
@@ -86,8 +97,8 @@ export function scoreAnswers(
     unattempted,
     attempted,
     accuracy,
-    passedHeuristic: raw >= threshold.score,
-    threshold,
+    passedHeuristic: raw >= passScore,
+    threshold: thresholdResolved,
     subjectBreakup: [...subjectMap.entries()].map(([subjectId, v]) => ({ subjectId, ...v })),
     topicBreakup: [...topicMap.entries()].map(([topicId, v]) => ({ topicId, ...v })),
   };

@@ -1,6 +1,7 @@
 import type { MockQuestion } from "@/types";
+import { csatQuantsExtraPool } from "./csat-quants-extra-pool";
 
-export const csatMockPool: MockQuestion[] = [
+const csatMockPoolBase: MockQuestion[] = [
   {
     id: "mcs-comp-1",
     subjectId: "csat-comp",
@@ -6060,3 +6061,5 @@ export const csatMockPool: MockQuestion[] = [
     section: "comp",
   },
 ];
+
+export const csatMockPool: MockQuestion[] = [...csatMockPoolBase, ...csatQuantsExtraPool];

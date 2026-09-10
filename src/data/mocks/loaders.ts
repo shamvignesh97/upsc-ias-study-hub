@@ -1,4 +1,4 @@
-import type { MockQuestion } from "@/types";
+import type { MockKind, MockQuestion } from "@/types";
 
 const gs1Loaders: Record<string, () => Promise<MockQuestion[]>> = {
   a: () => import("./gs1-paper-a").then((m) => m.gs1PaperA),
@@ -18,8 +18,16 @@ const csatLoaders: Record<string, () => Promise<MockQuestion[]>> = {
   f: () => import("./csat-paper-f").then((m) => m.csatPaperF),
 };
 
-export async function loadMockPaper(kind: "gs1" | "csat", key: string): Promise<MockQuestion[]> {
-  const loaders = kind === "gs1" ? gs1Loaders : csatLoaders;
+const csatQuantsLoaders: Record<string, () => Promise<MockQuestion[]>> = {
+  q1: () => import("./csat-quants-paper-q1").then((m) => m.csatQuantsPaperQ1),
+  q2: () => import("./csat-quants-paper-q2").then((m) => m.csatQuantsPaperQ2),
+  q3: () => import("./csat-quants-paper-q3").then((m) => m.csatQuantsPaperQ3),
+  q4: () => import("./csat-quants-paper-q4").then((m) => m.csatQuantsPaperQ4),
+};
+
+export async function loadMockPaper(kind: MockKind, key: string): Promise<MockQuestion[]> {
+  const loaders =
+    kind === "gs1" ? gs1Loaders : kind === "csat-quants" ? csatQuantsLoaders : csatLoaders;
   const loader = loaders[key];
   if (!loader) return [];
   return loader();
