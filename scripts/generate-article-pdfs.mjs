@@ -16,8 +16,8 @@ const root = path.join(__dirname, "..");
 const outRoot = path.join(root, "public", "articles");
 const bundlePath = path.join(root, "scripts", ".articles-bundle.cjs");
 
-const FONT_REG = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf";
-const FONT_BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf";
+const FONT_REG = path.join(root, "public/fonts/DejaVuSans.ttf");
+const FONT_BOLD = path.join(root, "public/fonts/DejaVuSans-Bold.ttf");
 
 await esbuild.build({
   entryPoints: [path.join(root, "src/data/articles/index.ts")],
@@ -55,9 +55,19 @@ function cleanText(s) {
 }
 
 function registerFonts(doc) {
-  if (fs.existsSync(FONT_REG)) {
-    doc.registerFont("Body", FONT_REG);
-    doc.registerFont("Heading", fs.existsSync(FONT_BOLD) ? FONT_BOLD : FONT_REG);
+  const candidatesReg = [
+    FONT_REG,
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+  ];
+  const candidatesBold = [
+    FONT_BOLD,
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+  ];
+  const reg = candidatesReg.find((f) => fs.existsSync(f));
+  const bold = candidatesBold.find((f) => fs.existsSync(f));
+  if (reg) {
+    doc.registerFont("Body", reg);
+    doc.registerFont("Heading", bold || reg);
   } else {
     doc.registerFont("Body", "Helvetica");
     doc.registerFont("Heading", "Helvetica-Bold");
