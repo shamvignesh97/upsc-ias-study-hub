@@ -3,7 +3,14 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import type { MockQuestion } from "@/types";
-import { DRILL_QUESTION_COUNT, istDayKey, previousIstDayKey, sampleDailyDrill } from "@/lib/drill";
+import {
+  CSAT_QUANTS_DAILY_COUNT,
+  DRILL_QUESTION_COUNT,
+  istDayKey,
+  previousIstDayKey,
+  sampleCsatQuantsDaily,
+  sampleDailyDrill,
+} from "@/lib/drill";
 import {
   getDrillPersist,
   saveDrillPersist,
@@ -13,21 +20,45 @@ import {
 import { cn } from "@/lib/utils";
 import ExplanationPanel from "@/components/ExplanationPanel";
 
+type DrillMode = "gs1" | "csat-quants";
+
+const MODE_KEY = "upsc-drill-mode";
+
 export default function DrillClient() {
+  const [mode, setMode] = useState<DrillMode>("gs1");
   const [questions, setQuestions] = useState<MockQuestion[] | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [persist, setPersist] = useState<DrillPersist | null>(null);
   const [index, setIndex] = useState(0);
   const dayKey = useMemo(() => istDayKey(), []);
+  const targetCount = mode === "gs1" ? DRILL_QUESTION_COUNT : CSAT_QUANTS_DAILY_COUNT;
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const saved = localStorage.getItem(MODE_KEY);
+    if (saved === "csat-quants" || saved === "gs1") setMode(saved);
+  }, []);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") localStorage.setItem(MODE_KEY, mode);
+    setIndex(0);
+    setQuestions(null);
+    setLoadError(null);
+  }, [mode]);
 
   useEffect(() => {
     let cancelled = false;
     (async () => {
       try {
-        const mod = await import("@/data/mocks/gs1-pool");
-        if (cancelled) return;
-        const sampled = sampleDailyDrill(mod.gs1MockPool, dayKey);
-        setQuestions(sampled);
+        if (mode === "gs1") {
+          const mod = await import("@/data/mocks/gs1-pool");
+          if (cancelled) return;
+          setQuestions(sampleDailyDrill(mod.gs1MockPool, dayKey));
+        } else {
+          const pool = await import("@/data/mocks/csat-pool");
+          if (cancelled) return;
+          setQuestions(sampleCsatQuantsDaily(pool.csatMockPool, dayKey));
+        }
       } catch {
         if (!cancelled) setLoadError("Could not load today’s drill bank.");
       }
@@ -35,18 +66,22 @@ export default function DrillClient() {
     return () => {
       cancelled = true;
     };
-  }, [dayKey]);
+  }, [dayKey, mode]);
 
   useEffect(() => {
     const existing = getDrillPersist();
+    // Separate answered maps per mode via synthetic dayKey suffix in answered ids is overkill;
+    // store mode-specific day state under today when switching — reset answered if mode changes mid-day.
+    const modeTag = mode === "gs1" ? "gs1" : "cq";
+    const storageDay = `${dayKey}::${modeTag}`;
     let today: DrillDayState =
-      existing.today?.dayKey === dayKey
+      existing.today?.dayKey === storageDay
         ? existing.today
-        : { dayKey, answered: {}, completed: false, correctCount: 0 };
+        : { dayKey: storageDay, answered: {}, completed: false, correctCount: 0 };
     const next: DrillPersist = { ...existing, today };
     saveDrillPersist(next);
     setPersist(next);
-  }, [dayKey]);
+  }, [dayKey, mode]);
 
   const answeredMap = persist?.today?.answered ?? {};
   const q = questions?.[index];
@@ -59,7 +94,7 @@ export default function DrillClient() {
 
   const selectOption = useCallback(
     (opt: number) => {
-      if (!q || !persist?.today || persist.today.dayKey !== dayKey) return;
+      if (!q || !persist?.today) return;
       if (answeredMap[q.id] !== undefined) return;
       const answered = { ...persist.today.answered, [q.id]: opt };
       const correctCount = questions
@@ -68,11 +103,12 @@ export default function DrillClient() {
             return a !== undefined && a === qq.correctIndex;
           }).length
         : 0;
-      const completed = Object.keys(answered).length >= DRILL_QUESTION_COUNT;
+      const completed = Object.keys(answered).length >= targetCount;
       let streak = persist.streak;
       let bestStreak = persist.bestStreak;
       let lastCompletedDay = persist.lastCompletedDay;
-      if (completed && !persist.today.completed) {
+      // Streak only advances on GS1 daily completion (primary habit loop).
+      if (mode === "gs1" && completed && !persist.today.completed) {
         const prev = previousIstDayKey(dayKey);
         if (lastCompletedDay === prev) streak = persist.streak + 1;
         else if (lastCompletedDay === dayKey) streak = persist.streak;
@@ -81,7 +117,7 @@ export default function DrillClient() {
         lastCompletedDay = dayKey;
       }
       const today: DrillDayState = {
-        dayKey,
+        dayKey: persist.today.dayKey,
         answered,
         completed,
         correctCount,
@@ -90,7 +126,7 @@ export default function DrillClient() {
       saveDrillPersist(next);
       setPersist(next);
     },
-    [q, persist, dayKey, answeredMap, questions]
+    [q, persist, dayKey, answeredMap, questions, targetCount, mode]
   );
 
   if (loadError) {
@@ -107,8 +143,9 @@ export default function DrillClient() {
         <div>
           <h1 className="text-3xl font-bold text-slate-900">Daily Drill</h1>
           <p className="mt-1 text-sm text-slate-600">
-            10 GS1-weighted questions from high next-exam-chance themes. Seeded by date (
-            {dayKey} IST) — refresh won’t reshuffle.
+            {mode === "gs1"
+              ? `10 GS1-weighted questions from high next-exam-chance themes. Seeded by date (${dayKey} IST).`
+              : `CSAT quants daily 5 — high-prob numeracy themes only. Seeded by date (${dayKey} IST).`}
           </p>
         </div>
         <div className="flex flex-wrap gap-2 text-sm">
@@ -119,23 +156,63 @@ export default function DrillClient() {
             Best {persist.bestStreak}
           </span>
           <span className="rounded-full bg-sky-100 px-3 py-1 font-medium text-sky-900">
-            Today {answeredCount}/{DRILL_QUESTION_COUNT}
+            Today {answeredCount}/{targetCount}
           </span>
         </div>
       </div>
 
+      <div className="flex flex-wrap gap-2">
+        <button
+          type="button"
+          onClick={() => setMode("gs1")}
+          className={cn(
+            "rounded-lg px-3 py-2 text-sm font-semibold",
+            mode === "gs1" ? "bg-amber-500 text-[#0f2744]" : "border border-slate-200 bg-white text-slate-700"
+          )}
+        >
+          GS1 daily 10
+        </button>
+        <button
+          type="button"
+          onClick={() => setMode("csat-quants")}
+          className={cn(
+            "rounded-lg px-3 py-2 text-sm font-semibold",
+            mode === "csat-quants"
+              ? "bg-sky-600 text-white"
+              : "border border-slate-200 bg-white text-slate-700"
+          )}
+        >
+          CSAT quants daily 5
+        </button>
+        <Link
+          href="/weekly"
+          className="rounded-lg border border-rose-200 bg-rose-50 px-3 py-2 text-sm font-semibold text-rose-900"
+        >
+          Weekly high-prob 25
+        </Link>
+      </div>
+
       {persist.today?.completed ? (
         <div className="rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-950">
-          Drill complete — {persist.today.correctCount}/{DRILL_QUESTION_COUNT} correct. Streak saved
-          in localStorage.{" "}
-          <Link href="/analytics" className="font-semibold underline">
-            See analytics
+          {mode === "gs1" ? "Drill" : "CSAT quants"} complete — {persist.today.correctCount}/
+          {targetCount} correct.
+          {mode === "gs1" ? " Streak saved in localStorage." : ""}{" "}
+          <Link href="/revise/flash" className="font-semibold underline">
+            Revise 10 flash points
           </Link>{" "}
-          or keep reviewing below.
+          ·{" "}
+          <Link href="/analytics" className="font-semibold underline">
+            Analytics
+          </Link>
         </div>
       ) : null}
 
-      <div className="grid gap-2 grid-cols-5 sm:grid-cols-10">
+      <div
+        className={cn(
+          "grid gap-2",
+          mode === "gs1" ? "grid-cols-5 sm:grid-cols-10" : "grid-cols-5"
+        )}
+      >
         {questions.map((qq, i) => {
           const a = answeredMap[qq.id];
           const done = a !== undefined;
@@ -166,8 +243,13 @@ export default function DrillClient() {
             {q.topicId ? (
               <span className="rounded-full bg-slate-100 px-2 py-0.5">{q.topicId}</span>
             ) : null}
-            <span className="rounded-full bg-rose-50 px-2 py-0.5 font-medium text-rose-800">
-              ~{q.nextExamChance}% theme chance
+            {q.section ? (
+              <span className="rounded-full bg-sky-50 px-2 py-0.5 font-medium text-sky-900">
+                {q.section}
+              </span>
+            ) : null}
+            <span className="rounded-full bg-rose-50 px-2 py-0.5 font-semibold text-rose-800">
+              ~{q.nextExamChance}% Loop chance
             </span>
             <span className="rounded-full bg-amber-50 px-2 py-0.5 text-amber-900">
               Q {index + 1}/{questions.length}
@@ -217,7 +299,11 @@ export default function DrillClient() {
                   Incorrect. Correct: {String.fromCharCode(65 + q.correctIndex)}
                 </p>
               )}
-              <ExplanationPanel className="mt-2 bg-white/70" explanation={q.explanation} correctIndex={q.correctIndex} />
+              <ExplanationPanel
+                className="mt-2 bg-white/70"
+                explanation={q.explanation}
+                correctIndex={q.correctIndex}
+              />
               {q.topicId ? (
                 <Link
                   href={`/topic/${q.topicId}`}

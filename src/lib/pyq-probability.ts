@@ -39,7 +39,7 @@ export interface ComputedProbability {
  *   syllabusBoost = syllabusWeight (1–5) → up to +10
  *   CSAT papers: structural/qualifying framing — high floor for core skill blocks
  *
- * Disclaimer: educational prioritisation heuristic — NOT an official UPSC prediction.
+ * Disclaimer: Loop’s educational prioritisation heuristic (10-year PYQ synthesis) — NOT an official UPSC prediction.
  */
 export function computeFromFrequency(entry: PyqTopicFrequency): ComputedProbability {
   const counts = ANALYSIS_YEARS.map((y) => entry.yearCounts[y] ?? 0);
@@ -101,7 +101,7 @@ export function computeFromFrequency(entry: PyqTopicFrequency): ComputedProbabil
   const shortWhy = buildShortWhy(entry, yearsAppeared.length, totalAppearances, trend);
   const chanceLabel = examChanceLabel(entry.paper as PaperId, probability);
 
-  const methodologyNote = `Derived from PYQ theme frequency (${ANALYSIS_YEARS[0]}–${ANALYSIS_YEARS[ANALYSIS_YEARS.length - 1]}) with recency weighting and syllabus importance (weight ${entry.syllabusWeight}/5). Not an official UPSC prediction.`;
+  const methodologyNote = `Loop’s 10-year synthesis of PYQ theme frequency (${ANALYSIS_YEARS[0]}–${ANALYSIS_YEARS[ANALYSIS_YEARS.length - 1]}) with recency weighting and syllabus importance (weight ${entry.syllabusWeight}/5). Not an official UPSC prediction.`;
 
   return {
     probability,

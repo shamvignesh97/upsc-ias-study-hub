@@ -70,13 +70,22 @@ export default function WeakAreaCoach({
             that mixes these with high next-exam-chance topics (saved in localStorage).
           </p>
         </div>
-        <button
-          type="button"
-          onClick={rebuildPlan}
-          className="shrink-0 rounded-lg bg-rose-600 px-3 py-2 text-sm font-semibold text-white"
-        >
-          Rebuild my 7-day plan
-        </button>
+        <div className="flex shrink-0 flex-wrap gap-2">
+          <Link
+            href="/revise/flash"
+            onClick={persistWeak}
+            className="rounded-lg bg-amber-500 px-3 py-2 text-sm font-semibold text-[#0f2744]"
+          >
+            Revise 10 flash points
+          </Link>
+          <button
+            type="button"
+            onClick={rebuildPlan}
+            className="rounded-lg bg-rose-600 px-3 py-2 text-sm font-semibold text-white"
+          >
+            Rebuild my 7-day plan
+          </button>
+        </div>
       </div>
       {planMsg ? (
         <p className="mt-3 rounded-lg bg-amber-50 px-3 py-2 text-sm text-amber-950">

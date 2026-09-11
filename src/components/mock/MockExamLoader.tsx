@@ -5,6 +5,7 @@ import Link from "next/link";
 import type { MockKind, MockQuestion } from "@/types";
 import { getMockPaperMeta, loadMockPaper } from "@/data/mocks";
 import MockExamPlayer from "@/components/mock/MockExamPlayer";
+import { enrichQuestionPool } from "@/lib/question-chance";
 
 export default function MockExamLoader({
   kind,
@@ -29,7 +30,7 @@ export default function MockExamLoader({
     }
     loadMockPaper(kind as MockKind, paperKey)
       .then((qs) => {
-        if (!cancelled) setQuestions(qs);
+        if (!cancelled) setQuestions(enrichQuestionPool(qs));
       })
       .catch(() => {
         if (!cancelled) setError("Failed to load paper");

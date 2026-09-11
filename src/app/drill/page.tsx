@@ -4,7 +4,7 @@ import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
   title: "Daily Drill",
-  description: "10 high next-exam-chance Prelims GS1 questions every day with streak tracking.",
+  description: "Daily GS1 drill (10) or CSAT quants (5) from Loop high-chance themes, with streak tracking.",
 };
 
 export default function DrillPage() {

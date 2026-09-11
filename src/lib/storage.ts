@@ -149,3 +149,50 @@ export function getStoredWeakAreas(): StoredWeakAreas | null {
 export function saveStoredWeakAreas(data: StoredWeakAreas): void {
   localStorage.setItem(WEAK_AREAS_KEY, JSON.stringify(data));
 }
+
+
+const WEEKLY_PACK_KEY = "upsc-weekly-pack";
+const FLASH_REVISE_KEY = "upsc-flash-revise";
+
+export type WeeklyPackState = {
+  weekKey: string;
+  answered: Record<string, number>;
+  completed: boolean;
+  correctCount: number;
+  scoreSavedAt?: string;
+};
+
+export type WeeklyPackPersist = {
+  history: { weekKey: string; correctCount: number; total: number; savedAt: string }[];
+  current: WeeklyPackState | null;
+};
+
+export function getWeeklyPackPersist(): WeeklyPackPersist {
+  if (typeof window === "undefined") return { history: [], current: null };
+  return safeParse(localStorage.getItem(WEEKLY_PACK_KEY), { history: [], current: null });
+}
+
+export function saveWeeklyPackPersist(state: WeeklyPackPersist): void {
+  localStorage.setItem(WEEKLY_PACK_KEY, JSON.stringify(state));
+}
+
+export type FlashRevisePersist = {
+  lastGeneratedAt: string | null;
+  topicIds: string[];
+  reviewedIds: string[];
+};
+
+export function getFlashRevisePersist(): FlashRevisePersist {
+  if (typeof window === "undefined") {
+    return { lastGeneratedAt: null, topicIds: [], reviewedIds: [] };
+  }
+  return safeParse(localStorage.getItem(FLASH_REVISE_KEY), {
+    lastGeneratedAt: null,
+    topicIds: [],
+    reviewedIds: [],
+  });
+}
+
+export function saveFlashRevisePersist(state: FlashRevisePersist): void {
+  localStorage.setItem(FLASH_REVISE_KEY, JSON.stringify(state));
+}

@@ -9,6 +9,7 @@ import LikelihoodBadge from "./LikelihoodBadge";
 import Disclaimer from "./Disclaimer";
 import TodayDrillCard from "./TodayDrillCard";
 import CoachTip from "./CoachTip";
+import NextExamFocusLoop from "./loop/NextExamFocusLoop";
 
 export default function DashboardClient() {
   const { progress, studiedCount, ready } = useProgress();
@@ -31,6 +32,9 @@ export default function DashboardClient() {
             </Link>
             <Link href="/drill" className="rounded-lg border border-amber-300/50 bg-amber-500/20 px-4 py-2 text-sm font-semibold text-amber-100">
               Today’s drill
+            </Link>
+            <Link href="/weekly" className="rounded-lg border border-rose-300/50 bg-rose-500/20 px-4 py-2 text-sm font-semibold text-rose-100">
+              Weekly pack
             </Link>
             <Link href="/syllabus" className="rounded-lg border border-white/30 px-4 py-2 text-sm font-semibold">
               Syllabus & chances
@@ -112,6 +116,26 @@ export default function DashboardClient() {
         ))}
       </section>
 
+      <NextExamFocusLoop limit={12} />
+
+      <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        {[
+          { href: "/weekly", title: "Weekly high-prob pack", desc: "25 GS1 Qs from ≥70% portions · score saved" },
+          { href: "/battle", title: "Portion battle cards", desc: "Climate, FR/DPSP, inflation, PA, parliament…" },
+          { href: "/revise/flash", title: "Flash revision", desc: "10 must-remember points from weak areas" },
+          { href: "/drill", title: "CSAT quants daily 5", desc: "Toggle on Drill for high-prob numeracy" },
+        ].map((c) => (
+          <Link
+            key={c.href}
+            href={c.href}
+            className="rounded-xl border border-rose-200 bg-rose-50/60 p-4 shadow-sm hover:border-rose-400"
+          >
+            <div className="font-semibold text-slate-900">{c.title}</div>
+            <div className="text-sm text-slate-600">{c.desc}</div>
+          </Link>
+        ))}
+      </section>
+
       <Disclaimer />
 
       <section>
@@ -119,7 +143,7 @@ export default function DashboardClient() {
           <div>
             <h2 className="text-xl font-bold text-slate-900">Focus for next exam</h2>
             <p className="text-sm text-slate-600">
-              Ranked by PYQ frequency + recency. Coach tips explain why + how to revise in 20 min.
+              Topic-level Loop ranks (10-year PYQ synthesis). Coach tips explain why + how to revise in 20 min.
             </p>
           </div>
           <Link href="/methodology" className="text-sm font-medium text-amber-800 underline">

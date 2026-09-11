@@ -287,7 +287,7 @@ export default function MockExamPlayer({
                 {mistakesOnly ? " (mistakes)" : ""}
               </span>
               <span className="rounded-full bg-rose-50 px-2 py-0.5 text-[10px] font-medium text-rose-800">
-                ~{rq.nextExamChance}% theme chance
+                ~{rq.nextExamChance}% Loop chance
               </span>
             </div>
             <h3 className="whitespace-pre-wrap text-base font-semibold text-slate-900">{rq.question}</h3>
@@ -475,7 +475,7 @@ export default function MockExamPlayer({
                 <span className="rounded-full bg-slate-100 px-2 py-0.5">{q.topicId}</span>
               ) : null}
               <span className="rounded-full bg-rose-50 px-2 py-0.5 font-medium text-rose-800">
-                ~{q.nextExamChance}% next-exam theme chance
+                ~{q.nextExamChance}% Loop next-exam chance
               </span>
               <span className="rounded-full bg-amber-50 px-2 py-0.5 text-amber-900">Illustrative</span>
             </div>

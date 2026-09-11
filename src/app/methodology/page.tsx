@@ -11,11 +11,12 @@ export default function MethodologyPage() {
   return (
     <div className="mx-auto max-w-3xl space-y-6">
       <div>
-        <h1 className="text-3xl font-bold">How we estimate next-exam likelihood</h1>
+        <h1 className="text-3xl font-bold">How Loop estimates next-exam likelihood</h1>
         <p className="mt-2 text-slate-600">
-          Probabilities are derived from a structured multi-year PYQ theme-frequency dataset
-          ({ANALYSIS_YEARS[0]}–{ANALYSIS_YEARS[ANALYSIS_YEARS.length - 1]}), not vague placeholders.
-          Target framing: prioritising study for ~{NEXT_EXAM_YEAR} papers.
+          Rankings are <strong>Loop’s 10-year synthesis</strong> of Prelims/Mains theme patterns
+          ({ANALYSIS_YEARS[0]}–{ANALYSIS_YEARS[ANALYSIS_YEARS.length - 1]}) — frequency × recency ×
+          syllabus weight — not vague placeholders and not Gemini. Target framing: prioritising study
+          for ~{NEXT_EXAM_YEAR} papers.
         </p>
       </div>
 
@@ -24,8 +25,8 @@ export default function MethodologyPage() {
       <section className="space-y-3 rounded-xl border border-amber-200 bg-amber-50 p-5 text-sm leading-relaxed text-amber-950 shadow-sm">
         <h2 className="text-lg font-semibold">Why these articles (deep PDFs)</h2>
         <p>
-          We deepen <strong>{deepCount}</strong> portion articles chosen by the portion-level
-          2016–2025 model (topic frequency × recency × syllabus weight). Ancient India’s hottest
+          We deepen <strong>{deepCount}</strong> portion articles chosen by Loop’s portion-level
+          10-year (2016–2025) model (topic frequency × recency × syllabus weight). Ancient India’s hottest
           slices (IVC, Buddhism/Jainism, Maurya–Gupta) stay in the deep set even when the parent
           topic sits mid-pack, because those sub-portions still clear the high-yield bar.
         </p>
@@ -37,7 +38,7 @@ export default function MethodologyPage() {
 
       <section className="space-y-3 rounded-xl border border-slate-200 bg-white p-5 text-sm leading-relaxed text-slate-700 shadow-sm">
         <h2 className="text-lg font-semibold text-slate-900">
-          Highest next-exam-chance portions — Prelims GS
+          Loop pick — highest next-exam-chance portions (Prelims GS)
         </h2>
         <ol className="list-decimal space-y-2 pl-5">
           {gsPortions.map((p) => (
@@ -147,6 +148,31 @@ export default function MethodologyPage() {
           Dashboard <strong>Focus for next exam</strong> ranks topics by this computed probability
           (excluding Optional/Interview).
         </p>
+      </section>
+
+      <section className="space-y-3 rounded-xl border border-slate-200 bg-white p-5 text-sm leading-relaxed text-slate-700 shadow-sm">
+        <h2 className="text-lg font-semibold text-slate-900">How the product uses Loop ranks</h2>
+        <ul className="list-disc space-y-1 pl-5">
+          <li>
+            <strong>Next exam focus (Loop pick)</strong> on Home — top portions with % · trend · why ·
+            Study / article / PDF / battle / weekly links
+          </li>
+          <li>
+            <strong>Weekly high-prob pack</strong> (/weekly) — 25 GS1 MCQs only from portions ≥70%
+          </li>
+          <li>
+            <strong>Battle cards</strong> (/battle) — dense in-app facts for climate, FR/DPSP,
+            inflation, protected areas, parliament, schemes, ISRO, monsoon
+          </li>
+          <li>
+            <strong>Flash revision</strong> (/revise/flash) — 10 must-remember points from weak-area
+            coach / last mock wrongs
+          </li>
+          <li>
+            <strong>CSAT quants daily 5</strong> — toggle on /drill for high-prob numeracy
+          </li>
+          <li>Mock/drill questions show live Loop chance % (topic-synced)</li>
+        </ul>
       </section>
 
       <section className="space-y-3 rounded-xl border border-slate-200 bg-white p-5 text-sm leading-relaxed text-slate-700 shadow-sm">

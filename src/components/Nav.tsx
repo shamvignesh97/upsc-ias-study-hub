@@ -11,6 +11,7 @@ const primaryLinks = [
   { href: "/study", label: "Study" },
   { href: "/mock", label: "Mock" },
   { href: "/drill", label: "Drill" },
+  { href: "/weekly", label: "Weekly" },
   { href: "/syllabus", label: "Focus" },
   { href: "/analytics", label: "Analytics" },
 ];
@@ -22,6 +23,8 @@ const moreLinks = [
   { href: "/optional", label: "Optional" },
   { href: "/interview", label: "Interview" },
   { href: "/bookmarks", label: "Bookmarks" },
+  { href: "/battle", label: "Battle cards" },
+  { href: "/revise/flash", label: "Flash revise" },
   { href: "/methodology", label: "Odds method" },
   { href: "/search", label: "Search" },
 ];

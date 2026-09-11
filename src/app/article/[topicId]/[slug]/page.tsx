@@ -5,6 +5,7 @@ import { getArticle, getAllArticleParams } from "@/data/articles";
 import { getTopicById } from "@/data/topics";
 import ArticlePdfActions from "@/components/articles/ArticlePdfActions";
 import Disclaimer from "@/components/Disclaimer";
+import { getPortionRank } from "@/data/portion-frequency";
 
 export function generateStaticParams() {
   return getAllArticleParams();
@@ -33,6 +34,8 @@ export default async function ArticlePage({
   const article = getArticle(topicId, slug);
   if (!article) notFound();
   const topic = getTopicById(topicId);
+  const portionRank = getPortionRank(slug, topicId);
+  const liveChance = portionRank?.probability ?? article.portionChance;
 
   return (
     <article className="mx-auto max-w-3xl space-y-6 print:max-w-none">
@@ -50,7 +53,7 @@ export default async function ArticlePage({
         <p className="text-slate-600">{article.blurb}</p>
         <div className="flex flex-wrap gap-2">
           <span className="inline-flex rounded-full border border-amber-300 bg-amber-50 px-2.5 py-0.5 text-xs font-semibold text-amber-950">
-            ~{article.portionChance}% portion focus
+            ~{liveChance}% Loop chance
           </span>
           {topic?.chanceLabel ? (
             <span className="inline-flex rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-medium text-slate-700">

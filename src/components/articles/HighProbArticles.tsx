@@ -14,7 +14,7 @@ export default function HighProbArticles({ topicId }: { topicId: string }) {
   const ranked = getRankedPortions({ paper: "all" }).filter((p) => p.topicId === topicId);
   const whyBlurb =
     ranked.length > 0
-      ? `Chosen via 2016–2025 PYQ portion model: ${ranked
+      ? `Chosen via Loop’s 10-year (2016–2025) PYQ portion synthesis: ${ranked
           .slice(0, 3)
           .map((p) => `${p.title} ~${p.probability}% (${p.trend})`)
           .join("; ")}.`
@@ -47,7 +47,7 @@ export default function HighProbArticles({ topicId }: { topicId: string }) {
                 <div className="flex flex-wrap items-center gap-2">
                   <h3 className="font-semibold text-slate-900">{a.title}</h3>
                   <span className="inline-flex rounded-full border border-amber-300 bg-amber-50 px-2 py-0.5 text-[11px] font-semibold tabular-nums text-amber-950">
-                    ~{a.portionChance}% portion
+                    ~{(ranked.find((r) => r.articleSlug === a.slug)?.probability ?? a.portionChance)}% Loop chance
                   </span>
                 </div>
                 <p className="mt-1 text-sm text-slate-600">{a.blurb}</p>

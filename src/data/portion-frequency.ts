@@ -1,8 +1,8 @@
 import type { Trend } from "@/types";
 
 /**
- * Portion / theme-level PYQ frequency (educational synthesis, 2016–2025).
- * Used to choose which articles to deepen and to explain “Why these articles”.
+ * Portion / theme-level PYQ frequency — Loop’s 10-year synthesis (2016–2025).
+ * Used for Next-exam focus ranks, weekly high-prob packs, battle cards, and article depth.
  * Not scraped verbatim papers — approximate theme counts for study prioritisation.
  */
 export interface PortionFrequency {
@@ -150,9 +150,9 @@ export const portionFrequency: PortionFrequency[] = [
     paper: "prelims-gs",
     title: "Monsoon & Climatology",
     articleSlug: "monsoon-climatology",
-    yearCounts: { "2016": 2, "2017": 2, "2018": 2, "2019": 2, "2020": 2, "2021": 2, "2022": 2, "2023": 2, "2024": 2, "2025": 2 },
-    syllabusWeight: 4,
-    notes: "Monsoon mechanism + climate classification staples.",
+    yearCounts: { "2016": 2, "2017": 2, "2018": 2, "2019": 2, "2020": 2, "2021": 3, "2022": 2, "2023": 3, "2024": 2, "2025": 3 },
+    syllabusWeight: 5,
+    notes: "Monsoon mechanism + ENSO/orography — Loop marks this as a perennial GS geo staple.",
   },
   {
     id: "geomorphology-oceans",
@@ -414,4 +414,25 @@ export function getRankedPortions(opts?: {
 
 export function getPortionRank(articleSlug: string, topicId: string): RankedPortion | undefined {
   return getRankedPortions().find((p) => p.articleSlug === articleSlug && p.topicId === topicId);
+}
+
+/** High-chance floor used by weekly pack / Loop focus (≥70% = High band). */
+export const HIGH_PORTION_CHANCE = 70;
+
+/** Loop’s next-exam portion picks for Prelims GS (default top 12). */
+export function getLoopNextExamPicks(limit = 12): RankedPortion[] {
+  return getRankedPortions({ paper: "prelims-gs", limit });
+}
+
+/** Topic ids covered by High-chance (≥70%) Prelims GS portions. */
+export function getHighChancePortionTopicIds(floor = HIGH_PORTION_CHANCE): string[] {
+  const ids = new Set<string>();
+  for (const p of getRankedPortions({ paper: "prelims-gs" })) {
+    if (p.probability >= floor) ids.add(p.topicId);
+  }
+  return [...ids];
+}
+
+export function getPortionById(id: string): RankedPortion | undefined {
+  return getRankedPortions().find((p) => p.id === id);
 }
